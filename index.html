@@ -11,6 +11,50 @@
   <!-- Master Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
   
+  <!-- Inline SVG Animation Fallback Stylesheet -->
+  <style>
+    @keyframes radarSweepAnim {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes radarRingPulse {
+      0% { r: 20px; opacity: 0.85; stroke-width: 2.2; }
+      100% { r: 170px; opacity: 0; stroke-width: 0.5; }
+    }
+    @keyframes candleFloat1 {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-4px); }
+    }
+    @keyframes candleFloat2 {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-7px); }
+    }
+    @keyframes candleFloat3 {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-9px); }
+    }
+    @keyframes nodePulse {
+      0%, 100% { r: 7px; filter: drop-shadow(0 0 5px #00F0FF); opacity: 1; }
+      50% { r: 10px; filter: drop-shadow(0 0 16px #00F0FF); opacity: 0.75; }
+    }
+    .animate-radar-sweep {
+      transform-origin: 220px 226px;
+      animation: radarSweepAnim 4.5s linear infinite !important;
+    }
+    .animate-radar-ring-1 {
+      animation: radarRingPulse 3s ease-out infinite !important;
+      transform-origin: 220px 226px;
+    }
+    .animate-radar-ring-2 {
+      animation: radarRingPulse 3s ease-out infinite 1.5s !important;
+      transform-origin: 220px 226px;
+    }
+    .animate-candle-1 { animation: candleFloat1 3s ease-in-out infinite alternate !important; }
+    .animate-candle-2 { animation: candleFloat2 3.8s ease-in-out infinite alternate !important; }
+    .animate-candle-3 { animation: candleFloat3 4.2s ease-in-out infinite alternate !important; }
+    .animate-node-pulse { animation: nodePulse 1.8s ease-in-out infinite !important; }
+  </style>
+  
   <!-- Plotly.js Interactive Financial & XAI Engine -->
   <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
   
@@ -23,18 +67,24 @@
   <div class="bg-grid-overlay"></div>
 
   <!-- ========================================================================
-       HIGH-TECH BOOT SCREEN / INITIAL TERMINAL LOADER (FEATURE 12)
+       HIGH-TECH BOOT SCREEN / INITIAL TERMINAL LOADER (FEATURE 4 & 12)
        ======================================================================== -->
   <div id="boot-screen">
     <div class="boot-box">
       <div class="boot-scanline"></div>
+      
+      <!-- Prominent Brand Wordmark Logo in Loading Sequence (Item 4) -->
+      <div class="boot-brand-wrap">
+        <img id="boot-brand-logo" src="assets/logo/aegis_wordmark_dark.jpg" alt="INVESTION AEGIS" class="boot-brand-img">
+      </div>
+
       <div class="boot-header">
         <div class="boot-title">
           <svg width="20" height="20" viewBox="0 0 40 40" fill="none">
             <path d="M20 4L34 10V21C34 29.5 27.8 35.8 20 38C12.2 35.8 6 29.5 6 21V10L20 4Z" stroke="#00F0FF" stroke-width="2.5"/>
             <path d="M12 25L18 19L22 22L29 13" stroke="#00F0FF" stroke-width="2.5" stroke-linecap="round"/>
           </svg>
-          <span>INVESTION AEGIS CORE OS</span>
+          <span>INVESTION AEGIS OS</span>
         </div>
         <div class="boot-status">ARMED v4.2</div>
       </div>
@@ -50,17 +100,17 @@
   </div>
 
   <!-- ========================================================================
-       TOP NAVIGATION BAR (TRACE SIGNATURE REFINEMENT)
+       TOP NAVIGATION BAR
        ======================================================================== -->
   <header class="top-navbar">
     <div class="container nav-container">
       
-      <!-- Brand Logo Wordmark Image (Feature 1) -->
+      <!-- Brand Logo Wordmark Image (Item 4) -->
       <div class="brand-block" onclick="AEGIS_APP.nav('overview')">
         <img id="nav-brand-logo" src="assets/logo/aegis_wordmark_dark.jpg" alt="INVESTION AEGIS" class="brand-logo-img">
       </div>
 
-      <!-- Navigation Tabs (Metodologi di Paling Kanan - Feature 5) -->
+      <!-- Navigation Tabs (Metodologi di Paling Kanan - Item 5) -->
       <nav class="nav-links-center">
         <button class="nav-tab-btn active" data-page="overview" onclick="AEGIS_APP.nav('overview', this)">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
@@ -82,7 +132,7 @@
           <span>Simulasi Portofolio</span>
         </button>
 
-        <!-- Metodologi di Paling Kanan Sesuai Permintaan -->
+        <!-- Metodologi di Paling Kanan -->
         <button class="nav-tab-btn" data-page="metodologi" onclick="AEGIS_APP.nav('metodologi', this)">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
           <span>Metodologi Riset</span>
@@ -102,8 +152,8 @@
           </svg>
         </button>
 
-        <button class="btn-primary-action" onclick="AEGIS_APP.nav('simulasi')">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        <button class="btn-nav-action" onclick="AEGIS_APP.nav('simulasi')">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
           <span>Uji Simulasi</span>
         </button>
       </div>
@@ -112,131 +162,141 @@
   </header>
 
   <!-- ========================================================================
-       TICKER BAR (LATEST METRICS)
+       LIVE TICKER BAR (EXACT AUTHENTIC NUMBERS - ITEM 6)
        ======================================================================== -->
-  <div class="ticker-bar">
+  <div class="live-ticker-bar">
     <div class="ticker-badge">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg>
-      <span>LATEST METRICS</span>
+      <span>TELEMETRI TERKINI</span>
     </div>
     <div class="ticker-track-wrapper">
       <div class="ticker-track">
-        <div class="ticker-item"><span class="dot"></span><span>Champion Model:</span><span class="val-highlight">Boosted Hybrid (Ridge-HAR-X + GBRT)</span></div>
-        <div class="ticker-item"><span class="dot"></span><span>Inference Latency:</span><span class="val-safe">4.2 ms (HFT Real-Time)</span></div>
-        <div class="ticker-item"><span class="dot"></span><span>Baseline Outperformance:</span><span class="val-safe">-23.00% RMSE vs Naive 5D</span></div>
-        <div class="ticker-item"><span class="dot"></span><span>5-Fold Purged CV RMSE:</span><span class="val-highlight">0.004041</span></div>
-        <div class="ticker-item"><span class="dot"></span><span>Out-of-Sample Volatility 2025-2026:</span><span class="val-warning">0.0093 Avg (Aman &bull; POJK 43/2015)</span></div>
-        <div class="ticker-item"><span class="dot"></span><span>99% 5D VaR (Dana Rp 10T):</span><span class="val-highlight">Rp 342.4 Miliar (Threshold OK)</span></div>
-        <div class="ticker-item"><span class="dot"></span><span>Drawdown Defense:</span><span class="val-safe">-34.8% &rarr; -9.1%</span></div>
-        <div class="ticker-item"><span class="dot"></span><span>Regulasi:</span><span class="val-highlight">POJK 43/2015 &bull; UU P2SK No. 4/2023 &bull; SDG 8.10</span></div>
-        <!-- Duplication for continuous marquee -->
-        <div class="ticker-item"><span class="dot"></span><span>Champion Model:</span><span class="val-highlight">Boosted Hybrid (Ridge-HAR-X + GBRT)</span></div>
-        <div class="ticker-item"><span class="dot"></span><span>Inference Latency:</span><span class="val-safe">4.2 ms (HFT Real-Time)</span></div>
-        <div class="ticker-item"><span class="dot"></span><span>Baseline Outperformance:</span><span class="val-safe">-23.00% RMSE vs Naive 5D</span></div>
-        <div class="ticker-item"><span class="dot"></span><span>5-Fold Purged CV RMSE:</span><span class="val-highlight">0.004041</span></div>
+        <div class="ticker-item"><span class="dot"></span><span>Model Champion: <span class="val-highlight">Boosted Hybrid (Ridge-HAR-X + GBRT)</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>Inference Latency: <span class="val-safe">4.2 ms (HFT-Ready)</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>Baseline Outperformance: <span class="val-safe">-23.00% RMSE vs Naive</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>5-Fold Purged CV RMSE: <span class="val-highlight">0.004041</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>Holdout RMSE: <span class="val-highlight">0.003100</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>Out-of-Sample Volatility 2025-2026: <span class="val-safe">0.0093 Avg (Safe Calm Regime)</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>Puncak Volatilitas 2025-2026: <span class="val-warning">0.0231 (Eskalasi)</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>99% Stressed VaR (Rp 10T): <span class="val-highlight">Rp 342.4 Miliar</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>Mandat Regulasi: <span class="val-highlight">POJK No. 43/2015 &bull; UU P2SK No. 4/2023</span></span></div>
+        
+        <!-- Duplicated track for infinite seamless marquee -->
+        <div class="ticker-item"><span class="dot"></span><span>Model Champion: <span class="val-highlight">Boosted Hybrid (Ridge-HAR-X + GBRT)</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>Inference Latency: <span class="val-safe">4.2 ms (HFT-Ready)</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>Baseline Outperformance: <span class="val-safe">-23.00% RMSE vs Naive</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>5-Fold Purged CV RMSE: <span class="val-highlight">0.004041</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>Holdout RMSE: <span class="val-highlight">0.003100</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>Out-of-Sample Volatility 2025-2026: <span class="val-safe">0.0093 Avg (Safe Calm Regime)</span></span></div>
       </div>
     </div>
   </div>
 
-  <!-- MAIN VIEWPORT CONTAINER -->
-  <main class="container" style="padding-top: 20px;">
+  <!-- ========================================================================
+       MAIN APP CONTAINER (SPA ROUTER)
+       ======================================================================== -->
+  <main class="container" style="padding-top: 24px;">
 
     <!-- ======================================================================
-         PAGE 1: OVERVIEW / BERANDA (EXECUTIVE COCKPIT)
+         PAGE 1: OVERVIEW (HOME)
          ====================================================================== -->
     <section id="page-overview" class="page-view active">
       
-      <!-- HERO SECTION -->
+      <!-- HERO BANNER -->
       <div class="hero-section">
         <div class="hero-grid">
           
-          <!-- Left Column: Executive Framing -->
+          <!-- Left Column -->
           <div>
-            <div class="hero-pill-badge">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              <span>PT INVESTION ASSET MANAGEMENT &bull; INCEPTION 2026</span>
+            <!-- Institutional Badge with Brand Logo (Item 4) -->
+            <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 16px; flex-wrap: wrap;">
+              <img id="hero-brand-logo" src="assets/logo/aegis_wordmark_dark.jpg" alt="INVESTION AEGIS" style="height: 38px; width: auto; object-fit: contain; mix-blend-mode: screen; filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.25));">
+              <span class="hero-pill-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span>PT INVESTION ASSET MANAGEMENT &bull; INCEPTION 2026</span>
+              </span>
             </div>
 
             <h1 class="hero-title">
-              Sistem Peringatan Dini. <br>
-              <span class="highlight-cyan">Perlindungan Portofolio Rp 10T.</span> <br>
+              Sistem Peringatan Dini.<br>
+              <span class="highlight-cyan">Perlindungan Portofolio Rp 10T.</span><br>
               Presisi Volatilitas 5-Hari.
             </h1>
 
             <p class="hero-desc">
-              Platform kuantitatif institusional untuk memprediksi <em>5-day realized volatility</em> Indeks Harga Saham Gabungan (IHSG). Mengintegrasikan ekonometrika <strong>HAR-X</strong>, akselerasi residual <strong>Gradient Boosting</strong>, dan <strong>Explainable AI (XAI)</strong> guna mematuhi amanat <strong>POJK No. 43/2015</strong> dan <strong>UU P2SK No. 4/2023</strong> dalam memitigasi risiko sistemik pasar modal.
+              Platform kuantitatif terdepan yang dirancang untuk memprediksi <em>5-day realized volatility</em> Indeks Harga Saham Gabungan (IHSG). Mengintegrasikan ekonometrika <strong>HAR-X</strong>, akselerasi residual <strong>Gradient Boosting</strong>, dan <strong>Explainable AI (XAI)</strong> untuk membentengi portofolio institusi dari guncangan makroekonomi global.
             </p>
 
             <div class="hero-cta-group">
               <button class="btn-hero-primary" onclick="AEGIS_APP.nav('simulasi')">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
                 <span>Buka Simulasi Portofolio</span>
               </button>
-
               <button class="btn-hero-secondary" onclick="AEGIS_APP.nav('metodologi')">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
                 <span>Eksplorasi Metodologi</span>
               </button>
             </div>
 
-            <!-- 4 Metric Cards -->
+            <!-- 4 Metric Cards Grid -->
             <div class="hero-metrics-grid">
               <div class="metric-card">
-                <div class="metric-card-lbl">INFERENCE LATENCY</div>
-                <div class="metric-card-val text-cyan">4.2 ms</div>
-                <div class="metric-card-sub">HFT Streaming Ready</div>
+                <div class="metric-card-lbl">MODEL CHAMPION</div>
+                <div class="metric-card-val text-cyan" style="font-size: 1.15rem; margin: 4px 0;">Boosted Hybrid</div>
+                <div class="metric-card-sub">Ridge-HAR-X + GBRT Booster</div>
               </div>
 
               <div class="metric-card">
-                <div class="metric-card-lbl">BASELINE OUTPERFORM</div>
+                <div class="metric-card-lbl">REDUKSI ERROR</div>
                 <div class="metric-card-val text-safe">-23.00%</div>
-                <div class="metric-card-sub">Reduksi RMSE vs Naive</div>
+                <div class="metric-card-sub">Holdout RMSE vs Naive Baseline</div>
               </div>
 
               <div class="metric-card">
-                <div class="metric-card-lbl">5-FOLD PURGED CV</div>
-                <div class="metric-card-val">0.00404</div>
-                <div class="metric-card-sub">Zero-Leakage Rigor</div>
+                <div class="metric-card-lbl">LATENSI EKSEKUSI</div>
+                <div class="metric-card-val">4.2 ms</div>
+                <div class="metric-card-sub">High-Frequency Trading Ready</div>
               </div>
 
               <div class="metric-card">
-                <div class="metric-card-lbl">MAX 99% 5D VAR</div>
-                <div class="metric-card-val">Rp 412 M</div>
-                <div class="metric-card-sub">Modal Buffer Terjaga</div>
+                <div class="metric-card-lbl">DATA INTEGRITY</div>
+                <div class="metric-card-val text-safe">100%</div>
+                <div class="metric-card-sub">4.266 Baris Zero Leakage Purged</div>
               </div>
             </div>
+
           </div>
 
-          <!-- Right Column: Animated Hero Aegis Shield -->
+          <!-- Right Column: Interactive Animated SVG Shield Telemetry (Item 1 Fixed) -->
           <div>
             <div class="hero-shield-card">
               <div class="shield-telemetry-header">
-                <div>
+                <div style="display: flex; align-items: center; gap: 8px;">
                   <span class="shield-telemetry-badge">AEGIS SHIELD TELEMETRY</span>
-                  <span style="margin-left: 8px;">RATIO 1:1.31 (Φ)</span>
+                  <span>RATIO 1:1.31 (Φ)</span>
                 </div>
-                <div>
-                  <span style="color: var(--brand-cyan);">●</span> SYSTEM ARMED
+                <div style="display: flex; align-items: center; gap: 6px; color: var(--color-safe);">
+                  <span class="status-dot"></span>
+                  <span>SYSTEM ARMED</span>
                 </div>
               </div>
 
-              <!-- Animated SVG Shield Emblem -->
-              <svg viewBox="0 0 440 440" style="width: 100%; height: auto; max-height: 380px; display: block; margin: 0 auto;">
+              <!-- Animated SVG Shield with Smooth 360 Sweep & Node Pulse -->
+              <svg viewBox="0 0 440 440" style="width: 100%; height: auto; display: block;">
                 <defs>
-                  <linearGradient id="shieldGradDark" x1="15%" y1="0%" x2="85%" y2="100%">
-                    <stop offset="0%" stop-color="#F8FAFC" stop-opacity="0.9" />
-                    <stop offset="40%" stop-color="#334155" />
-                    <stop offset="100%" stop-color="#0F172A" />
+                  <linearGradient id="shieldGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#0E1B38"/>
+                    <stop offset="50%" stop-color="#070E20"/>
+                    <stop offset="100%" stop-color="#03060E"/>
                   </linearGradient>
 
                   <linearGradient id="cyanNeonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#00F0FF" />
-                    <stop offset="100%" stop-color="#0052FF" />
+                    <stop offset="0%" stop-color="#00F0FF"/>
+                    <stop offset="100%" stop-color="#0052FF"/>
                   </linearGradient>
 
-                  <linearGradient id="radarSweepGradHero" x1="0%" y1="0%" x2="100%" y2="50%">
-                    <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.38" />
-                    <stop offset="100%" stop-color="#0052FF" stop-opacity="0" />
+                  <linearGradient id="radarSweepGradHero" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.38"/>
+                    <stop offset="100%" stop-color="#00F0FF" stop-opacity="0"/>
                   </linearGradient>
 
                   <clipPath id="heroInnerClip">
@@ -244,28 +304,35 @@
                   </clipPath>
                 </defs>
 
+                <!-- Static Background Rings -->
                 <circle cx="220" cy="220" r="176" fill="none" stroke="url(#cyanNeonGrad)" stroke-width="1" stroke-opacity="0.2" stroke-dasharray="6 8" />
                 <circle cx="220" cy="220" r="192" fill="none" stroke="#00F0FF" stroke-width="0.75" stroke-opacity="0.1" />
 
+                <!-- Outer Shield Frame -->
                 <path d="M 220 32 L 370 90 L 370 226 C 370 330 304 396 220 426 C 136 396 70 330 70 226 L 70 90 Z" 
                       fill="url(#shieldGradDark)" stroke="url(#cyanNeonGrad)" stroke-width="3" />
 
+                <!-- Inner Shield Body -->
                 <path d="M 220 54 L 348 102 L 348 226 C 348 316 292 376 220 404 C 148 376 92 316 92 226 L 92 102 Z" 
                       fill="#050B1B" stroke="#1E293B" stroke-width="2" />
 
+                <!-- Clipped Shield Radar & Telemetry -->
                 <g clip-path="url(#heroInnerClip)">
                   <circle cx="220" cy="226" r="50" fill="none" stroke="#00F0FF" stroke-opacity="0.15" stroke-width="1" />
                   <circle cx="220" cy="226" r="100" fill="none" stroke="#00F0FF" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="4 6" />
                   <circle cx="220" cy="226" r="140" fill="none" stroke="#0052FF" stroke-opacity="0.2" stroke-width="1" />
 
+                  <!-- Pulsing Expanding Radar Waves -->
                   <circle class="animate-radar-ring-1" cx="220" cy="226" r="30" fill="none" stroke="#00F0FF" />
                   <circle class="animate-radar-ring-2" cx="220" cy="226" r="30" fill="none" stroke="#0052FF" />
 
+                  <!-- Rotating Radar Sweep Cone -->
                   <g class="animate-radar-sweep" style="transform-origin: 220px 226px;">
                     <path d="M 220 226 L 220 40 A 180 180 0 0 1 370 140 Z" fill="url(#radarSweepGradHero)" />
                     <line x1="220" y1="226" x2="220" y2="40" stroke="#00F0FF" stroke-width="2" stroke-opacity="0.8" />
                   </g>
 
+                  <!-- Dynamic Floating Financial Candlesticks -->
                   <g class="animate-candle-1">
                     <line x1="130" y1="260" x2="130" y2="330" stroke="#64748B" stroke-width="2.5" />
                     <rect x="123" y="275" width="14" height="35" rx="2" fill="#334155" />
@@ -292,6 +359,7 @@
                   </g>
                 </g>
 
+                <!-- Glowing Prediction Vector Arrow -->
                 <path d="M 100 310 C 140 300, 160 270, 185 250 C 210 230, 230 235, 255 195 C 280 155, 305 130, 330 105" 
                       fill="none" stroke="#00F0FF" stroke-width="6" stroke-linecap="round" opacity="0.6" />
                 <path d="M 100 310 C 140 300, 160 270, 185 250 C 210 230, 230 235, 255 195 C 280 155, 305 130, 330 105" 
@@ -299,6 +367,7 @@
 
                 <path d="M 310 102 L 335 100 L 332 125" fill="none" stroke="#00F0FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 
+                <!-- Pulsing Target Node -->
                 <circle cx="185" cy="250" r="5" fill="#050B1B" stroke="#00F0FF" stroke-width="2.5" />
                 <circle cx="255" cy="195" r="5" fill="#050B1B" stroke="#00F0FF" stroke-width="3" />
                 <circle class="animate-node-pulse" cx="330" cy="105" r="7" fill="#FFFFFF" stroke="#00F0FF" stroke-width="3" />
@@ -314,11 +383,11 @@
         </div>
       </div>
 
-      <!-- PROFIL TIM & INSTITUSI -->
+      <!-- PROFIL TIM & MANDAT KELOLAAN DANA -->
       <div class="card-panel" style="margin-top: 32px;">
         <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid var(--border-subtle); padding-bottom: 14px; margin-bottom: 18px;">
           <div>
-            <div class="section-pill">PROFIL TIM &amp; MANDAT MANAJEMEN RISIKO</div>
+            <div class="section-pill">PROFIL TIM &bull; MANDAT MANAJEMEN RISIKO</div>
             <h3 class="card-title">Tim Positif Podium &bull; Universitas Negeri Surabaya (UNESA)</h3>
           </div>
           <div style="display: flex; gap: 8px;">
@@ -357,7 +426,7 @@
         </div>
       </div>
 
-      <!-- INTERACTIVE 2025-2026 FORECAST CHART (FEATURE 6 FIXED) -->
+      <!-- INTERACTIVE 2025-2026 FORECAST CHART -->
       <div class="card-panel">
         <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 14px;">
           <div>
@@ -367,7 +436,7 @@
           </div>
           <div style="display: flex; gap: 8px;">
             <span class="badge-tag tag-safe">Conformal 90% Valid</span>
-            <span class="badge-tag tag-warning">Markov Regime Shaded</span>
+            <span class="badge-tag tag-warning">Regime Switching Overlay</span>
           </div>
         </div>
 
@@ -395,14 +464,14 @@
     </section>
 
     <!-- ======================================================================
-         PAGE 2: EKSPLORASI DATA (FORENSIC EDA & PLOTLY MULTI-CHART - FEATURE 7)
+         PAGE 2: EKSPLORASI DATA (EDA - ITEM 2 NON-OVERFLOW FIXED)
          ====================================================================== -->
     <section id="page-eda" class="page-view">
       <div class="section-header-block">
         <div class="section-pill">BAB 1 // TASK 1 EDA &amp; MARKET INTELLIGENCE</div>
         <h2 class="section-title">Eksplorasi Data Forensik &amp; Analisis Ekonometrika</h2>
         <p class="section-desc">
-          Audit empiris terhadap 4.266 observasi harian bursa (2010 s.d. 2026) mencakup pengelompokan volatilitas (*volatility clustering*), transmisi guncangan multi-aset global, uji stasioneritas Dickey-Fuller, dan dampak peristiwa politik nasional.
+          Audit empiris terhadap 4.266 observasi harian bursa (2010 s.d. 2026) mencakup pengelompokan volatilitas (<em>volatility clustering</em>), transmisi guncangan multi-aset global, uji stasioneritas Dickey-Fuller, dan dampak peristiwa krisis historis.
         </p>
       </div>
 
@@ -413,7 +482,7 @@
         <div id="chart-multi-asset-comparison" class="chart-container"></div>
         <div class="regulatory-callout" style="margin-top: 14px;">
           <div>
-            <strong>Temuan Analitik:</strong> Hubungan terbalik antara IHSG dan VIX menunjukkan koefisien transmisi risiko global sebesar <strong>+0.434</strong>. Setiap kali VIX melampaui level 30, aliran dana asing (*foreign portfolio flows*) mencatatkan *net sell* rata-rata Rp 1.8 Triliun per pekan di Bursa Efek Indonesia.
+            <strong>Temuan Analitik:</strong> Hubungan terbalik antara IHSG dan VIX menunjukkan koefisien transmisi risiko global sebesar <strong>+0.434</strong>. Setiap kali VIX melampaui level 30, aliran dana asing (<em>foreign portfolio flows</em>) mencatatkan <em>net sell</em> rata-rata Rp 1.8 Triliun per pekan di Bursa Efek Indonesia.
           </div>
         </div>
       </div>
@@ -421,49 +490,49 @@
       <!-- Interactive Chart 2: Volatility Clustering (HAR Dynamics) -->
       <div class="card-panel">
         <div class="card-title">2. Volatility Clustering &amp; Heterogeneous Autoregressive (HAR) Dynamics</div>
-        <div class="card-subtitle">Membandingkan Target Volatilitas 5D dengan realized volatility bergulir 20D (Bulanan) dan 60D (Kuartalan), membuktikan sifat ketergantungan memori panjang (*long-memory persistence*).</div>
+        <div class="card-subtitle">Membandingkan Target Volatilitas 5D dengan realized volatility bergulir 20D (Bulanan) dan 60D (Kuartalan), membuktikan sifat ketergantungan memori panjang (<em>long-memory persistence</em>).</div>
         <div id="chart-volatility-clustering" class="chart-container"></div>
         <div class="regulatory-callout" style="margin-top: 14px;">
           <div>
-            <strong>Rasionalitas Teori Corsi (2009):</strong> Volatilitas tidak bergerak secara acak (*random walk*), melainkan terstruktur berdasarkan horizon pelaku pasar: *harian* (intraday market makers), *mingguan* (hedge funds), dan *bulanan* (investor institusi pengelola dana pensiun).
+            <strong>Rasionalitas Teori Corsi (2009):</strong> Volatilitas tidak bergerak secara acak (<em>random walk</em>), melainkan terstruktur berdasarkan horizon pelaku pasar: <em>harian</em> (intraday market makers), <em>mingguan</em> (hedge funds), dan <em>bulanan</em> (investor institusi pengelola dana pensiun).
           </div>
         </div>
       </div>
 
-      <!-- Side-by-Side: Chart 3 (Feature Correlations) & Chart 4 (Crisis Event Study) -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+      <!-- Side-by-Side: Chart 3 (Feature Correlations) & Chart 4 (Crisis Event Study) - ITEM 2 FIXED -->
+      <div class="eda-side-grid">
         
         <!-- Interactive Chart 3 -->
         <div class="card-panel">
           <div class="card-title">3. Peringkat Korelasi 10 Fitur Turunan vs Target</div>
           <div class="card-subtitle">Korelasi Pearson terkuat dipimpin oleh komponen autoregresif RV 5D (+0.684) dan VIX (+0.434).</div>
-          <div id="chart-feature-correlations" class="chart-container" style="min-height: 340px;"></div>
+          <div id="chart-feature-correlations" class="chart-container" style="min-height: 350px;"></div>
         </div>
 
-        <!-- Interactive Chart 4 -->
+        <!-- Interactive Chart 4 (Fixed Width & Non-Overflowing Labels) -->
         <div class="card-panel">
           <div class="card-title">4. Event Study: 8 Guncangan Makro &amp; Krisis Historis</div>
           <div class="card-subtitle">Perbandingan persentase penurunan IHSG vs lonjakan realized volatility 5-hari.</div>
-          <div id="chart-crisis-event-study" class="chart-container" style="min-height: 340px;"></div>
+          <div id="chart-crisis-event-study" class="chart-container" style="min-height: 350px;"></div>
         </div>
 
       </div>
 
-      <!-- 7 Comprehensive EDA Cards Grid -->
+      <!-- 3 Structured EDA Findings Cards -->
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; margin-top: 10px;">
-        <div class="card-panel">
+        <div class="card-panel" style="margin-bottom: 0;">
           <div class="badge-tag tag-champion" style="margin-bottom: 8px;">EDA 1 // DATA HYGIENE</div>
           <h4 style="font-size: 1rem; margin-bottom: 4px;">Integritas Data &amp; 0% Missing Values</h4>
-          <p style="font-size: 0.82rem; color: var(--text-secondary);">4.266 observasi bursa memiliki integritas 100% tanpa baris kosong. Menjamin pipeline bebas dari bias imputasi rata-rata yang sering mengaburkan risiko ekor (*tail risk*).</p>
+          <p style="font-size: 0.82rem; color: var(--text-secondary);">4.266 observasi bursa memiliki integritas 100% tanpa baris kosong. Menjamin pipeline bebas dari bias imputasi rata-rata yang sering mengaburkan risiko ekor (<em>tail risk</em>).</p>
         </div>
 
-        <div class="card-panel">
+        <div class="card-panel" style="margin-bottom: 0;">
           <div class="badge-tag tag-champion" style="margin-bottom: 8px;">EDA 2 // EKONOMETRIKA</div>
           <h4 style="font-size: 1rem; margin-bottom: 4px;">Uji Stasioneritas ADF (Dickey-Fuller)</h4>
           <p style="font-size: 0.82rem; color: var(--text-secondary);">Seluruh instrumen level harga terbukti non-stasioner I(1). Seluruh 15 fitur turunan ditransformasikan ke bentuk stasioner I(0) dengan p-value ADF &lt; 0.001 untuk mencegah regresi lancung.</p>
         </div>
 
-        <div class="card-panel">
+        <div class="card-panel" style="margin-bottom: 0;">
           <div class="badge-tag tag-champion" style="margin-bottom: 8px;">EDA 3 // POLITICAL CYCLE</div>
           <h4 style="font-size: 1rem; margin-bottom: 4px;">Siklus Pemilu RI (2014, 2019, 2024)</h4>
           <p style="font-size: 0.82rem; color: var(--text-secondary);">Volatilitas meningkat rata-rata +18.4% pada 30 hari kalender sebelum pemilu, namun kembali ke rata-rata historis dalam waktu 15 hari bursa pasca rekapitulasi KPU.</p>
@@ -471,7 +540,7 @@
       </div>
 
       <!-- High-Res Charts Gallery -->
-      <div class="card-panel" style="margin-top: 20px;">
+      <div class="card-panel" style="margin-top: 22px;">
         <h4 class="card-title">Galeri Visualisasi Analitik Master 300 DPI (Klik untuk Memperbesar)</h4>
         <p class="card-subtitle">Seluruh grafik analitik resolusi cetak tinggi yang diekspor dari pipeline notebook tim.</p>
         
@@ -501,7 +570,7 @@
     </section>
 
     <!-- ======================================================================
-         PAGE 3: HASIL & PEMODELAN (14 MODELS BENCHMARK & XAI - FEATURES 8 & 9)
+         PAGE 3: HASIL & PEMODELAN (ITEM 3 & 5 ELEVATED)
          ====================================================================== -->
     <section id="page-model" class="page-view">
       <div class="section-header-block">
@@ -512,17 +581,57 @@
         </p>
       </div>
 
-      <!-- Pareto Frontier Chart -->
-      <div class="card-panel">
-        <div class="card-title">Kurva Batas Efisiensi Pareto: Akurasi (RMSE) vs Latensi Inferensi (ms)</div>
-        <div class="card-subtitle">Champion Boosted Hybrid berada di batas optimum Pareto: akurasi tinggi setara GBDT namun 200x lebih cepat dibanding Stacking Ensemble.</div>
-        <div id="chart-pareto-frontier" class="chart-container"></div>
+      <!-- Feature 3: Two-Column Pareto Frontier Section -->
+      <div class="pareto-two-col">
+        
+        <!-- Left: Calibrated Pareto Frontier Chart -->
+        <div class="card-panel" style="margin-bottom: 0;">
+          <div class="card-title">Batas Efisiensi Pareto: Akurasi (RMSE) vs Latensi Inferensi</div>
+          <div class="card-subtitle">Champion Boosted Hybrid berada di batas optimum: akurasi setara model tercanggih namun 200x lebih cepat dibanding Stacking Ensemble.</div>
+          <div id="chart-pareto-frontier" class="chart-container" style="min-height: 360px;"></div>
+        </div>
+
+        <!-- Right: Executive Telemetry & HFT Audit Box -->
+        <div class="pareto-telemetry-box">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px solid var(--border-subtle); padding-bottom: 10px;">
+              <span class="badge-tag tag-champion">LATENCY SLA COMPLIANT</span>
+              <span style="font-family: 'JetBrains Mono'; font-size: 0.72rem; color: var(--color-safe);">SPEEDUP: 665x vs STACKING</span>
+            </div>
+
+            <h4 style="font-size: 1.1rem; margin-bottom: 8px; color: var(--text-primary);">Mengapa Efisiensi Latensi Krusial bagi Dana Rp 10T?</h4>
+            <p style="font-size: 0.82rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 14px;">
+              Di pasar derivatif dan bursa saham modern, keterlambatan sinyal risiko (<em>latency slippage</em>) dapat mengakibatkan kerugian miliaran rupiah saat terjadi *flash crash*.
+            </p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px;">
+              <div style="background: var(--bg-surface); padding: 10px; border-radius: 8px; border: 1px solid var(--border-subtle);">
+                <div style="font-family: 'JetBrains Mono'; font-size: 0.65rem; color: var(--text-muted);">BOOSTED HYBRID</div>
+                <div style="font-family: 'Plus Jakarta Sans'; font-size: 1.3rem; font-weight: 800; color: var(--brand-cyan);">4.2 ms</div>
+                <div style="font-size: 0.7rem; color: var(--color-safe);">&le; 10 ms (Order-Book Safe)</div>
+              </div>
+
+              <div style="background: var(--bg-surface); padding: 10px; border-radius: 8px; border: 1px solid var(--border-subtle);">
+                <div style="font-family: 'JetBrains Mono'; font-size: 0.65rem; color: var(--text-muted);">STACKING ENSEMBLE</div>
+                <div style="font-family: 'Plus Jakarta Sans'; font-size: 1.3rem; font-weight: 800; color: var(--color-crisis);">2.796 ms</div>
+                <div style="font-size: 0.7rem; color: var(--color-crisis);">&gt; 2.5 Detik (High Risk)</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="regulatory-callout" style="margin-top: 0; padding: 10px 14px;">
+            <div style="font-size: 0.78rem;">
+              <strong>Rasionalitas Seleksi:</strong> Selisih RMSE antara Boosted Hybrid (0.003100) dan Stacking (0.003092) hanya <strong>0.000008</strong> (&lt; 0.2 bps), namun Stacking memerlukan waktu komputasi <strong>665 kali lebih lama</strong>. Boosted Hybrid adalah pilihan tak terbantahkan bagi institusi pengelola dana.
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <!-- Benchmark Table -->
+      <!-- 14 Models Benchmark Table (Exact Authentic Metrics from Table04 & Table04b) -->
       <div class="card-panel">
         <h3 class="card-title">Papan Peringkat 14 Model Regresi Finansial</h3>
-        <p class="card-subtitle">Hasil evaluasi out-of-sample holdout validation periode krisis 2023–2024.</p>
+        <p class="card-subtitle">Hasil evaluasi out-of-sample holdout validation periode 2023–2024 dan 5-Fold Purged Cross Validation.</p>
 
         <div class="table-responsive">
           <table class="data-table">
@@ -533,12 +642,12 @@
                 <th>Holdout RMSE</th>
                 <th>Holdout MAE</th>
                 <th>Reduksi vs Naive</th>
-                <th>Latensi Inferensi</th>
+                <th>Latensi Eksekusi</th>
                 <th>Status Model</th>
               </tr>
             </thead>
             <tbody>
-              <tr style="background: rgba(0, 82, 255, 0.06); font-weight: 700;">
+              <tr style="background: rgba(0, 82, 255, 0.08); font-weight: 700;">
                 <td><strong>#1 Boosted Hybrid (Ridge-HAR-X + GBRT)</strong></td>
                 <td>Hybrid Ekonometrika-ML</td>
                 <td class="mono" style="color: var(--brand-cyan);">0.003100</td>
@@ -548,46 +657,118 @@
                 <td><span class="badge-tag tag-champion">CHAMPION #1</span></td>
               </tr>
               <tr>
-                <td>#2 CatBoost Regressor</td>
-                <td>Gradient Boosted Trees</td>
-                <td class="mono">0.003080</td>
-                <td class="mono">0.002340</td>
-                <td class="mono" style="color: var(--color-safe);">-23.49%</td>
-                <td class="mono">850.0 ms</td>
-                <td>Benchmark GBDT</td>
+                <td>#2 Huber-HAR-X (Robust M-Estimator)</td>
+                <td>Robust Ekonometrika</td>
+                <td class="mono">0.003087</td>
+                <td class="mono">0.002304</td>
+                <td class="mono" style="color: var(--color-safe);">-23.32%</td>
+                <td class="mono">209.4 ms</td>
+                <td>Top Robust Benchmark</td>
               </tr>
               <tr>
-                <td>#3 Stacking Ensemble (Meta-Ridge)</td>
+                <td>#3 Optimal Stacking Ensemble (4 Models)</td>
                 <td>Ensemble Stacking</td>
-                <td class="mono">0.003050</td>
-                <td class="mono">0.002310</td>
-                <td class="mono" style="color: var(--color-safe);">-24.23%</td>
-                <td class="mono">1450.0 ms</td>
+                <td class="mono">0.003092</td>
+                <td class="mono">0.002367</td>
+                <td class="mono" style="color: var(--color-safe);">-23.19%</td>
+                <td class="mono">2.796.7 ms</td>
                 <td>Heavy Meta-Model</td>
               </tr>
               <tr>
-                <td>#4 LightGBM Regressor</td>
+                <td>#4 Ridge-HAR-X (Regularized Linear)</td>
+                <td>Linear Ekonometrika</td>
+                <td class="mono">0.003095</td>
+                <td class="mono">0.002363</td>
+                <td class="mono" style="color: var(--color-safe);">-23.12%</td>
+                <td class="mono">4.2 ms</td>
+                <td>Linear Regularized</td>
+              </tr>
+              <tr>
+                <td>#5 Tuned CatBoost Regressor</td>
+                <td>Modern GBDT</td>
+                <td class="mono">0.003123</td>
+                <td class="mono">0.002397</td>
+                <td class="mono" style="color: var(--color-safe);">-22.42%</td>
+                <td class="mono">697.9 ms</td>
+                <td>CatBoost Benchmark</td>
+              </tr>
+              <tr>
+                <td>#6 Tuned XGBoost Regressor</td>
+                <td>Modern GBDT</td>
+                <td class="mono">0.003126</td>
+                <td class="mono">0.002389</td>
+                <td class="mono" style="color: var(--color-safe);">-22.36%</td>
+                <td class="mono">138.0 ms</td>
+                <td>XGBoost Benchmark</td>
+              </tr>
+              <tr>
+                <td>#7 Optuna Tuned LightGBM</td>
                 <td>Histogram GBDT</td>
+                <td class="mono">0.003143</td>
+                <td class="mono">0.002445</td>
+                <td class="mono" style="color: var(--color-safe);">-21.92%</td>
+                <td class="mono">1.956.6 ms</td>
+                <td>Optuna Optimized</td>
+              </tr>
+              <tr>
+                <td>#8 Meta-Ensemble (Ridge + Huber + GBRT)</td>
+                <td>Linear Blending</td>
                 <td class="mono">0.003190</td>
                 <td class="mono">0.002410</td>
                 <td class="mono" style="color: var(--color-safe);">-20.76%</td>
-                <td class="mono">65.0 ms</td>
-                <td>Standard GBDT</td>
+                <td class="mono">656.5 ms</td>
+                <td>Ensemble Blend</td>
               </tr>
               <tr>
-                <td>#5 Random Forest Regressor</td>
-                <td>Bagging Ensemble</td>
+                <td>#9 HAR-X Standard (Macro Exogenous OLS)</td>
+                <td>OLS Ekonometrika</td>
+                <td class="mono">0.003250</td>
+                <td class="mono">0.002450</td>
+                <td class="mono" style="color: var(--color-safe);">-19.27%</td>
+                <td class="mono">5.4 ms</td>
+                <td>Standard OLS</td>
+              </tr>
+              <tr>
+                <td>#10 Random Forest Regressor</td>
+                <td>Bagging Trees</td>
                 <td class="mono">0.003310</td>
                 <td class="mono">0.002490</td>
                 <td class="mono" style="color: var(--color-safe);">-17.78%</td>
                 <td class="mono">45.0 ms</td>
-                <td>Bagging Tree</td>
+                <td>Bagging Benchmark</td>
+              </tr>
+              <tr>
+                <td>#11 MLP Neural Network (Tanh L-BFGS)</td>
+                <td>Deep Learning</td>
+                <td class="mono">0.003380</td>
+                <td class="mono">0.002520</td>
+                <td class="mono" style="color: var(--color-safe);">-16.05%</td>
+                <td class="mono">1.250.0 ms</td>
+                <td>Neural Network</td>
+              </tr>
+              <tr>
+                <td>#12 Corsi HAR-RV (Internal IHSG Murni)</td>
+                <td>Ekonometrika Murni</td>
+                <td class="mono">0.003420</td>
+                <td class="mono">0.002550</td>
+                <td class="mono" style="color: var(--color-safe);">-15.05%</td>
+                <td class="mono">1.3 ms</td>
+                <td>Internal Baseline</td>
+              </tr>
+              <tr>
+                <td>#13 RiskMetrics EWMA (λ=0.94)</td>
+                <td>RiskMetrics</td>
+                <td class="mono">0.003650</td>
+                <td class="mono">0.002720</td>
+                <td class="mono" style="color: var(--color-safe);">-9.34%</td>
+                <td class="mono">0.5 ms</td>
+                <td>RiskMetrics EWMA</td>
               </tr>
               <tr style="background: rgba(239, 68, 68, 0.05);">
                 <td>#14 Naive Baseline (Historical 5D MA)</td>
                 <td>Benchmark Naif</td>
                 <td class="mono" style="color: var(--color-crisis);">0.004026</td>
-                <td class="mono">0.002965</td>
+                <td class="mono">0.002966</td>
                 <td class="mono" style="color: var(--color-crisis);">0.00% (Baseline)</td>
                 <td class="mono">0.2 ms</td>
                 <td><span class="badge-tag tag-crisis">BASELINE KALAH</span></td>
@@ -596,12 +777,12 @@
           </table>
         </div>
 
-        <!-- Dedicated Analytical Interpretation (FEATURE 8) -->
+        <!-- Dedicated Analytical Interpretation (Item 8) -->
         <div class="regulatory-callout" style="margin-top: 18px;">
           <div>
             <h4 style="font-size: 0.95rem; margin-bottom: 6px; color: var(--text-primary);">4 Argumen Mengapa Boosted Hybrid Dipilih Sebagai Champion #1:</h4>
             <ol style="padding-left: 20px; line-height: 1.7;">
-              <li><strong>Batas Efisiensi Pareto (Latency Frontier):</strong> Model mencapai RMSE 0.003100 dengan kecepatan inferensi <strong>4.2 ms</strong>, memungkinkannya diintegrasikan langsung ke dalam pipeline kuotasi bursa berkecepatan tinggi tanpa resiko latensi slippage.</li>
+              <li><strong>Batas Efisiensi Pareto (Latency Frontier):</strong> Model mencapai RMSE 0.003100 dengan kecepatan inferensi <strong>4.2 ms</strong>, memungkinkannya diintegrasikan langsung ke dalam pipeline kuotasi bursa berkecepatan tinggi tanpa risiko latensi slippage.</li>
               <li><strong>Kekokohan Ekonometrika (No Wild Extrapolation):</strong> Komponen linier Ridge-HAR-X bertindak sebagai penopang struktural yang mencegah pohon keputusan GBDT melakukan ekstrapolasi anomali liar di luar batas pasar.</li>
               <li><strong>Closed-Form Additive SHAP:</strong> Struktur hibrida mempertahankan sifat aditif tertutup, sehingga memudahkan pelaporan risiko kuantitatif ke Komite Investasi dan OJK sesuai ketentuan <strong>POJK No. 43/2015</strong>.</li>
               <li><strong>Signifikansi Penurunan Error:</strong> Secara konsisten mengungguli baseline naif historis sebesar <strong>-23.00% RMSE</strong> dan <strong>-20.47% MAE</strong> pada data validasi.</li>
@@ -610,12 +791,12 @@
         </div>
       </div>
 
-      <!-- Balanced XAI Suite (FEATURE 9 FIXED) -->
+      <!-- Balanced XAI Suite -->
       <div class="card-panel">
         <h3 class="card-title">Transparansi Model Menggunakan Explainable AI (XAI)</h3>
         <p class="card-subtitle">Membongkar cara kerja model menggunakan SHAP (Shapley Additive exPlanations) dan Accumulated Local Effects (ALE).</p>
 
-        <div style="display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 24px; align-items: stretch;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 24px; align-items: stretch;">
           
           <!-- Left: Balanced SHAP Chart -->
           <div style="background: var(--bg-surface-alt); padding: 18px; border-radius: 12px; border: 1px solid var(--border-subtle); display: flex; flex-direction: column;">
@@ -658,7 +839,7 @@
     </section>
 
     <!-- ======================================================================
-         PAGE 4: SIMULASI PORTOFOLIO (INTERACTIVE RISK SANDBOX - FEATURE 10)
+         PAGE 4: SIMULASI PORTOFOLIO (INTERACTIVE RISK SANDBOX)
          ====================================================================== -->
     <section id="page-simulasi" class="page-view">
       <div class="section-header-block">
@@ -670,7 +851,7 @@
       </div>
 
       <!-- Two-Column Balanced Simulator Layout -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr)); gap: 24px; align-items: start;">
         
         <!-- Left: Sliders & Presets -->
         <div class="card-panel">
@@ -757,13 +938,13 @@
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px;">
             <div style="background: var(--bg-surface-alt); padding: 12px; border-radius: 10px;">
               <div style="font-family: 'JetBrains Mono'; font-size: 0.68rem; color: var(--text-muted);">PREDIKSI VOLATILITAS 5D</div>
-              <div style="font-family: 'Plus Jakarta Sans'; font-size: 1.45rem; font-weight: 800; color: var(--brand-cyan);" id="res-pred-vol">0.0121</div>
-              <div style="font-size: 0.72rem; color: var(--text-secondary);" id="res-pred-vol-pct">1.21% Realized Vol</div>
+              <div style="font-family: 'Plus Jakarta Sans'; font-size: 1.45rem; font-weight: 800; color: var(--brand-cyan);" id="res-pred-vol">0.0093</div>
+              <div style="font-size: 0.72rem; color: var(--text-secondary);" id="res-pred-vol-pct">0.93% Realized Vol</div>
             </div>
 
             <div style="background: var(--bg-surface-alt); padding: 12px; border-radius: 10px;">
               <div style="font-family: 'JetBrains Mono'; font-size: 0.68rem; color: var(--text-muted);">99% VALUE AT RISK (Rp 10T)</div>
-              <div style="font-family: 'Plus Jakarta Sans'; font-size: 1.45rem; font-weight: 800; color: var(--color-safe);" id="res-var-amount">Rp 281 Miliar</div>
+              <div style="font-family: 'Plus Jakarta Sans'; font-size: 1.45rem; font-weight: 800; color: var(--color-safe);" id="res-var-amount">Rp 216 Miliar</div>
               <div style="font-size: 0.72rem; color: var(--text-secondary);">Maksimum Estimasi Kerugian 5D</div>
             </div>
           </div>
@@ -794,7 +975,7 @@
     </section>
 
     <!-- ======================================================================
-         PAGE 5: METODOLOGI RISET (DI PALING KANAN - FEATURE 5)
+         PAGE 5: METODOLOGI RISET (ITEM 5 ELEVATED & RIGOROUS)
          ====================================================================== -->
     <section id="page-metodologi" class="page-view">
       <div class="section-header-block">
@@ -805,39 +986,39 @@
         </p>
       </div>
 
-      <!-- Pipeline Stages Overview (TRACE Style) -->
+      <!-- Pipeline Stages Overview -->
       <div class="card-panel">
         <h3 class="card-title">Alur Pipeline End-to-End Sistem AEGIS</h3>
         <p class="card-subtitle">Setiap tahapan dirancang dengan prinsip pemisahan data urut waktu mutlak.</p>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-top: 16px;">
-          <div style="background: var(--bg-surface-alt); padding: 14px; border-radius: 8px; border-left: 3px solid var(--brand-royal);">
+          <div style="background: var(--bg-surface-alt); padding: 16px; border-radius: 10px; border-left: 3px solid var(--brand-royal);">
             <div style="font-family: 'JetBrains Mono'; font-size: 0.68rem; color: var(--brand-cyan);">STAGE 01</div>
-            <h5 style="margin: 3px 0; font-size: 0.95rem;">Data Hygiene</h5>
-            <p style="font-size: 0.76rem; color: var(--text-secondary);">Audit harian 4.266 baris data bursa tanpa manipulasi imputasi.</p>
+            <h5 style="margin: 4px 0; font-size: 0.95rem;">Data Hygiene Audit</h5>
+            <p style="font-size: 0.76rem; color: var(--text-secondary);">Audit harian 4.266 baris data bursa tanpa interpolasi buatan. 0% missing value.</p>
           </div>
 
-          <div style="background: var(--bg-surface-alt); padding: 14px; border-radius: 8px; border-left: 3px solid var(--brand-cyan);">
+          <div style="background: var(--bg-surface-alt); padding: 16px; border-radius: 10px; border-left: 3px solid var(--brand-cyan);">
             <div style="font-family: 'JetBrains Mono'; font-size: 0.68rem; color: var(--brand-cyan);">STAGE 02</div>
-            <h5 style="margin: 3px 0; font-size: 0.95rem;">Feature Engineering</h5>
-            <p style="font-size: 0.76rem; color: var(--text-secondary);">15 fitur domain makroekonomi (HAR-X, VIX, FX Pressure, Suku Bunga).</p>
+            <h5 style="margin: 4px 0; font-size: 0.95rem;">Feature Engineering</h5>
+            <p style="font-size: 0.76rem; color: var(--text-secondary);">15 fitur domain makroekonomi (HAR-X, VIX, FX Pressure, Suku Bunga, Safe Haven).</p>
           </div>
 
-          <div style="background: var(--bg-surface-alt); padding: 14px; border-radius: 8px; border-left: 3px solid var(--brand-royal);">
+          <div style="background: var(--bg-surface-alt); padding: 16px; border-radius: 10px; border-left: 3px solid var(--brand-royal);">
             <div style="font-family: 'JetBrains Mono'; font-size: 0.68rem; color: var(--brand-cyan);">STAGE 03</div>
-            <h5 style="margin: 3px 0; font-size: 0.95rem;">Purged CV (5-Fold)</h5>
-            <p style="font-size: 0.76rem; color: var(--text-secondary);">Embargo gap 5 hari bursa untuk mengeliminasi overlap target 5D.</p>
+            <h5 style="margin: 4px 0; font-size: 0.95rem;">Purged CV (5-Fold)</h5>
+            <p style="font-size: 0.76rem; color: var(--text-secondary);">Embargo gap 5 hari bursa untuk mengeliminasi overlap target 5D secara matematis.</p>
           </div>
 
-          <div style="background: var(--bg-surface-alt); padding: 14px; border-radius: 8px; border-left: 3px solid var(--brand-cyan);">
+          <div style="background: var(--bg-surface-alt); padding: 16px; border-radius: 10px; border-left: 3px solid var(--brand-cyan);">
             <div style="font-family: 'JetBrains Mono'; font-size: 0.68rem; color: var(--brand-cyan);">STAGE 04</div>
-            <h5 style="margin: 3px 0; font-size: 0.95rem;">14 Models Benchmark</h5>
-            <p style="font-size: 0.76rem; color: var(--text-secondary);">Komparasi Naive, Linier, GBDT, Stacking, dan Champion Hybrid.</p>
+            <h5 style="margin: 4px 0; font-size: 0.95rem;">14 Models Benchmark</h5>
+            <p style="font-size: 0.76rem; color: var(--text-secondary);">Komparasi Naive, Linier, GBDT, Stacking, dan penentuan Champion Hybrid.</p>
           </div>
 
-          <div style="background: var(--bg-surface-alt); padding: 14px; border-radius: 8px; border-left: 3px solid var(--color-safe);">
+          <div style="background: var(--bg-surface-alt); padding: 16px; border-radius: 10px; border-left: 3px solid var(--color-safe);">
             <div style="font-family: 'JetBrains Mono'; font-size: 0.68rem; color: var(--color-safe);">STAGE 05</div>
-            <h5 style="margin: 3px 0; font-size: 0.95rem;">XAI &amp; Deployment</h5>
+            <h5 style="margin: 4px 0; font-size: 0.95rem;">XAI &amp; Stress Test</h5>
             <p style="font-size: 0.76rem; color: var(--text-secondary);">Audit SHAP global/lokal, deteksi tipping point, dan inferensi 2025-2026.</p>
           </div>
         </div>
@@ -895,8 +1076,8 @@
       </div>
 
       <!-- Anti-Leakage Proof -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-        <div class="card-panel">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 20px;">
+        <div class="card-panel" style="margin-bottom: 0;">
           <h4 class="card-title">Purged Walk-Forward Time-Series Split</h4>
           <p style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 12px;">
             Target prediksi adalah volatilitas 5 hari ke depan ($t+1$ s.d. $t+5$). Oleh karena itu, jeda (embargo) sepanjang minimal 5 hari bursa wajib disisipkan di antara fold latih dan validasi untuk mencegah kebocoran informasi.
@@ -906,19 +1087,19 @@
           </div>
         </div>
 
-        <div class="card-panel">
+        <div class="card-panel" style="margin-bottom: 0;">
           <h4 class="card-title">Jaminan Kode Anti-Kebocoran Waktu</h4>
           <p style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 10px;">
             Seluruh transformer (StandardScaler, PCA) dienkapsulasi murni menggunakan pipeline Scikit-Learn dengan aturan ketat:
           </p>
-          <div style="background: var(--bg-surface-alt); padding: 12px; border-radius: 8px; font-family: 'JetBrains Mono'; font-size: 0.72rem; line-height: 1.6; border: 1px solid var(--border-subtle);">
+          <div style="background: var(--bg-surface-alt); padding: 14px; border-radius: 8px; font-family: 'JetBrains Mono'; font-size: 0.72rem; line-height: 1.6; border: 1px solid var(--border-subtle);">
             # Anti-Leakage Rigor Enforced<br>
             pipeline.fit(X_train) # HANYA pada train fold<br>
             X_val_trans = pipeline.transform(X_val)<br>
             X_test_trans = pipeline.transform(X_test)<br>
             assert all(feature_timestamps &lt;= target_horizon)
           </div>
-          <div class="badge-tag tag-safe" style="margin-top: 12px;">
+          <div class="badge-tag tag-safe" style="margin-top: 14px;">
             100% Zero Forward-Looking Bias Terverifikasi
           </div>
         </div>
@@ -956,7 +1137,7 @@
       </div>
 
       <div style="display: flex; align-items: center; gap: 14px;">
-        <button onclick="AEGIS_APP.triggerBootScreen()" class="btn-hero-secondary" style="padding: 5px 10px; font-size: 0.7rem; font-family: 'JetBrains Mono';" title="Re-run HUD Boot Terminal">
+        <button onclick="AEGIS_APP.triggerBootScreen()" class="btn-hero-secondary" style="padding: 5px 12px; font-size: 0.72rem; font-family: 'JetBrains Mono';" title="Re-run HUD Boot Terminal">
           Re-Arm System
         </button>
         <div style="text-align: right;">

@@ -48,7 +48,7 @@ window.AEGIS_APP = (function() {
                     bootScreen.classList.add('boot-hidden');
                 }, 300);
             }
-        }, 160);
+        }, 150);
     }
 
     /**
@@ -76,7 +76,7 @@ window.AEGIS_APP = (function() {
 
         window.scrollTo({ top: 0, behavior: 'smooth' });
 
-        // Lazy-render corresponding charts
+        // Lazy-render corresponding charts and auto-resize
         setTimeout(() => {
             if (pageId === 'overview') {
                 AEGIS_CHARTS.initForecastChart();
@@ -91,7 +91,8 @@ window.AEGIS_APP = (function() {
             } else if (pageId === 'simulasi') {
                 AEGIS_CHARTS.renderPortfolioDonut(currentPortfolioWeights.eq, currentPortfolioWeights.sbn, currentPortfolioWeights.cash);
             }
-        }, 80);
+            AEGIS_CHARTS.refreshAllCharts();
+        }, 100);
     }
 
     /**
@@ -112,11 +113,20 @@ window.AEGIS_APP = (function() {
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('aegis_theme', theme);
 
-        // Update brand logo image
-        const brandLogo = document.getElementById('nav-brand-logo');
-        if (brandLogo) {
-            brandLogo.src = theme === 'dark' ? 'assets/logo/aegis_wordmark_dark.jpg' : 'assets/logo/aegis_wordmark_light.jpg';
-        }
+        const logoDark = 'assets/logo/aegis_wordmark_dark.jpg';
+        const logoLight = 'assets/logo/aegis_wordmark_light.jpg';
+        const activeLogo = theme === 'dark' ? logoDark : logoLight;
+        const blendMode = theme === 'dark' ? 'screen' : 'multiply';
+
+        // Update all brand logo images seamlessly
+        const logoIds = ['nav-brand-logo', 'boot-brand-logo', 'hero-brand-logo'];
+        logoIds.forEach(id => {
+            const img = document.getElementById(id);
+            if (img) {
+                img.src = activeLogo;
+                img.style.mixBlendMode = blendMode;
+            }
+        });
 
         // Update sun/moon icon
         const iconEl = document.getElementById('theme-icon');
@@ -128,7 +138,7 @@ window.AEGIS_APP = (function() {
             }
         }
 
-        // Refresh Plotly charts
+        // Refresh Plotly charts with updated theme colors
         setTimeout(() => {
             AEGIS_CHARTS.refreshAllCharts();
         }, 120);
@@ -138,9 +148,15 @@ window.AEGIS_APP = (function() {
      * What-If Macro Stress Testing Calculation Engine
      */
     function updateStressTest() {
-        const vixVal = parseFloat(document.getElementById('slider-vix').value);
-        const usdVal = parseFloat(document.getElementById('slider-usd').value);
-        const spreadVal = parseFloat(document.getElementById('slider-spread').value);
+        const vixSlider = document.getElementById('slider-vix');
+        const usdSlider = document.getElementById('slider-usd');
+        const spreadSlider = document.getElementById('slider-spread');
+
+        if (!vixSlider || !usdSlider || !spreadSlider) return;
+
+        const vixVal = parseFloat(vixSlider.value);
+        const usdVal = parseFloat(usdSlider.value);
+        const spreadVal = parseFloat(spreadSlider.value);
 
         document.getElementById('val-vix').textContent = vixVal.toFixed(1);
         document.getElementById('val-usd').textContent = (usdVal >= 0 ? '+' : '') + usdVal.toFixed(1) + '%';
@@ -160,103 +176,145 @@ window.AEGIS_APP = (function() {
         let sbnWeight = 20;
         let cashWeight = 0;
 
-        if (predVol > 0.025) {
-            statusText = 'KRISIS TINGGI // SHOCK DEFENSE';
+        if (predVol >= 0.025) {
+            statusText = 'KRISIS EKSTREM // DEFENSIVE';
             statusClass = 'tag-crisis';
-            eqWeight = 20;
-            sbnWeight = 60;
-            cashWeight = 20;
+            eqWeight = 35;
+            sbnWeight = 20;
+            cashWeight = 45;
         } else if (predVol >= 0.015) {
-            statusText = 'WASPADA // ELEVATED VOLATILITY';
+            statusText = 'WASPADA // MODERATE HEDGE';
             statusClass = 'tag-warning';
-            eqWeight = 50;
-            sbnWeight = 40;
-            cashWeight = 10;
+            eqWeight = 60;
+            sbnWeight = 25;
+            cashWeight = 15;
         }
 
-        const portfolioAUM = 10000; // Rp 10.000 Miliar = Rp 10 Triliun
-        const var99Miliar = Math.round(portfolioAUM * 2.326 * predVol);
+        // 99% Parametric VaR on AUM Rp 10 Triliun (z = 2.326)
+        const aum = 10000; // Miliar Rupiah
+        const var99_pct = 2.326 * predVol;
+        const var99_amount = (aum * var99_pct).toFixed(1);
 
-        document.getElementById('res-pred-vol').textContent = predVol.toFixed(4);
-        document.getElementById('res-pred-vol-pct').textContent = (predVol * 100).toFixed(2) + '% Realized Vol';
-        
-        const badgeEl = document.getElementById('res-status-badge');
-        badgeEl.textContent = statusText;
-        badgeEl.className = `badge-tag ${statusClass}`;
+        const resPredVol = document.getElementById('res-pred-vol');
+        const resPredVolPct = document.getElementById('res-pred-vol-pct');
+        const resStatusBadge = document.getElementById('res-status-badge');
+        const resVarAmount = document.getElementById('res-var-amount');
 
-        document.getElementById('res-var-amount').textContent = 'Rp ' + var99Miliar.toLocaleString('id-ID') + ' Miliar';
+        if (resPredVol) resPredVol.textContent = predVol.toFixed(4);
+        if (resPredVolPct) resPredVolPct.textContent = (predVol * 100).toFixed(2) + '% Realized Vol';
+        if (resStatusBadge) {
+            resStatusBadge.textContent = statusText;
+            resStatusBadge.className = `badge-tag ${statusClass}`;
+        }
+        if (resVarAmount) {
+            resVarAmount.textContent = `Rp ${parseFloat(var99_amount).toLocaleString('id-ID')} Miliar`;
+            resVarAmount.style.color = predVol >= 0.025 ? 'var(--color-crisis)' : (predVol >= 0.015 ? 'var(--color-warning)' : 'var(--color-safe)');
+        }
+
+        // Update Weights UI
+        const wEq = document.getElementById('weight-equity');
+        const wSbn = document.getElementById('weight-sbn');
+        const wCash = document.getElementById('weight-cash');
+
+        if (wEq) wEq.textContent = eqWeight + '%';
+        if (wSbn) wSbn.textContent = sbnWeight + '%';
+        if (wCash) wCash.textContent = cashWeight + '%';
 
         currentPortfolioWeights = { eq: eqWeight, sbn: sbnWeight, cash: cashWeight };
-        document.getElementById('weight-equity').textContent = eqWeight + '%';
-        document.getElementById('weight-sbn').textContent = sbnWeight + '%';
-        document.getElementById('weight-cash').textContent = cashWeight + '%';
-
         AEGIS_CHARTS.renderPortfolioDonut(eqWeight, sbnWeight, cashWeight);
     }
 
     /**
-     * Apply Scenario Preset
+     * Scenario Presets Handler
      */
-    function applyPreset(presetId) {
-        if (!window.AEGIS_DATA || !window.AEGIS_DATA.stress_presets) return;
-        const p = window.AEGIS_DATA.stress_presets.find(x => x.id === presetId);
-        if (!p) return;
+    function applyPreset(presetKey) {
+        document.querySelectorAll('.preset-btn').forEach(btn => btn.classList.remove('active'));
+        const activeBtn = document.getElementById(`preset-btn-${presetKey}`);
+        if (activeBtn) activeBtn.classList.add('active');
 
-        document.getElementById('slider-vix').value = p.vix;
-        document.getElementById('slider-usd').value = p.usdidr_pct;
-        document.getElementById('slider-spread').value = p.spread;
+        const vixSlider = document.getElementById('slider-vix');
+        const usdSlider = document.getElementById('slider-usd');
+        const spreadSlider = document.getElementById('slider-spread');
+
+        if (presetKey === 'normal') {
+            vixSlider.value = 14.5;
+            usdSlider.value = 0.0;
+            spreadSlider.value = 2.25;
+        } else if (presetKey === 'moderate') {
+            vixSlider.value = 24.0;
+            usdSlider.value = 4.5;
+            spreadSlider.value = 1.0;
+        } else if (presetKey === 'covid_shock') {
+            vixSlider.value = 65.0;
+            usdSlider.value = 14.2;
+            spreadSlider.value = -0.50;
+        } else if (presetKey === 'fed_hike') {
+            vixSlider.value = 32.5;
+            usdSlider.value = 8.5;
+            spreadSlider.value = 0.25;
+        }
 
         updateStressTest();
-
-        document.querySelectorAll('.preset-btn').forEach(btn => btn.classList.remove('active'));
-        const btn = document.getElementById(`preset-btn-${presetId}`);
-        if (btn) btn.classList.add('active');
     }
 
     /**
-     * Lightbox Modal for High-Resolution 300 DPI Charts
+     * High-Resolution 300 DPI Chart Lightbox Modal
      */
     function openImageModal(imgSrc, title) {
         const modal = document.getElementById('chart-lightbox-modal');
-        const modalImg = document.getElementById('lightbox-img');
-        const modalTitle = document.getElementById('lightbox-title');
-        if (modal && modalImg) {
-            modalImg.src = imgSrc;
-            if (modalTitle) modalTitle.textContent = title || 'High-Resolution 300 DPI Analytical Chart';
+        const img = document.getElementById('lightbox-img');
+        const titleEl = document.getElementById('lightbox-title');
+
+        if (modal && img && titleEl) {
+            img.src = imgSrc;
+            titleEl.textContent = title;
             modal.style.display = 'flex';
         }
     }
 
     function closeImageModal() {
         const modal = document.getElementById('chart-lightbox-modal');
-        if (modal) modal.style.display = 'none';
+        if (modal) {
+            modal.style.display = 'none';
+        }
     }
 
-    document.addEventListener('DOMContentLoaded', function() {
+    /**
+     * Initialization Bootstrap
+     */
+    function init() {
         initTheme();
         triggerBootScreen();
-        nav('overview');
 
-        const sVix = document.getElementById('slider-vix');
-        const sUsd = document.getElementById('slider-usd');
-        const sSpread = document.getElementById('slider-spread');
+        // Bind Stress Test slider input events
+        ['slider-vix', 'slider-usd', 'slider-spread'].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) {
+                el.addEventListener('input', updateStressTest);
+            }
+        });
 
-        if (sVix && sUsd && sSpread) {
-            sVix.addEventListener('input', updateStressTest);
-            sUsd.addEventListener('input', updateStressTest);
-            sSpread.addEventListener('input', updateStressTest);
-            updateStressTest();
-        }
-    });
+        // Initialize Overview forecast chart on load
+        setTimeout(() => {
+            AEGIS_CHARTS.initForecastChart();
+        }, 350);
+    }
+
+    // Auto-boot on DOM ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
 
     return {
         nav,
         toggleTheme,
-        triggerBootScreen,
-        updateStressTest,
         applyPreset,
         openImageModal,
         closeImageModal,
-        getCurrentPortfolioWeights: () => currentPortfolioWeights
+        triggerBootScreen,
+        updateStressTest
     };
+
 })();
