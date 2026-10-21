@@ -885,7 +885,7 @@ p, li, span, td, th {
    ========================================================================== */
 .eda-side-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 540px), 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   width: 100%;
   margin-bottom: 22px;

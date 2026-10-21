@@ -158,185 +158,195 @@
          ====================================================================== -->
     <section id="page-overview" class="page-view active">
       
-      <!-- HERO EXECUTIVE ROW WITH EMBEDDED LOGO -->
-      <div class="hero-executive-grid">
-        <div class="hero-left-content">
-          <div class="hero-badge-wrap">
-            <span class="badge-tag tag-champion">INCEPTION 2026 DATA SCIENCE COMP</span>
-            <span class="badge-tag tag-safe">PT INVESTION RISK MANDATE</span>
-          </div>
-
-          <!-- Hero Brand Wordmark in Header -->
-          <div style="margin: 16px 0 10px 0;">
-            <img id="hero-brand-logo" src="assets/logo/aegis_wordmark_dark.png" alt="INVESTION AEGIS" style="height: 54px; width: auto; object-fit: contain;">
-          </div>
-
-          <h1 class="hero-display-title">
-            Quantitative Risk &amp; Volatility Shield Platform
-          </h1>
-
-          <p class="hero-description">
-            Sistem Peringatan Dini (<em>Early Warning System</em>) berbasis Machine Learning Explainable (XAI) yang dirancang untuk memproyeksikan <strong>Realized Volatility IHSG 5 Hari ke Depan (Target Y)</strong> serta mengeksekusi <em>Dynamic Asset Allocation</em> guna melindungi portofolio ekuitas <strong>AUM Rp 10 Triliun</strong> dari guncangan makroekonomi global.
-          </p>
-
-          <!-- 4 Core Metric KPI Boxes -->
-          <div class="hero-metric-strip">
-            <div class="metric-card">
-              <div class="metric-card-lbl">PORTFOLIO MANDATE</div>
-              <div class="metric-card-val text-cyan">Rp 10 T</div>
-              <div class="metric-card-sub">AUM Reksa Dana Ekuitas</div>
+      <!-- HERO BANNER (ORIGINAL CLEAN & BALANCED GRID) -->
+      <div class="hero-section">
+        <div class="hero-grid">
+          
+          <!-- Left Column -->
+          <div>
+            <!-- Institutional Badge with Brand Logo -->
+            <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 16px; flex-wrap: wrap;">
+              <img id="hero-brand-logo" src="assets/logo/aegis_wordmark_dark.png" alt="INVESTION AEGIS" style="height: 40px; width: auto; object-fit: contain;">
+              <span class="hero-pill-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span>PT INVESTION ASSET MANAGEMENT &bull; INCEPTION 2026</span>
+              </span>
             </div>
 
-            <div class="metric-card">
-              <div class="metric-card-lbl">BASELINE REDUCTION</div>
-              <div class="metric-card-val text-safe">-23.00%</div>
-              <div class="metric-card-sub">RMSE 0.003100 (vs 0.004026)</div>
+            <h1 class="hero-title">
+              Sistem Peringatan Dini.<br>
+              <span class="highlight-cyan">Perlindungan Portofolio Rp 10T.</span><br>
+              Presisi Volatilitas 5-Hari.
+            </h1>
+
+            <p class="hero-desc">
+              Platform kuantitatif terdepan yang dirancang untuk memprediksi <em>5-day realized volatility</em> Indeks Harga Saham Gabungan (IHSG). Mengintegrasikan ekonometrika <strong>HAR-X</strong>, akselerasi residual <strong>Gradient Boosting</strong>, dan <strong>Explainable AI (XAI)</strong> untuk membentengi portofolio institusi dari guncangan makroekonomi global.
+            </p>
+
+            <div class="hero-cta-group">
+              <button class="btn-hero-primary" onclick="AEGIS_APP.nav('simulasi')">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                <span>Buka Simulasi Portofolio</span>
+              </button>
+              <button class="btn-hero-secondary" onclick="AEGIS_APP.nav('model')">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                <span>Papan Peringkat Model</span>
+              </button>
+              <button class="btn-hero-secondary" onclick="AEGIS_APP.nav('eda')">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                <span>Eksplorasi Data</span>
+              </button>
             </div>
 
-            <div class="metric-card">
-              <div class="metric-card-lbl">INFERENCE LATENCY</div>
-              <div class="metric-card-val text-cyan">4.2 ms</div>
-              <div class="metric-card-sub">Order-Book Execution SLA</div>
+            <!-- 4 Metric Cards Grid (1 Horizontal Row) -->
+            <div class="hero-metrics-grid">
+              <div class="metric-card">
+                <div class="metric-card-lbl">PORTFOLIO MANDATE</div>
+                <div class="metric-card-val text-cyan" style="font-size: 1.25rem; margin: 4px 0;">Rp 10 T</div>
+                <div class="metric-card-sub">AUM Reksa Dana Ekuitas</div>
+              </div>
+
+              <div class="metric-card">
+                <div class="metric-card-lbl">REDUKSI ERROR</div>
+                <div class="metric-card-val text-safe">-23.00%</div>
+                <div class="metric-card-sub">RMSE 0.003100 vs Naive</div>
+              </div>
+
+              <div class="metric-card">
+                <div class="metric-card-lbl">LATENSI EKSEKUSI</div>
+                <div class="metric-card-val">4.2 ms</div>
+                <div class="metric-card-sub">Order-Book Execution SLA</div>
+              </div>
+
+              <div class="metric-card">
+                <div class="metric-card-lbl">DATA INTEGRITY</div>
+                <div class="metric-card-val text-safe">100%</div>
+                <div class="metric-card-sub">Purged 5D Embargo CV</div>
+              </div>
             </div>
 
-            <div class="metric-card">
-              <div class="metric-card-lbl">ANTI-LEAKAGE RIGOR</div>
-              <div class="metric-card-val text-safe">100%</div>
-              <div class="metric-card-sub">Purged 5D Embargo CV</div>
+          </div>
+
+          <!-- Right Column: Interactive Animated SVG Shield Telemetry -->
+          <div>
+            <div class="hero-shield-card">
+              <div class="shield-telemetry-header">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <span class="shield-telemetry-badge">AEGIS SHIELD TELEMETRY</span>
+                  <span>RATIO 1:1.31 (&Phi;)</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 6px; color: var(--color-safe);">
+                  <span class="status-dot"></span>
+                  <span style="font-size: 0.65rem;">LIVE RADAR</span>
+                </div>
+              </div>
+
+              <div style="position: relative; width: 100%; height: 380px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                <svg viewBox="0 0 440 440" width="100%" height="100%" style="max-height: 380px;">
+                  <defs>
+                    <radialGradient id="radarGlow" cx="50%" cy="50%" r="50%">
+                      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.22"/>
+                      <stop offset="70%" stop-color="#0052FF" stop-opacity="0.06"/>
+                      <stop offset="100%" stop-color="#0052FF" stop-opacity="0"/>
+                    </radialGradient>
+                    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.85"/>
+                      <stop offset="50%" stop-color="#0052FF" stop-opacity="0.95"/>
+                      <stop offset="100%" stop-color="#020817" stop-opacity="0.9"/>
+                    </linearGradient>
+                    <linearGradient id="beamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.6"/>
+                      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+
+                  <!-- Radar Concentric Grid Circles -->
+                  <circle cx="220" cy="220" r="190" fill="none" stroke="rgba(0, 240, 255, 0.12)" stroke-width="1" stroke-dasharray="4,4"/>
+                  <circle cx="220" cy="220" r="145" fill="none" stroke="rgba(0, 240, 255, 0.18)" stroke-width="1"/>
+                  <circle cx="220" cy="220" r="100" fill="none" stroke="rgba(0, 240, 255, 0.22)" stroke-width="1" stroke-dasharray="2,2"/>
+                  <circle cx="220" cy="220" r="55" fill="none" stroke="rgba(0, 240, 255, 0.3)" stroke-width="1.2"/>
+                  <circle cx="220" cy="220" r="190" fill="url(#radarGlow)"/>
+
+                  <!-- Crosshairs -->
+                  <line x1="220" y1="15" x2="220" y2="425" stroke="rgba(0, 240, 255, 0.2)" stroke-width="1"/>
+                  <line x1="15" y1="220" x2="425" y2="220" stroke="rgba(0, 240, 255, 0.2)" stroke-width="1"/>
+                  <line x1="75" y1="75" x2="365" y2="365" stroke="rgba(0, 240, 255, 0.1)" stroke-width="1" stroke-dasharray="3,3"/>
+                  <line x1="75" y1="365" x2="365" y2="75" stroke="rgba(0, 240, 255, 0.1)" stroke-width="1" stroke-dasharray="3,3"/>
+
+                  <!-- Pulsing Radar Echo Waves -->
+                  <circle class="animate-radar-ring-1" cx="220" cy="220" r="25" fill="none" stroke="#00F0FF" stroke-width="2"/>
+                  <circle class="animate-radar-ring-2" cx="220" cy="220" r="25" fill="none" stroke="#0052FF" stroke-width="1.8"/>
+
+                  <!-- Rotating Radar Scanner Beam -->
+                  <g style="transform-origin: 220px 220px; animation: radarSweep 6s linear infinite;">
+                    <path d="M220 220 L410 220 A190 190 0 0 0 354 85 Z" fill="url(#beamGrad)" opacity="0.45"/>
+                    <line x1="220" y1="220" x2="410" y2="220" stroke="#00F0FF" stroke-width="2" opacity="0.9"/>
+                  </g>
+
+                  <!-- Central Strategic Emblem Shield -->
+                  <g transform="translate(185, 178) scale(1.75)">
+                    <path d="M20 4L34 10V21C34 29.5 27.8 35.8 20 38C12.2 35.8 6 29.5 6 21V10L20 4Z" fill="url(#shieldGrad)" stroke="#00F0FF" stroke-width="1.8"/>
+                    <path d="M12 25L18 19L22 22L29 13" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+
+                  <!-- Floating Multi-Asset Risk Nodes -->
+                  <g transform="translate(325, 120)">
+                    <circle class="animate-node-pulse" cx="0" cy="0" r="7" fill="#EF4444"/>
+                    <rect x="12" y="-12" width="75" height="22" rx="4" fill="rgba(6, 11, 25, 0.85)" stroke="#EF4444" stroke-width="1"/>
+                    <text x="18" y="3" fill="#EF4444" font-family="JetBrains Mono" font-size="9" font-weight="bold">VIX 14.5</text>
+                  </g>
+
+                  <g transform="translate(100, 130)">
+                    <circle class="animate-node-pulse" cx="0" cy="0" r="6" fill="#F59E0B"/>
+                    <rect x="-85" y="-12" width="75" height="22" rx="4" fill="rgba(6, 11, 25, 0.85)" stroke="#F59E0B" stroke-width="1"/>
+                    <text x="-79" y="3" fill="#F59E0B" font-family="JetBrains Mono" font-size="9" font-weight="bold">USD 16.2k</text>
+                  </g>
+
+                  <g transform="translate(330, 290)">
+                    <circle class="animate-node-pulse" cx="0" cy="0" r="6" fill="#10B981"/>
+                    <rect x="12" y="-12" width="85" height="22" rx="4" fill="rgba(6, 11, 25, 0.85)" stroke="#10B981" stroke-width="1"/>
+                    <text x="18" y="3" fill="#10B981" font-family="JetBrains Mono" font-size="9" font-weight="bold">SPREAD +2.25%</text>
+                  </g>
+
+                  <g transform="translate(95, 305)">
+                    <circle class="animate-node-pulse" cx="0" cy="0" r="7" fill="#00F0FF"/>
+                    <rect x="-85" y="-12" width="75" height="22" rx="4" fill="rgba(6, 11, 25, 0.85)" stroke="#00F0FF" stroke-width="1"/>
+                    <text x="-79" y="3" fill="#00F0FF" font-family="JetBrains Mono" font-size="9" font-weight="bold">RV 0.0093</text>
+                  </g>
+
+                  <!-- Floating Candlesticks -->
+                  <g transform="translate(145, 370)">
+                    <g class="animate-candle-1">
+                      <line x1="20" y1="0" x2="20" y2="35" stroke="#10B981" stroke-width="1.5"/>
+                      <rect x="16" y="8" width="8" height="18" fill="#10B981" rx="1"/>
+                    </g>
+                    <g class="animate-candle-2">
+                      <line x1="45" y1="-5" x2="45" y2="32" stroke="#EF4444" stroke-width="1.5"/>
+                      <rect x="41" y="4" width="8" height="20" fill="#EF4444" rx="1"/>
+                    </g>
+                    <g class="animate-candle-3">
+                      <line x1="70" y1="-8" x2="70" y2="30" stroke="#00F0FF" stroke-width="1.5"/>
+                      <rect x="66" y="2" width="8" height="15" fill="#00F0FF" rx="1"/>
+                    </g>
+                    <g class="animate-candle-1">
+                      <line x1="95" y1="2" x2="95" y2="38" stroke="#10B981" stroke-width="1.5"/>
+                      <rect x="91" y="10" width="8" height="20" fill="#10B981" rx="1"/>
+                    </g>
+                    <g class="animate-candle-2">
+                      <line x1="120" y1="-2" x2="120" y2="34" stroke="#10B981" stroke-width="1.5"/>
+                      <rect x="116" y="6" width="8" height="16" fill="#10B981" rx="1"/>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+
+              <div style="background: var(--bg-surface-alt); border-radius: 10px; padding: 10px 14px; margin-top: 10px; display: flex; justify-content: space-between; align-items: center; font-family: 'JetBrains Mono'; font-size: 0.72rem;">
+                <div><span style="color: var(--text-muted);">DEFENSE STATUS:</span> <b style="color: var(--color-safe);">LEVEL 1 NORMAL</b></div>
+                <div><span style="color: var(--text-muted);">EST. VALUE AT RISK 99%:</span> <b style="color: var(--brand-cyan);">Rp 216 Miliar</b></div>
+              </div>
             </div>
           </div>
 
-          <!-- Quick Navigation Actions -->
-          <div style="display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap;">
-            <button class="btn-hero-primary" onclick="AEGIS_APP.nav('simulasi')">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
-              <span>Buka Simulasi Portofolio</span>
-            </button>
-            <button class="btn-hero-secondary" onclick="AEGIS_APP.nav('model')">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-              <span>Audit Papan Peringkat Model</span>
-            </button>
-            <button class="btn-hero-secondary" onclick="AEGIS_APP.nav('eda')">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-              <span>Eksplorasi Data 15 Fitur</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- RIGHT: INTERACTIVE HIGH-TECH SHIELD RADAR ANIMATION (FULLY RESTORED & ALIGNED) -->
-        <div class="hero-shield-card">
-          <div class="shield-telemetry-header">
-            <span>AEGIS_VOLATILITY_SHIELD_RADAR</span>
-            <span class="shield-telemetry-badge">LIVE SCANNING</span>
-          </div>
-
-          <div style="position: relative; width: 100%; height: 380px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
-            <svg viewBox="0 0 440 440" width="100%" height="100%" style="max-height: 380px;">
-              <defs>
-                <radialGradient id="radarGlow" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.22"/>
-                  <stop offset="70%" stop-color="#0052FF" stop-opacity="0.06"/>
-                  <stop offset="100%" stop-color="#0052FF" stop-opacity="0"/>
-                </radialGradient>
-                <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.85"/>
-                  <stop offset="50%" stop-color="#0052FF" stop-opacity="0.95"/>
-                  <stop offset="100%" stop-color="#020817" stop-opacity="0.9"/>
-                </linearGradient>
-                <linearGradient id="beamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.6"/>
-                  <stop offset="100%" stop-color="#00F0FF" stop-opacity="0"/>
-                </linearGradient>
-              </defs>
-
-              <!-- Radar Concentric Grid Circles -->
-              <circle cx="220" cy="220" r="190" fill="none" stroke="rgba(0, 240, 255, 0.12)" stroke-width="1" stroke-dasharray="4,4"/>
-              <circle cx="220" cy="220" r="145" fill="none" stroke="rgba(0, 240, 255, 0.18)" stroke-width="1"/>
-              <circle cx="220" cy="220" r="100" fill="none" stroke="rgba(0, 240, 255, 0.22)" stroke-width="1" stroke-dasharray="2,2"/>
-              <circle cx="220" cy="220" r="55" fill="none" stroke="rgba(0, 240, 255, 0.3)" stroke-width="1.2"/>
-              <circle cx="220" cy="220" r="190" fill="url(#radarGlow)"/>
-
-              <!-- Crosshairs -->
-              <line x1="220" y1="15" x2="220" y2="425" stroke="rgba(0, 240, 255, 0.2)" stroke-width="1"/>
-              <line x1="15" y1="220" x2="425" y2="220" stroke="rgba(0, 240, 255, 0.2)" stroke-width="1"/>
-              <line x1="75" y1="75" x2="365" y2="365" stroke="rgba(0, 240, 255, 0.1)" stroke-width="1" stroke-dasharray="3,3"/>
-              <line x1="75" y1="365" x2="365" y2="75" stroke="rgba(0, 240, 255, 0.1)" stroke-width="1" stroke-dasharray="3,3"/>
-
-              <!-- Pulsing Radar Echo Waves -->
-              <circle class="animate-radar-ring-1" cx="220" cy="220" r="25" fill="none" stroke="#00F0FF" stroke-width="2"/>
-              <circle class="animate-radar-ring-2" cx="220" cy="220" r="25" fill="none" stroke="#0052FF" stroke-width="1.8"/>
-
-              <!-- Rotating Radar Scanner Beam -->
-              <g style="transform-origin: 220px 220px; animation: radarSweep 6s linear infinite;">
-                <path d="M220 220 L410 220 A190 190 0 0 0 354 85 Z" fill="url(#beamGrad)" opacity="0.45"/>
-                <line x1="220" y1="220" x2="410" y2="220" stroke="#00F0FF" stroke-width="2" opacity="0.9"/>
-              </g>
-
-              <!-- Central Strategic Emblem Shield -->
-              <g transform="translate(185, 178) scale(1.75)">
-                <path d="M20 4L34 10V21C34 29.5 27.8 35.8 20 38C12.2 35.8 6 29.5 6 21V10L20 4Z" fill="url(#shieldGrad)" stroke="#00F0FF" stroke-width="1.8"/>
-                <path d="M12 25L18 19L22 22L29 13" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </g>
-
-              <!-- Floating Multi-Asset Risk Nodes -->
-              <!-- VIX Node -->
-              <g transform="translate(325, 120)">
-                <circle class="animate-node-pulse" cx="0" cy="0" r="7" fill="#EF4444"/>
-                <rect x="12" y="-12" width="75" height="22" rx="4" fill="rgba(6, 11, 25, 0.85)" stroke="#EF4444" stroke-width="1"/>
-                <text x="18" y="3" fill="#EF4444" font-family="JetBrains Mono" font-size="9" font-weight="bold">VIX 14.5</text>
-              </g>
-
-              <!-- USD/IDR Node -->
-              <g transform="translate(100, 130)">
-                <circle class="animate-node-pulse" cx="0" cy="0" r="6" fill="#F59E0B"/>
-                <rect x="-85" y="-12" width="75" height="22" rx="4" fill="rgba(6, 11, 25, 0.85)" stroke="#F59E0B" stroke-width="1"/>
-                <text x="-79" y="3" fill="#F59E0B" font-family="JetBrains Mono" font-size="9" font-weight="bold">USD 16.2k</text>
-              </g>
-
-              <!-- Yield Spread Node -->
-              <g transform="translate(330, 290)">
-                <circle class="animate-node-pulse" cx="0" cy="0" r="6" fill="#10B981"/>
-                <rect x="12" y="-12" width="85" height="22" rx="4" fill="rgba(6, 11, 25, 0.85)" stroke="#10B981" stroke-width="1"/>
-                <text x="18" y="3" fill="#10B981" font-family="JetBrains Mono" font-size="9" font-weight="bold">SPREAD +2.25%</text>
-              </g>
-
-              <!-- Realized Vol Node -->
-              <g transform="translate(95, 305)">
-                <circle class="animate-node-pulse" cx="0" cy="0" r="7" fill="#00F0FF"/>
-                <rect x="-85" y="-12" width="75" height="22" rx="4" fill="rgba(6, 11, 25, 0.85)" stroke="#00F0FF" stroke-width="1"/>
-                <text x="-79" y="3" fill="#00F0FF" font-family="JetBrains Mono" font-size="9" font-weight="bold">RV 0.0093</text>
-              </g>
-
-              <!-- Interactive Floating Candlestick Telemetry -->
-              <g transform="translate(145, 370)">
-                <g class="animate-candle-1">
-                  <line x1="20" y1="0" x2="20" y2="35" stroke="#10B981" stroke-width="1.5"/>
-                  <rect x="16" y="8" width="8" height="18" fill="#10B981" rx="1"/>
-                </g>
-                <g class="animate-candle-2">
-                  <line x1="45" y1="-5" x2="45" y2="32" stroke="#EF4444" stroke-width="1.5"/>
-                  <rect x="41" y="4" width="8" height="20" fill="#EF4444" rx="1"/>
-                </g>
-                <g class="animate-candle-3">
-                  <line x1="70" y1="-8" x2="70" y2="30" stroke="#00F0FF" stroke-width="1.5"/>
-                  <rect x="66" y="2" width="8" height="15" fill="#00F0FF" rx="1"/>
-                </g>
-                <g class="animate-candle-1">
-                  <line x1="95" y1="2" x2="95" y2="38" stroke="#10B981" stroke-width="1.5"/>
-                  <rect x="91" y="10" width="8" height="20" fill="#10B981" rx="1"/>
-                </g>
-                <g class="animate-candle-2">
-                  <line x1="120" y1="-2" x2="120" y2="34" stroke="#10B981" stroke-width="1.5"/>
-                  <rect x="116" y="6" width="8" height="16" fill="#10B981" rx="1"/>
-                </g>
-              </g>
-            </svg>
-          </div>
-
-          <div style="background: var(--bg-surface-alt); border-radius: 10px; padding: 10px 14px; margin-top: 10px; display: flex; justify-content: space-between; align-items: center; font-family: 'JetBrains Mono'; font-size: 0.72rem;">
-            <div><span style="color: var(--text-muted);">DEFENSE STATUS:</span> <b style="color: var(--color-safe);">LEVEL 1 NORMAL</b></div>
-            <div><span style="color: var(--text-muted);">EST. VALUE AT RISK 99%:</span> <b style="color: var(--brand-cyan);">Rp 216 Miliar</b></div>
-          </div>
         </div>
       </div>
 
@@ -637,24 +647,35 @@
         </div>
       </div>
 
-      <!-- CHART 3: FEATURE CORRELATION RANKING -->
-      <div class="card-panel">
-        <h3 class="card-title">3. Peringkat Korelasi 10 Fitur Turunan vs Target Volatilitas (Y)</h3>
-        <p class="card-subtitle">Korelasi Pearson antara fitur rekayasa finansial terhadap realized volatility 5 hari ke depan:</p>
-        <div id="chart-feature-correlations" class="chart-container" style="min-height: 360px;"></div>
-        <div style="background: var(--bg-surface-alt); padding: 14px; border-radius: 10px; margin-top: 14px; border: 1px solid var(--border-subtle);">
-          <div style="font-family: 'Sora'; font-weight: 700; font-size: 0.88rem; margin-bottom: 4px; color: var(--brand-cyan);">Rasionalitas Bisnis &amp; Hipotesis Transmisi Finansial:</div>
-          <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.6;">
-            Fitur <code>RV_IHSG_5D</code> menduduki peringkat teratas (+0.551), mengonfirmasi sifat persistensi volatilitas bursa domestik. VIX global (+0.434) dan Downside Semivolatility (+0.412) membuktikan bahwa kepanikan pasar global dan risiko ekor (*tail risk*) mentransmisikan tekanan langsung ke dispersi return IHSG.
-          </p>
+      <!-- 2-COLUMN GRID ROW: CHART 3 & CHART 4 SIDE-BY-SIDE (KIRI KANAN 1 BARIS) -->
+      <div class="eda-side-grid">
+        
+        <!-- Left: Feature Correlation Ranking -->
+        <div class="card-panel">
+          <h3 class="card-title">3. Peringkat Korelasi 10 Fitur Turunan vs Target Volatilitas (Y)</h3>
+          <p class="card-subtitle">Korelasi Pearson antara fitur rekayasa finansial terhadap realized volatility 5 hari ke depan:</p>
+          <div id="chart-feature-correlations" class="chart-container" style="min-height: 360px;"></div>
+          <div style="background: var(--bg-surface-alt); padding: 12px; border-radius: 8px; margin-top: 12px; border: 1px solid var(--border-subtle);">
+            <div style="font-family: 'Sora'; font-weight: 700; font-size: 0.82rem; margin-bottom: 2px; color: var(--brand-cyan);">Rasionalitas Bisnis:</div>
+            <p style="font-size: 0.76rem; color: var(--text-secondary); line-height: 1.5;">
+              Fitur <code>RV_IHSG_5D</code> (+0.551) dan <code>VIX</code> (+0.434) mendominasi, membuktikan persistensi volatilitas bursa domestik dan transmisi kepanikan pasar global.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <!-- CHART 4: CRISIS EVENT STUDY -->
-      <div class="card-panel">
-        <h3 class="card-title">4. Event Study: 8 Guncangan Makroekonomi &amp; Krisis Historis</h3>
-        <p class="card-subtitle">Perbandingan kedalaman koreksi IHSG (Drawdown %) vs Lonjakan Target Volatilitas pada episode krisis:</p>
-        <div id="chart-crisis-event-study" class="chart-container" style="min-height: 360px;"></div>
+        <!-- Right: Crisis Event Study -->
+        <div class="card-panel">
+          <h3 class="card-title">4. Event Study: 8 Guncangan Makroekonomi &amp; Krisis Historis</h3>
+          <p class="card-subtitle">Perbandingan kedalaman koreksi IHSG (Drawdown %) vs Lonjakan Target Volatilitas pada episode krisis:</p>
+          <div id="chart-crisis-event-study" class="chart-container" style="min-height: 360px;"></div>
+          <div style="background: var(--bg-surface-alt); padding: 12px; border-radius: 8px; margin-top: 12px; border: 1px solid var(--border-subtle);">
+            <div style="font-family: 'Sora'; font-weight: 700; font-size: 0.82rem; margin-bottom: 2px; color: var(--color-safe);">Dampak Volatilitas:</div>
+            <p style="font-size: 0.76rem; color: var(--text-secondary); line-height: 1.5;">
+              Krisis Covid-19 2020 mencatat rekor volatilitas 0.0682, memicu koreksi IHSG -37.5% dan mengaktifkan protokol pertahanan modal AEGIS.
+            </p>
+          </div>
+        </div>
+
       </div>
 
       <!-- TABEL 01: MATRIKS KORELASI STATIS PEARSON & SPEARMAN -->
