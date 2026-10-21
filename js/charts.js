@@ -596,7 +596,7 @@ window.AEGIS_CHARTS = (function() {
     }
 
     /**
-     * 8. Dynamic Portfolio Allocation Donut Chart (Simulation)
+     * 8. Dynamic Portfolio Allocation Donut Chart (Simulation - Clean Labels & Centered Annotation)
      */
     function renderPortfolioDonut(eq, sbn, cash) {
         const container = document.getElementById('chart-portfolio-donut');
@@ -604,28 +604,40 @@ window.AEGIS_CHARTS = (function() {
 
         const th = getThemeLayout();
 
+        const eqMiliar = eq * 100;
+        const sbnMiliar = sbn * 100;
+        const cashMiliar = cash * 100;
+
         const trace = {
             values: [eq, sbn, cash],
-            labels: ['Saham Ekuitas IHSG', 'Surat Berharga Negara (SBN)', 'Kas Hedging & Pasar Uang'],
+            labels: ['Saham IHSG', 'SBN Buffer', 'Kas Hedging'],
             type: 'pie',
-            hole: 0.62,
+            hole: 0.65,
             marker: {
                 colors: ['#0052FF', '#10B981', '#F59E0B'],
                 line: { color: th.isDark ? '#070E20' : '#FFFFFF', width: 2 }
             },
-            textinfo: 'label+percent',
+            textinfo: 'percent',
             textposition: 'inside',
-            insidetextorientation: 'radial',
-            textfont: { family: 'Sora, sans-serif', size: 9, color: '#FFFFFF' },
-            hoverinfo: 'label+value+percent'
+            insidetextorientation: 'horizontal',
+            textfont: { family: 'Plus Jakarta Sans, sans-serif', size: 12.5, weight: 800, color: '#FFFFFF' },
+            hovertemplate: '<b>%{label}</b><br>Porsi Alokasi: <b>%{percent}</b><br>Nominal: <b>Rp %{customdata} Miliar</b><extra></extra>',
+            customdata: [eqMiliar.toLocaleString('id-ID'), sbnMiliar.toLocaleString('id-ID'), cashMiliar.toLocaleString('id-ID')]
         };
 
         const layout = {
             paper_bgcolor: th.paper_bgcolor,
             plot_bgcolor: th.plot_bgcolor,
             font: th.font,
-            margin: { t: 15, r: 15, l: 15, b: 15 },
-            showlegend: false
+            height: 250,
+            margin: { t: 8, r: 10, l: 10, b: 8 },
+            showlegend: false,
+            annotations: [{
+                text: `<b style="font-size:20px; font-family:'Plus Jakarta Sans', sans-serif; font-weight:800; color:${th.isDark ? '#00F0FF' : '#0284C7'}; letter-spacing:-0.5px;">${eq}:${sbn}:${cash}</b><br><span style="font-size:9px; font-family:'JetBrains Mono', monospace; letter-spacing:1px; color:#94A3B8;">EQ / SBN / CASH</span>`,
+                showarrow: false,
+                x: 0.5,
+                y: 0.5
+            }]
         };
 
         Plotly.newPlot(container, [trace], layout, { responsive: true, displayModeBar: false });
