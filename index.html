@@ -2228,16 +2228,16 @@
   </footer>
 
   <!-- ========================================================================
-       MODAL IMAGE VIEWER FOR HIGH-RES XAI ASSETS
+       MODAL IMAGE VIEWER FOR HIGH-RES XAI ASSETS (LIGHTBOX OVERLAY)
        ======================================================================== -->
-  <div id="image-modal" class="modal-backdrop" onclick="AEGIS_APP.closeImageModal()">
+  <div id="chart-lightbox-modal" class="modal-backdrop" style="display: none;" onclick="AEGIS_APP.closeImageModal()">
     <div class="modal-content" onclick="event.stopPropagation()">
       <div class="modal-header">
-        <h4 id="modal-title" style="margin: 0; font-size: 1rem; color: var(--text-primary);">Pratinjau Aset Visual Resolusi Tinggi</h4>
+        <h4 id="lightbox-title">Pratinjau Aset Visual Resolusi Tinggi</h4>
         <button class="modal-close-btn" onclick="AEGIS_APP.closeImageModal()">&times;</button>
       </div>
       <div class="modal-body">
-        <img id="modal-img" src="" alt="Visual Detail" style="width: 100%; height: auto; border-radius: 8px;">
+        <img id="lightbox-img" src="" alt="Visual Detail">
       </div>
     </div>
   </div>
