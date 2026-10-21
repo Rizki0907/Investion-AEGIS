@@ -5,14 +5,14 @@
 window.AEGIS_DATA = {
     meta: {
         title: "INVESTION AEGIS",
-        subtitle: "Quantitative Risk & Volatility Shield",
+        subtitle: "Quantitative Risk and Volatility Shield",
         institution: "PT Investion Asset Management (AUM Rp 10 Triliun)",
         team: {
             name: "Positif Podium",
             leader: "Muhammad Habib Nur Aiman",
             member: "Rizki Piji Fathoni",
             university: "Universitas Negeri Surabaya (UNESA)",
-            competition: "INCEPTION 2026 (HIMATIFA Fakultas Ilmu Komputer, UPN 'Veteran' Jawa Timur)",
+            competition: "INCEPTION 2026",
             year: 2026
         },
         metrics: {
@@ -73,8 +73,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008735,
     "Conformal_Upper_90": 0.012584999999999999,
-    "Conformal_Upper_95": 0.014554999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014554999999999998
   },
   {
     "Date": "2025-01-03",
@@ -89,8 +88,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007472,
     "Conformal_Upper_90": 0.011322,
-    "Conformal_Upper_95": 0.013292,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013292
   },
   {
     "Date": "2025-01-06",
@@ -105,8 +103,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008403,
     "Conformal_Upper_90": 0.012253,
-    "Conformal_Upper_95": 0.014223,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014223
   },
   {
     "Date": "2025-01-07",
@@ -121,8 +118,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007832,
     "Conformal_Upper_90": 0.011682000000000001,
-    "Conformal_Upper_95": 0.013652000000000001,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013652000000000001
   },
   {
     "Date": "2025-01-08",
@@ -137,8 +133,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007964,
     "Conformal_Upper_90": 0.011814000000000002,
-    "Conformal_Upper_95": 0.013784000000000001,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013784000000000001
   },
   {
     "Date": "2025-01-09",
@@ -153,8 +148,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008657,
     "Conformal_Upper_90": 0.012507,
-    "Conformal_Upper_95": 0.014477,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014477
   },
   {
     "Date": "2025-01-10",
@@ -169,8 +163,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008653,
     "Conformal_Upper_90": 0.012503,
-    "Conformal_Upper_95": 0.014473,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014473
   },
   {
     "Date": "2025-01-13",
@@ -185,8 +178,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009024,
     "Conformal_Upper_90": 0.012874,
-    "Conformal_Upper_95": 0.014844,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014844
   },
   {
     "Date": "2025-01-14",
@@ -201,8 +193,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009552,
     "Conformal_Upper_90": 0.013402,
-    "Conformal_Upper_95": 0.015372,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015372
   },
   {
     "Date": "2025-01-15",
@@ -217,8 +208,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008345,
     "Conformal_Upper_90": 0.012195000000000001,
-    "Conformal_Upper_95": 0.014165,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014165
   },
   {
     "Date": "2025-01-16",
@@ -233,8 +223,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007557,
     "Conformal_Upper_90": 0.011407,
-    "Conformal_Upper_95": 0.013377,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013377
   },
   {
     "Date": "2025-01-17",
@@ -249,8 +238,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006928,
     "Conformal_Upper_90": 0.010778,
-    "Conformal_Upper_95": 0.012747999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012747999999999999
   },
   {
     "Date": "2025-01-20",
@@ -265,8 +253,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006407,
     "Conformal_Upper_90": 0.010257,
-    "Conformal_Upper_95": 0.012227,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012227
   },
   {
     "Date": "2025-01-21",
@@ -281,8 +268,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.00583,
     "Conformal_Upper_90": 0.009680000000000001,
-    "Conformal_Upper_95": 0.01165,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.01165
   },
   {
     "Date": "2025-01-22",
@@ -297,8 +283,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005962,
     "Conformal_Upper_90": 0.009812000000000001,
-    "Conformal_Upper_95": 0.011782,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011782
   },
   {
     "Date": "2025-01-23",
@@ -313,8 +298,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006189,
     "Conformal_Upper_90": 0.010039,
-    "Conformal_Upper_95": 0.012008999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012008999999999999
   },
   {
     "Date": "2025-01-24",
@@ -329,8 +313,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006386,
     "Conformal_Upper_90": 0.010236,
-    "Conformal_Upper_95": 0.012206,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012206
   },
   {
     "Date": "2025-01-27",
@@ -345,8 +328,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006653,
     "Conformal_Upper_90": 0.010503,
-    "Conformal_Upper_95": 0.012473,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012473
   },
   {
     "Date": "2025-01-28",
@@ -361,8 +343,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006257,
     "Conformal_Upper_90": 0.010107000000000001,
-    "Conformal_Upper_95": 0.012077000000000001,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012077000000000001
   },
   {
     "Date": "2025-01-29",
@@ -377,8 +358,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007158,
     "Conformal_Upper_90": 0.011008,
-    "Conformal_Upper_95": 0.012978,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012978
   },
   {
     "Date": "2025-01-30",
@@ -393,8 +373,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007443,
     "Conformal_Upper_90": 0.011293000000000001,
-    "Conformal_Upper_95": 0.013263,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013263
   },
   {
     "Date": "2025-01-31",
@@ -409,8 +388,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006442,
     "Conformal_Upper_90": 0.010291999999999999,
-    "Conformal_Upper_95": 0.012261999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012261999999999999
   },
   {
     "Date": "2025-02-03",
@@ -425,8 +403,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008181,
     "Conformal_Upper_90": 0.012031,
-    "Conformal_Upper_95": 0.014001,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014001
   },
   {
     "Date": "2025-02-04",
@@ -441,8 +418,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007407,
     "Conformal_Upper_90": 0.011257,
-    "Conformal_Upper_95": 0.013227,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013227
   },
   {
     "Date": "2025-02-05",
@@ -457,8 +433,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008274,
     "Conformal_Upper_90": 0.012124,
-    "Conformal_Upper_95": 0.014093999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014093999999999999
   },
   {
     "Date": "2025-02-06",
@@ -473,8 +448,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009165,
     "Conformal_Upper_90": 0.013014999999999999,
-    "Conformal_Upper_95": 0.014984999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014984999999999998
   },
   {
     "Date": "2025-02-07",
@@ -489,8 +463,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011409,
     "Conformal_Upper_90": 0.015259000000000002,
-    "Conformal_Upper_95": 0.017229,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.017229
   },
   {
     "Date": "2025-02-10",
@@ -505,8 +478,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011808,
     "Conformal_Upper_90": 0.015658000000000002,
-    "Conformal_Upper_95": 0.017628,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.017628
   },
   {
     "Date": "2025-02-11",
@@ -521,8 +493,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.013807,
     "Conformal_Upper_90": 0.017657,
-    "Conformal_Upper_95": 0.019627,
-    "Prob_Regime_HighVol": 0.1505833333333333
+    "Conformal_Upper_95": 0.019627
   },
   {
     "Date": "2025-02-12",
@@ -537,8 +508,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.012625,
     "Conformal_Upper_90": 0.016475,
-    "Conformal_Upper_95": 0.018445,
-    "Prob_Regime_HighVol": 0.05208333333333338
+    "Conformal_Upper_95": 0.018445
   },
   {
     "Date": "2025-02-13",
@@ -553,8 +523,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.01139,
     "Conformal_Upper_90": 0.01524,
-    "Conformal_Upper_95": 0.01721,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.01721
   },
   {
     "Date": "2025-02-14",
@@ -569,8 +538,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.010033,
     "Conformal_Upper_90": 0.013883,
-    "Conformal_Upper_95": 0.015853,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015853
   },
   {
     "Date": "2025-02-17",
@@ -585,8 +553,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009665,
     "Conformal_Upper_90": 0.013515,
-    "Conformal_Upper_95": 0.015484999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015484999999999999
   },
   {
     "Date": "2025-02-18",
@@ -601,8 +568,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009081,
     "Conformal_Upper_90": 0.012931000000000002,
-    "Conformal_Upper_95": 0.014901000000000001,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014901000000000001
   },
   {
     "Date": "2025-02-19",
@@ -617,8 +583,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009367,
     "Conformal_Upper_90": 0.013217,
-    "Conformal_Upper_95": 0.015186999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015186999999999999
   },
   {
     "Date": "2025-02-20",
@@ -633,8 +598,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008916,
     "Conformal_Upper_90": 0.012766,
-    "Conformal_Upper_95": 0.014735999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014735999999999999
   },
   {
     "Date": "2025-02-21",
@@ -649,8 +613,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009004,
     "Conformal_Upper_90": 0.012854,
-    "Conformal_Upper_95": 0.014824,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014824
   },
   {
     "Date": "2025-02-24",
@@ -665,8 +628,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.00982,
     "Conformal_Upper_90": 0.013670000000000002,
-    "Conformal_Upper_95": 0.01564,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.01564
   },
   {
     "Date": "2025-02-25",
@@ -681,8 +643,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.012854,
     "Conformal_Upper_90": 0.016704,
-    "Conformal_Upper_95": 0.018674,
-    "Prob_Regime_HighVol": 0.07116666666666671
+    "Conformal_Upper_95": 0.018674
   },
   {
     "Date": "2025-02-26",
@@ -697,8 +658,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011062,
     "Conformal_Upper_90": 0.014912000000000002,
-    "Conformal_Upper_95": 0.016882,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.016882
   },
   {
     "Date": "2025-02-27",
@@ -713,8 +673,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.013241,
     "Conformal_Upper_90": 0.017091,
-    "Conformal_Upper_95": 0.019060999999999998,
-    "Prob_Regime_HighVol": 0.10341666666666659
+    "Conformal_Upper_95": 0.019060999999999998
   },
   {
     "Date": "2025-02-28",
@@ -729,8 +688,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.016965,
     "Conformal_Upper_90": 0.020815,
-    "Conformal_Upper_95": 0.022785,
-    "Prob_Regime_HighVol": 0.41375000000000006
+    "Conformal_Upper_95": 0.022785
   },
   {
     "Date": "2025-03-03",
@@ -745,8 +703,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.014535,
     "Conformal_Upper_90": 0.018385,
-    "Conformal_Upper_95": 0.020354999999999998,
-    "Prob_Regime_HighVol": 0.2112499999999999
+    "Conformal_Upper_95": 0.020354999999999998
   },
   {
     "Date": "2025-03-04",
@@ -761,8 +718,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.014487,
     "Conformal_Upper_90": 0.018337,
-    "Conformal_Upper_95": 0.020307,
-    "Prob_Regime_HighVol": 0.20724999999999996
+    "Conformal_Upper_95": 0.020307
   },
   {
     "Date": "2025-03-05",
@@ -777,8 +733,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011666,
     "Conformal_Upper_90": 0.015515999999999999,
-    "Conformal_Upper_95": 0.017485999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.017485999999999998
   },
   {
     "Date": "2025-03-06",
@@ -793,8 +748,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011162,
     "Conformal_Upper_90": 0.015012000000000001,
-    "Conformal_Upper_95": 0.016982,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.016982
   },
   {
     "Date": "2025-03-07",
@@ -809,8 +763,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.010827,
     "Conformal_Upper_90": 0.014676999999999999,
-    "Conformal_Upper_95": 0.016647,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.016647
   },
   {
     "Date": "2025-03-10",
@@ -825,8 +778,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011421,
     "Conformal_Upper_90": 0.015271,
-    "Conformal_Upper_95": 0.017241,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.017241
   },
   {
     "Date": "2025-03-11",
@@ -841,8 +793,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011141,
     "Conformal_Upper_90": 0.014991,
-    "Conformal_Upper_95": 0.016961,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.016961
   },
   {
     "Date": "2025-03-12",
@@ -857,8 +808,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.010266,
     "Conformal_Upper_90": 0.014116,
-    "Conformal_Upper_95": 0.016086,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.016086
   },
   {
     "Date": "2025-03-13",
@@ -873,8 +823,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.010025,
     "Conformal_Upper_90": 0.013874999999999998,
-    "Conformal_Upper_95": 0.015844999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015844999999999998
   },
   {
     "Date": "2025-03-14",
@@ -889,8 +838,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011494,
     "Conformal_Upper_90": 0.015344,
-    "Conformal_Upper_95": 0.017314,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.017314
   },
   {
     "Date": "2025-03-17",
@@ -905,8 +853,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.010777,
     "Conformal_Upper_90": 0.014627000000000001,
-    "Conformal_Upper_95": 0.016597,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.016597
   },
   {
     "Date": "2025-03-18",
@@ -921,8 +868,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.014404,
     "Conformal_Upper_90": 0.018254,
-    "Conformal_Upper_95": 0.020224,
-    "Prob_Regime_HighVol": 0.2003333333333333
+    "Conformal_Upper_95": 0.020224
   },
   {
     "Date": "2025-03-19",
@@ -937,8 +883,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.013455,
     "Conformal_Upper_90": 0.017305,
-    "Conformal_Upper_95": 0.019275,
-    "Prob_Regime_HighVol": 0.12124999999999997
+    "Conformal_Upper_95": 0.019275
   },
   {
     "Date": "2025-03-20",
@@ -953,8 +898,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.012152,
     "Conformal_Upper_90": 0.016002,
-    "Conformal_Upper_95": 0.017972,
-    "Prob_Regime_HighVol": 0.012666666666666613
+    "Conformal_Upper_95": 0.017972
   },
   {
     "Date": "2025-03-21",
@@ -969,8 +913,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.012964,
     "Conformal_Upper_90": 0.016814,
-    "Conformal_Upper_95": 0.018784,
-    "Prob_Regime_HighVol": 0.0803333333333333
+    "Conformal_Upper_95": 0.018784
   },
   {
     "Date": "2025-03-24",
@@ -985,8 +928,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.013334,
     "Conformal_Upper_90": 0.017184,
-    "Conformal_Upper_95": 0.019154,
-    "Prob_Regime_HighVol": 0.11116666666666668
+    "Conformal_Upper_95": 0.019154
   },
   {
     "Date": "2025-03-25",
@@ -1001,8 +943,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.01023,
     "Conformal_Upper_90": 0.014079999999999999,
-    "Conformal_Upper_95": 0.01605,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.01605
   },
   {
     "Date": "2025-03-26",
@@ -1017,8 +958,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.01001,
     "Conformal_Upper_90": 0.01386,
-    "Conformal_Upper_95": 0.01583,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.01583
   },
   {
     "Date": "2025-03-27",
@@ -1033,8 +973,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009722,
     "Conformal_Upper_90": 0.013572,
-    "Conformal_Upper_95": 0.015542,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015542
   },
   {
     "Date": "2025-03-28",
@@ -1049,8 +988,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009349,
     "Conformal_Upper_90": 0.013198999999999999,
-    "Conformal_Upper_95": 0.015168999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015168999999999998
   },
   {
     "Date": "2025-03-31",
@@ -1065,8 +1003,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009182,
     "Conformal_Upper_90": 0.013031999999999998,
-    "Conformal_Upper_95": 0.015001999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015001999999999998
   },
   {
     "Date": "2025-04-01",
@@ -1081,8 +1018,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009302,
     "Conformal_Upper_90": 0.013152,
-    "Conformal_Upper_95": 0.015122,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015122
   },
   {
     "Date": "2025-04-02",
@@ -1097,8 +1033,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.00889,
     "Conformal_Upper_90": 0.012740000000000001,
-    "Conformal_Upper_95": 0.01471,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.01471
   },
   {
     "Date": "2025-04-03",
@@ -1113,8 +1048,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.00981,
     "Conformal_Upper_90": 0.013659999999999999,
-    "Conformal_Upper_95": 0.015629999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015629999999999998
   },
   {
     "Date": "2025-04-04",
@@ -1129,8 +1063,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.012442,
     "Conformal_Upper_90": 0.016292,
-    "Conformal_Upper_95": 0.018262,
-    "Prob_Regime_HighVol": 0.03683333333333331
+    "Conformal_Upper_95": 0.018262
   },
   {
     "Date": "2025-04-07",
@@ -1145,8 +1078,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.013329,
     "Conformal_Upper_90": 0.017179,
-    "Conformal_Upper_95": 0.019149,
-    "Prob_Regime_HighVol": 0.11075000000000003
+    "Conformal_Upper_95": 0.019149
   },
   {
     "Date": "2025-04-08",
@@ -1161,8 +1093,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.02313,
     "Conformal_Upper_90": 0.02698,
-    "Conformal_Upper_95": 0.02895,
-    "Prob_Regime_HighVol": 0.9275000000000001
+    "Conformal_Upper_95": 0.02895
   },
   {
     "Date": "2025-04-09",
@@ -1177,8 +1108,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.019179,
     "Conformal_Upper_90": 0.023029,
-    "Conformal_Upper_95": 0.024999,
-    "Prob_Regime_HighVol": 0.5982500000000001
+    "Conformal_Upper_95": 0.024999
   },
   {
     "Date": "2025-04-10",
@@ -1193,8 +1123,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.016839,
     "Conformal_Upper_90": 0.020689,
-    "Conformal_Upper_95": 0.022659,
-    "Prob_Regime_HighVol": 0.40324999999999994
+    "Conformal_Upper_95": 0.022659
   },
   {
     "Date": "2025-04-11",
@@ -1209,8 +1138,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.015562,
     "Conformal_Upper_90": 0.019412,
-    "Conformal_Upper_95": 0.021381999999999998,
-    "Prob_Regime_HighVol": 0.2968333333333333
+    "Conformal_Upper_95": 0.021381999999999998
   },
   {
     "Date": "2025-04-14",
@@ -1225,8 +1153,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.013046,
     "Conformal_Upper_90": 0.016896,
-    "Conformal_Upper_95": 0.018866,
-    "Prob_Regime_HighVol": 0.08716666666666667
+    "Conformal_Upper_95": 0.018866
   },
   {
     "Date": "2025-04-15",
@@ -1241,8 +1168,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011176,
     "Conformal_Upper_90": 0.015026000000000001,
-    "Conformal_Upper_95": 0.016996,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.016996
   },
   {
     "Date": "2025-04-16",
@@ -1257,8 +1183,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.012277,
     "Conformal_Upper_90": 0.016127,
-    "Conformal_Upper_95": 0.018097,
-    "Prob_Regime_HighVol": 0.02308333333333329
+    "Conformal_Upper_95": 0.018097
   },
   {
     "Date": "2025-04-17",
@@ -1273,8 +1198,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011011,
     "Conformal_Upper_90": 0.014861,
-    "Conformal_Upper_95": 0.016831,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.016831
   },
   {
     "Date": "2025-04-21",
@@ -1289,8 +1213,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011211,
     "Conformal_Upper_90": 0.015061000000000001,
-    "Conformal_Upper_95": 0.017031,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.017031
   },
   {
     "Date": "2025-04-22",
@@ -1305,8 +1228,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.010294,
     "Conformal_Upper_90": 0.014144,
-    "Conformal_Upper_95": 0.016114,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.016114
   },
   {
     "Date": "2025-04-23",
@@ -1321,8 +1243,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011847,
     "Conformal_Upper_90": 0.015697,
-    "Conformal_Upper_95": 0.017667,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.017667
   },
   {
     "Date": "2025-04-24",
@@ -1337,8 +1258,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011296,
     "Conformal_Upper_90": 0.015146,
-    "Conformal_Upper_95": 0.017116,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.017116
   },
   {
     "Date": "2025-04-25",
@@ -1353,8 +1273,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009998,
     "Conformal_Upper_90": 0.013848,
-    "Conformal_Upper_95": 0.015818,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015818
   },
   {
     "Date": "2025-04-28",
@@ -1369,8 +1288,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.010024,
     "Conformal_Upper_90": 0.013874000000000001,
-    "Conformal_Upper_95": 0.015844,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015844
   },
   {
     "Date": "2025-04-29",
@@ -1385,8 +1303,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009651,
     "Conformal_Upper_90": 0.013500999999999999,
-    "Conformal_Upper_95": 0.015470999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015470999999999999
   },
   {
     "Date": "2025-04-30",
@@ -1401,8 +1318,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009747,
     "Conformal_Upper_90": 0.013597000000000001,
-    "Conformal_Upper_95": 0.015567000000000001,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015567000000000001
   },
   {
     "Date": "2025-05-01",
@@ -1417,8 +1333,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.010041,
     "Conformal_Upper_90": 0.013891,
-    "Conformal_Upper_95": 0.015861,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015861
   },
   {
     "Date": "2025-05-02",
@@ -1433,8 +1348,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009447,
     "Conformal_Upper_90": 0.013297,
-    "Conformal_Upper_95": 0.015267,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015267
   },
   {
     "Date": "2025-05-05",
@@ -1449,8 +1363,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009715,
     "Conformal_Upper_90": 0.013565,
-    "Conformal_Upper_95": 0.015535,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015535
   },
   {
     "Date": "2025-05-06",
@@ -1465,8 +1378,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009962,
     "Conformal_Upper_90": 0.013812000000000001,
-    "Conformal_Upper_95": 0.015782,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015782
   },
   {
     "Date": "2025-05-07",
@@ -1481,8 +1393,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009099,
     "Conformal_Upper_90": 0.012948999999999999,
-    "Conformal_Upper_95": 0.014918999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014918999999999998
   },
   {
     "Date": "2025-05-08",
@@ -1497,8 +1408,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008914,
     "Conformal_Upper_90": 0.012764000000000001,
-    "Conformal_Upper_95": 0.014734,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014734
   },
   {
     "Date": "2025-05-09",
@@ -1513,8 +1423,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008646,
     "Conformal_Upper_90": 0.012496,
-    "Conformal_Upper_95": 0.014466,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014466
   },
   {
     "Date": "2025-05-12",
@@ -1529,8 +1438,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008071,
     "Conformal_Upper_90": 0.011921000000000001,
-    "Conformal_Upper_95": 0.013891,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013891
   },
   {
     "Date": "2025-05-13",
@@ -1545,8 +1453,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.00877,
     "Conformal_Upper_90": 0.01262,
-    "Conformal_Upper_95": 0.014589999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014589999999999999
   },
   {
     "Date": "2025-05-14",
@@ -1561,8 +1468,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008743,
     "Conformal_Upper_90": 0.012593,
-    "Conformal_Upper_95": 0.014563,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014563
   },
   {
     "Date": "2025-05-15",
@@ -1577,8 +1483,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008072,
     "Conformal_Upper_90": 0.011921999999999999,
-    "Conformal_Upper_95": 0.013891999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013891999999999998
   },
   {
     "Date": "2025-05-16",
@@ -1593,8 +1498,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007924,
     "Conformal_Upper_90": 0.011774,
-    "Conformal_Upper_95": 0.013744,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013744
   },
   {
     "Date": "2025-05-19",
@@ -1609,8 +1513,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008096,
     "Conformal_Upper_90": 0.011946000000000002,
-    "Conformal_Upper_95": 0.013916000000000001,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013916000000000001
   },
   {
     "Date": "2025-05-20",
@@ -1625,8 +1528,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008607,
     "Conformal_Upper_90": 0.012457,
-    "Conformal_Upper_95": 0.014426999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014426999999999999
   },
   {
     "Date": "2025-05-21",
@@ -1641,8 +1543,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008365,
     "Conformal_Upper_90": 0.012215,
-    "Conformal_Upper_95": 0.014185,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014185
   },
   {
     "Date": "2025-05-22",
@@ -1657,8 +1558,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008332,
     "Conformal_Upper_90": 0.012182000000000002,
-    "Conformal_Upper_95": 0.014152000000000001,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014152000000000001
   },
   {
     "Date": "2025-05-23",
@@ -1673,8 +1573,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008454,
     "Conformal_Upper_90": 0.012303999999999999,
-    "Conformal_Upper_95": 0.014273999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014273999999999998
   },
   {
     "Date": "2025-05-26",
@@ -1689,8 +1588,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008467,
     "Conformal_Upper_90": 0.012317000000000002,
-    "Conformal_Upper_95": 0.014287000000000001,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014287000000000001
   },
   {
     "Date": "2025-05-27",
@@ -1705,8 +1603,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007578,
     "Conformal_Upper_90": 0.011428,
-    "Conformal_Upper_95": 0.013398,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013398
   },
   {
     "Date": "2025-05-28",
@@ -1721,8 +1618,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007272,
     "Conformal_Upper_90": 0.011122,
-    "Conformal_Upper_95": 0.013092,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013092
   },
   {
     "Date": "2025-05-29",
@@ -1737,8 +1633,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006984,
     "Conformal_Upper_90": 0.010834,
-    "Conformal_Upper_95": 0.012804,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012804
   },
   {
     "Date": "2025-05-30",
@@ -1753,8 +1648,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006811,
     "Conformal_Upper_90": 0.010661,
-    "Conformal_Upper_95": 0.012631,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012631
   },
   {
     "Date": "2025-06-02",
@@ -1769,8 +1663,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008202,
     "Conformal_Upper_90": 0.012052,
-    "Conformal_Upper_95": 0.014022,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014022
   },
   {
     "Date": "2025-06-03",
@@ -1785,8 +1678,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008247,
     "Conformal_Upper_90": 0.012097,
-    "Conformal_Upper_95": 0.014067,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014067
   },
   {
     "Date": "2025-06-04",
@@ -1801,8 +1693,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007699,
     "Conformal_Upper_90": 0.011549,
-    "Conformal_Upper_95": 0.013519,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013519
   },
   {
     "Date": "2025-06-05",
@@ -1817,8 +1708,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007155,
     "Conformal_Upper_90": 0.011005000000000001,
-    "Conformal_Upper_95": 0.012975,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012975
   },
   {
     "Date": "2025-06-06",
@@ -1833,8 +1723,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006677,
     "Conformal_Upper_90": 0.010527,
-    "Conformal_Upper_95": 0.012497,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012497
   },
   {
     "Date": "2025-06-09",
@@ -1849,8 +1738,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006217,
     "Conformal_Upper_90": 0.010067,
-    "Conformal_Upper_95": 0.012036999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012036999999999999
   },
   {
     "Date": "2025-06-10",
@@ -1865,8 +1753,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006373,
     "Conformal_Upper_90": 0.010223,
-    "Conformal_Upper_95": 0.012192999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012192999999999999
   },
   {
     "Date": "2025-06-11",
@@ -1881,8 +1768,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006283,
     "Conformal_Upper_90": 0.010133,
-    "Conformal_Upper_95": 0.012103,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012103
   },
   {
     "Date": "2025-06-12",
@@ -1897,8 +1783,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007383,
     "Conformal_Upper_90": 0.011233,
-    "Conformal_Upper_95": 0.013203,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013203
   },
   {
     "Date": "2025-06-13",
@@ -1913,8 +1798,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007143,
     "Conformal_Upper_90": 0.010993,
-    "Conformal_Upper_95": 0.012962999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012962999999999999
   },
   {
     "Date": "2025-06-16",
@@ -1929,8 +1813,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007106,
     "Conformal_Upper_90": 0.010956,
-    "Conformal_Upper_95": 0.012926,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012926
   },
   {
     "Date": "2025-06-17",
@@ -1945,8 +1828,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008443,
     "Conformal_Upper_90": 0.012293000000000002,
-    "Conformal_Upper_95": 0.014263000000000001,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014263000000000001
   },
   {
     "Date": "2025-06-18",
@@ -1961,8 +1843,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007823,
     "Conformal_Upper_90": 0.011673,
-    "Conformal_Upper_95": 0.013642999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013642999999999999
   },
   {
     "Date": "2025-06-19",
@@ -1977,8 +1858,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009869,
     "Conformal_Upper_90": 0.013718999999999999,
-    "Conformal_Upper_95": 0.015688999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015688999999999998
   },
   {
     "Date": "2025-06-20",
@@ -1993,8 +1873,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.01052,
     "Conformal_Upper_90": 0.01437,
-    "Conformal_Upper_95": 0.01634,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.01634
   },
   {
     "Date": "2025-06-23",
@@ -2009,8 +1888,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011637,
     "Conformal_Upper_90": 0.015487,
-    "Conformal_Upper_95": 0.017457,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.017457
   },
   {
     "Date": "2025-06-24",
@@ -2025,8 +1903,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011365,
     "Conformal_Upper_90": 0.015215,
-    "Conformal_Upper_95": 0.017185,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.017185
   },
   {
     "Date": "2025-06-25",
@@ -2041,8 +1918,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.01024,
     "Conformal_Upper_90": 0.014090000000000002,
-    "Conformal_Upper_95": 0.01606,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.01606
   },
   {
     "Date": "2025-06-26",
@@ -2057,8 +1933,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009512,
     "Conformal_Upper_90": 0.013361999999999999,
-    "Conformal_Upper_95": 0.015331999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015331999999999998
   },
   {
     "Date": "2025-06-27",
@@ -2073,8 +1948,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007731,
     "Conformal_Upper_90": 0.011581000000000001,
-    "Conformal_Upper_95": 0.013551,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013551
   },
   {
     "Date": "2025-06-30",
@@ -2089,8 +1963,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007839,
     "Conformal_Upper_90": 0.011689000000000001,
-    "Conformal_Upper_95": 0.013659000000000001,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013659000000000001
   },
   {
     "Date": "2025-07-01",
@@ -2105,8 +1978,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007659,
     "Conformal_Upper_90": 0.011509,
-    "Conformal_Upper_95": 0.013479,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013479
   },
   {
     "Date": "2025-07-02",
@@ -2121,8 +1993,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007685,
     "Conformal_Upper_90": 0.011535,
-    "Conformal_Upper_95": 0.013505,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013505
   },
   {
     "Date": "2025-07-03",
@@ -2137,8 +2008,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007517,
     "Conformal_Upper_90": 0.011367,
-    "Conformal_Upper_95": 0.013337,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013337
   },
   {
     "Date": "2025-07-04",
@@ -2153,8 +2023,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007573,
     "Conformal_Upper_90": 0.011422999999999999,
-    "Conformal_Upper_95": 0.013392999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013392999999999999
   },
   {
     "Date": "2025-07-07",
@@ -2169,8 +2038,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007852,
     "Conformal_Upper_90": 0.011702,
-    "Conformal_Upper_95": 0.013672,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013672
   },
   {
     "Date": "2025-07-08",
@@ -2185,8 +2053,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007226,
     "Conformal_Upper_90": 0.011075999999999999,
-    "Conformal_Upper_95": 0.013045999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013045999999999999
   },
   {
     "Date": "2025-07-09",
@@ -2201,8 +2068,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006899,
     "Conformal_Upper_90": 0.010749,
-    "Conformal_Upper_95": 0.012719,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012719
   },
   {
     "Date": "2025-07-10",
@@ -2217,8 +2083,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006393,
     "Conformal_Upper_90": 0.010243,
-    "Conformal_Upper_95": 0.012213,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012213
   },
   {
     "Date": "2025-07-11",
@@ -2233,8 +2098,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006004,
     "Conformal_Upper_90": 0.009854,
-    "Conformal_Upper_95": 0.011824,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011824
   },
   {
     "Date": "2025-07-14",
@@ -2249,8 +2113,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006126,
     "Conformal_Upper_90": 0.009976,
-    "Conformal_Upper_95": 0.011946,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011946
   },
   {
     "Date": "2025-07-15",
@@ -2265,8 +2128,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005763,
     "Conformal_Upper_90": 0.009613,
-    "Conformal_Upper_95": 0.011583,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011583
   },
   {
     "Date": "2025-07-16",
@@ -2281,8 +2143,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005651,
     "Conformal_Upper_90": 0.009500999999999999,
-    "Conformal_Upper_95": 0.011470999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011470999999999999
   },
   {
     "Date": "2025-07-17",
@@ -2297,8 +2158,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005819,
     "Conformal_Upper_90": 0.009669,
-    "Conformal_Upper_95": 0.011639,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011639
   },
   {
     "Date": "2025-07-18",
@@ -2313,8 +2173,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005797,
     "Conformal_Upper_90": 0.009647,
-    "Conformal_Upper_95": 0.011616999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011616999999999999
   },
   {
     "Date": "2025-07-21",
@@ -2329,8 +2188,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006068,
     "Conformal_Upper_90": 0.009918,
-    "Conformal_Upper_95": 0.011888,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011888
   },
   {
     "Date": "2025-07-22",
@@ -2345,8 +2203,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006182,
     "Conformal_Upper_90": 0.010032,
-    "Conformal_Upper_95": 0.012001999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012001999999999999
   },
   {
     "Date": "2025-07-23",
@@ -2361,8 +2218,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006172,
     "Conformal_Upper_90": 0.010022,
-    "Conformal_Upper_95": 0.011992,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011992
   },
   {
     "Date": "2025-07-24",
@@ -2377,8 +2233,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006058,
     "Conformal_Upper_90": 0.009908,
-    "Conformal_Upper_95": 0.011878,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011878
   },
   {
     "Date": "2025-07-25",
@@ -2393,8 +2248,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005958,
     "Conformal_Upper_90": 0.009808,
-    "Conformal_Upper_95": 0.011778,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011778
   },
   {
     "Date": "2025-07-28",
@@ -2409,8 +2263,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006078,
     "Conformal_Upper_90": 0.009928,
-    "Conformal_Upper_95": 0.011897999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011897999999999999
   },
   {
     "Date": "2025-07-29",
@@ -2425,8 +2278,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006067,
     "Conformal_Upper_90": 0.009917,
-    "Conformal_Upper_95": 0.011887,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011887
   },
   {
     "Date": "2025-07-30",
@@ -2441,8 +2293,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006619,
     "Conformal_Upper_90": 0.010469,
-    "Conformal_Upper_95": 0.012438999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012438999999999999
   },
   {
     "Date": "2025-07-31",
@@ -2457,8 +2308,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007144,
     "Conformal_Upper_90": 0.010994,
-    "Conformal_Upper_95": 0.012964,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012964
   },
   {
     "Date": "2025-08-01",
@@ -2473,8 +2323,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007199,
     "Conformal_Upper_90": 0.011049,
-    "Conformal_Upper_95": 0.013019,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013019
   },
   {
     "Date": "2025-08-04",
@@ -2489,8 +2338,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007824,
     "Conformal_Upper_90": 0.011674,
-    "Conformal_Upper_95": 0.013644,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013644
   },
   {
     "Date": "2025-08-05",
@@ -2505,8 +2353,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.00699,
     "Conformal_Upper_90": 0.010839999999999999,
-    "Conformal_Upper_95": 0.012809999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012809999999999998
   },
   {
     "Date": "2025-08-06",
@@ -2521,8 +2368,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006029,
     "Conformal_Upper_90": 0.009878999999999999,
-    "Conformal_Upper_95": 0.011848999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011848999999999998
   },
   {
     "Date": "2025-08-07",
@@ -2537,8 +2383,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005943,
     "Conformal_Upper_90": 0.009793,
-    "Conformal_Upper_95": 0.011763,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011763
   },
   {
     "Date": "2025-08-08",
@@ -2553,8 +2398,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005763,
     "Conformal_Upper_90": 0.009613,
-    "Conformal_Upper_95": 0.011583,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011583
   },
   {
     "Date": "2025-08-11",
@@ -2569,8 +2413,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006197,
     "Conformal_Upper_90": 0.010047,
-    "Conformal_Upper_95": 0.012017,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012017
   },
   {
     "Date": "2025-08-12",
@@ -2585,8 +2428,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006613,
     "Conformal_Upper_90": 0.010463,
-    "Conformal_Upper_95": 0.012433,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012433
   },
   {
     "Date": "2025-08-13",
@@ -2601,8 +2443,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006636,
     "Conformal_Upper_90": 0.010486,
-    "Conformal_Upper_95": 0.012456,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012456
   },
   {
     "Date": "2025-08-14",
@@ -2617,8 +2458,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006752,
     "Conformal_Upper_90": 0.010602,
-    "Conformal_Upper_95": 0.012572,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012572
   },
   {
     "Date": "2025-08-15",
@@ -2633,8 +2473,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006652,
     "Conformal_Upper_90": 0.010502000000000001,
-    "Conformal_Upper_95": 0.012472,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012472
   },
   {
     "Date": "2025-08-18",
@@ -2649,8 +2488,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006542,
     "Conformal_Upper_90": 0.010392,
-    "Conformal_Upper_95": 0.012362,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012362
   },
   {
     "Date": "2025-08-19",
@@ -2665,8 +2503,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.00687,
     "Conformal_Upper_90": 0.01072,
-    "Conformal_Upper_95": 0.01269,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.01269
   },
   {
     "Date": "2025-08-20",
@@ -2681,8 +2518,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006508,
     "Conformal_Upper_90": 0.010358,
-    "Conformal_Upper_95": 0.012327999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012327999999999999
   },
   {
     "Date": "2025-08-21",
@@ -2697,8 +2533,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007068,
     "Conformal_Upper_90": 0.010918,
-    "Conformal_Upper_95": 0.012888,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012888
   },
   {
     "Date": "2025-08-22",
@@ -2713,8 +2548,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006774,
     "Conformal_Upper_90": 0.010624,
-    "Conformal_Upper_95": 0.012594,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012594
   },
   {
     "Date": "2025-08-25",
@@ -2729,8 +2563,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005988,
     "Conformal_Upper_90": 0.009838,
-    "Conformal_Upper_95": 0.011807999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011807999999999999
   },
   {
     "Date": "2025-08-26",
@@ -2745,8 +2578,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005658,
     "Conformal_Upper_90": 0.009507999999999999,
-    "Conformal_Upper_95": 0.011477999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011477999999999999
   },
   {
     "Date": "2025-08-27",
@@ -2761,8 +2593,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005172,
     "Conformal_Upper_90": 0.009022,
-    "Conformal_Upper_95": 0.010992,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.010992
   },
   {
     "Date": "2025-08-28",
@@ -2777,8 +2608,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005152,
     "Conformal_Upper_90": 0.009002,
-    "Conformal_Upper_95": 0.010971999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.010971999999999999
   },
   {
     "Date": "2025-08-29",
@@ -2793,8 +2623,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005832,
     "Conformal_Upper_90": 0.009682,
-    "Conformal_Upper_95": 0.011652,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011652
   },
   {
     "Date": "2025-09-01",
@@ -2809,8 +2638,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007837,
     "Conformal_Upper_90": 0.011687,
-    "Conformal_Upper_95": 0.013656999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013656999999999999
   },
   {
     "Date": "2025-09-02",
@@ -2825,8 +2653,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007111,
     "Conformal_Upper_90": 0.010961,
-    "Conformal_Upper_95": 0.012931,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012931
   },
   {
     "Date": "2025-09-03",
@@ -2841,8 +2668,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006432,
     "Conformal_Upper_90": 0.010282,
-    "Conformal_Upper_95": 0.012251999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012251999999999999
   },
   {
     "Date": "2025-09-04",
@@ -2857,8 +2683,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006508,
     "Conformal_Upper_90": 0.010358,
-    "Conformal_Upper_95": 0.012327999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012327999999999999
   },
   {
     "Date": "2025-09-05",
@@ -2873,8 +2698,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005888,
     "Conformal_Upper_90": 0.009738,
-    "Conformal_Upper_95": 0.011708,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011708
   },
   {
     "Date": "2025-09-08",
@@ -2889,8 +2713,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006205,
     "Conformal_Upper_90": 0.010055,
-    "Conformal_Upper_95": 0.012025,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012025
   },
   {
     "Date": "2025-09-09",
@@ -2905,8 +2728,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008253,
     "Conformal_Upper_90": 0.012103,
-    "Conformal_Upper_95": 0.014072999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014072999999999999
   },
   {
     "Date": "2025-09-10",
@@ -2921,8 +2743,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007965,
     "Conformal_Upper_90": 0.011814999999999999,
-    "Conformal_Upper_95": 0.013784999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013784999999999999
   },
   {
     "Date": "2025-09-11",
@@ -2937,8 +2758,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007215,
     "Conformal_Upper_90": 0.011065,
-    "Conformal_Upper_95": 0.013035,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013035
   },
   {
     "Date": "2025-09-12",
@@ -2953,8 +2773,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006245,
     "Conformal_Upper_90": 0.010095,
-    "Conformal_Upper_95": 0.012065,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012065
   },
   {
     "Date": "2025-09-15",
@@ -2969,8 +2788,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006119,
     "Conformal_Upper_90": 0.009969,
-    "Conformal_Upper_95": 0.011939,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011939
   },
   {
     "Date": "2025-09-16",
@@ -2985,8 +2803,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.0058,
     "Conformal_Upper_90": 0.009649999999999999,
-    "Conformal_Upper_95": 0.011619999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011619999999999998
   },
   {
     "Date": "2025-09-17",
@@ -3001,8 +2818,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.00559,
     "Conformal_Upper_90": 0.00944,
-    "Conformal_Upper_95": 0.01141,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.01141
   },
   {
     "Date": "2025-09-18",
@@ -3017,8 +2833,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005558,
     "Conformal_Upper_90": 0.009408,
-    "Conformal_Upper_95": 0.011378,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011378
   },
   {
     "Date": "2025-09-19",
@@ -3033,8 +2848,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005641,
     "Conformal_Upper_90": 0.009491,
-    "Conformal_Upper_95": 0.011460999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011460999999999999
   },
   {
     "Date": "2025-09-22",
@@ -3049,8 +2863,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005957,
     "Conformal_Upper_90": 0.009807,
-    "Conformal_Upper_95": 0.011777,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011777
   },
   {
     "Date": "2025-09-23",
@@ -3065,8 +2878,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006479,
     "Conformal_Upper_90": 0.010329000000000001,
-    "Conformal_Upper_95": 0.012299000000000001,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012299000000000001
   },
   {
     "Date": "2025-09-24",
@@ -3081,8 +2893,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006383,
     "Conformal_Upper_90": 0.010232999999999999,
-    "Conformal_Upper_95": 0.012202999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012202999999999999
   },
   {
     "Date": "2025-09-25",
@@ -3097,8 +2908,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006964,
     "Conformal_Upper_90": 0.010814,
-    "Conformal_Upper_95": 0.012784,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012784
   },
   {
     "Date": "2025-09-26",
@@ -3113,8 +2923,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006112,
     "Conformal_Upper_90": 0.009962,
-    "Conformal_Upper_95": 0.011932,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011932
   },
   {
     "Date": "2025-09-29",
@@ -3129,8 +2938,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.00583,
     "Conformal_Upper_90": 0.009680000000000001,
-    "Conformal_Upper_95": 0.01165,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.01165
   },
   {
     "Date": "2025-09-30",
@@ -3145,8 +2953,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006365,
     "Conformal_Upper_90": 0.010215,
-    "Conformal_Upper_95": 0.012185,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012185
   },
   {
     "Date": "2025-10-01",
@@ -3161,8 +2968,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006466,
     "Conformal_Upper_90": 0.010316,
-    "Conformal_Upper_95": 0.012286,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012286
   },
   {
     "Date": "2025-10-02",
@@ -3177,8 +2983,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005956,
     "Conformal_Upper_90": 0.009806,
-    "Conformal_Upper_95": 0.011776,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011776
   },
   {
     "Date": "2025-10-03",
@@ -3193,8 +2998,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005969,
     "Conformal_Upper_90": 0.009819000000000001,
-    "Conformal_Upper_95": 0.011789,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011789
   },
   {
     "Date": "2025-10-06",
@@ -3209,8 +3013,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005801,
     "Conformal_Upper_90": 0.009651,
-    "Conformal_Upper_95": 0.011621,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011621
   },
   {
     "Date": "2025-10-07",
@@ -3225,8 +3028,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005476,
     "Conformal_Upper_90": 0.009326000000000001,
-    "Conformal_Upper_95": 0.011296,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011296
   },
   {
     "Date": "2025-10-08",
@@ -3241,8 +3043,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005253,
     "Conformal_Upper_90": 0.009103,
-    "Conformal_Upper_95": 0.011073,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011073
   },
   {
     "Date": "2025-10-09",
@@ -3257,8 +3058,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.00589,
     "Conformal_Upper_90": 0.00974,
-    "Conformal_Upper_95": 0.01171,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.01171
   },
   {
     "Date": "2025-10-10",
@@ -3273,8 +3073,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.00608,
     "Conformal_Upper_90": 0.009930000000000001,
-    "Conformal_Upper_95": 0.0119,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.0119
   },
   {
     "Date": "2025-10-13",
@@ -3289,8 +3088,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006013,
     "Conformal_Upper_90": 0.009863,
-    "Conformal_Upper_95": 0.011833,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011833
   },
   {
     "Date": "2025-10-14",
@@ -3305,8 +3103,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007674,
     "Conformal_Upper_90": 0.011524,
-    "Conformal_Upper_95": 0.013493999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013493999999999999
   },
   {
     "Date": "2025-10-15",
@@ -3321,8 +3118,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007471,
     "Conformal_Upper_90": 0.011321000000000001,
-    "Conformal_Upper_95": 0.013291,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013291
   },
   {
     "Date": "2025-10-16",
@@ -3337,8 +3133,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007991,
     "Conformal_Upper_90": 0.011841,
-    "Conformal_Upper_95": 0.013811,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013811
   },
   {
     "Date": "2025-10-17",
@@ -3353,8 +3148,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.010751,
     "Conformal_Upper_90": 0.014601,
-    "Conformal_Upper_95": 0.016571,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.016571
   },
   {
     "Date": "2025-10-20",
@@ -3369,8 +3163,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008853,
     "Conformal_Upper_90": 0.012702999999999999,
-    "Conformal_Upper_95": 0.014672999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014672999999999999
   },
   {
     "Date": "2025-10-21",
@@ -3385,8 +3178,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.00828,
     "Conformal_Upper_90": 0.012129999999999998,
-    "Conformal_Upper_95": 0.014099999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014099999999999998
   },
   {
     "Date": "2025-10-22",
@@ -3401,8 +3193,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008588,
     "Conformal_Upper_90": 0.012438000000000001,
-    "Conformal_Upper_95": 0.014408,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014408
   },
   {
     "Date": "2025-10-23",
@@ -3417,8 +3208,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008245,
     "Conformal_Upper_90": 0.012095000000000002,
-    "Conformal_Upper_95": 0.014065000000000001,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014065000000000001
   },
   {
     "Date": "2025-10-24",
@@ -3433,8 +3223,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007753,
     "Conformal_Upper_90": 0.011603,
-    "Conformal_Upper_95": 0.013573,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013573
   },
   {
     "Date": "2025-10-27",
@@ -3449,8 +3238,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008601,
     "Conformal_Upper_90": 0.012451,
-    "Conformal_Upper_95": 0.014421,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014421
   },
   {
     "Date": "2025-10-28",
@@ -3465,8 +3253,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009929,
     "Conformal_Upper_90": 0.013779,
-    "Conformal_Upper_95": 0.015749,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015749
   },
   {
     "Date": "2025-10-29",
@@ -3481,8 +3268,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008281,
     "Conformal_Upper_90": 0.012131,
-    "Conformal_Upper_95": 0.014100999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014100999999999999
   },
   {
     "Date": "2025-10-30",
@@ -3497,8 +3283,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008348,
     "Conformal_Upper_90": 0.012198,
-    "Conformal_Upper_95": 0.014168,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014168
   },
   {
     "Date": "2025-10-31",
@@ -3513,8 +3298,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009279,
     "Conformal_Upper_90": 0.013129000000000002,
-    "Conformal_Upper_95": 0.015099000000000001,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015099000000000001
   },
   {
     "Date": "2025-11-03",
@@ -3529,8 +3313,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.00747,
     "Conformal_Upper_90": 0.01132,
-    "Conformal_Upper_95": 0.01329,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.01329
   },
   {
     "Date": "2025-11-04",
@@ -3545,8 +3328,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007764,
     "Conformal_Upper_90": 0.011614,
-    "Conformal_Upper_95": 0.013583999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013583999999999999
   },
   {
     "Date": "2025-11-05",
@@ -3561,8 +3343,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006911,
     "Conformal_Upper_90": 0.010761,
-    "Conformal_Upper_95": 0.012731,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012731
   },
   {
     "Date": "2025-11-06",
@@ -3577,8 +3358,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006615,
     "Conformal_Upper_90": 0.010465,
-    "Conformal_Upper_95": 0.012435,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012435
   },
   {
     "Date": "2025-11-07",
@@ -3593,8 +3373,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007438,
     "Conformal_Upper_90": 0.011288,
-    "Conformal_Upper_95": 0.013257999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013257999999999999
   },
   {
     "Date": "2025-11-10",
@@ -3609,8 +3388,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.00636,
     "Conformal_Upper_90": 0.01021,
-    "Conformal_Upper_95": 0.01218,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.01218
   },
   {
     "Date": "2025-11-11",
@@ -3625,8 +3403,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.00641,
     "Conformal_Upper_90": 0.01026,
-    "Conformal_Upper_95": 0.01223,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.01223
   },
   {
     "Date": "2025-11-12",
@@ -3641,8 +3418,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006293,
     "Conformal_Upper_90": 0.010143,
-    "Conformal_Upper_95": 0.012112999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012112999999999999
   },
   {
     "Date": "2025-11-13",
@@ -3657,8 +3433,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006702,
     "Conformal_Upper_90": 0.010551999999999999,
-    "Conformal_Upper_95": 0.012521999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012521999999999998
   },
   {
     "Date": "2025-11-14",
@@ -3673,8 +3448,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006639,
     "Conformal_Upper_90": 0.010489,
-    "Conformal_Upper_95": 0.012459,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012459
   },
   {
     "Date": "2025-11-17",
@@ -3689,8 +3463,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006925,
     "Conformal_Upper_90": 0.010775,
-    "Conformal_Upper_95": 0.012745,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012745
   },
   {
     "Date": "2025-11-18",
@@ -3705,8 +3478,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007248,
     "Conformal_Upper_90": 0.011098,
-    "Conformal_Upper_95": 0.013068,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013068
   },
   {
     "Date": "2025-11-19",
@@ -3721,8 +3493,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006937,
     "Conformal_Upper_90": 0.010787,
-    "Conformal_Upper_95": 0.012757,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012757
   },
   {
     "Date": "2025-11-20",
@@ -3737,8 +3508,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007242,
     "Conformal_Upper_90": 0.011092000000000001,
-    "Conformal_Upper_95": 0.013062,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.013062
   },
   {
     "Date": "2025-11-21",
@@ -3753,8 +3523,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006664,
     "Conformal_Upper_90": 0.010513999999999999,
-    "Conformal_Upper_95": 0.012483999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012483999999999999
   },
   {
     "Date": "2025-11-24",
@@ -3769,8 +3538,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006948,
     "Conformal_Upper_90": 0.010798,
-    "Conformal_Upper_95": 0.012768,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012768
   },
   {
     "Date": "2025-11-25",
@@ -3785,8 +3553,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006783,
     "Conformal_Upper_90": 0.010633,
-    "Conformal_Upper_95": 0.012603,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012603
   },
   {
     "Date": "2025-11-26",
@@ -3801,8 +3568,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.00639,
     "Conformal_Upper_90": 0.010239999999999999,
-    "Conformal_Upper_95": 0.012209999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012209999999999999
   },
   {
     "Date": "2025-11-27",
@@ -3817,8 +3583,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006672,
     "Conformal_Upper_90": 0.010522,
-    "Conformal_Upper_95": 0.012492,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012492
   },
   {
     "Date": "2025-11-28",
@@ -3833,8 +3598,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006569,
     "Conformal_Upper_90": 0.010419000000000001,
-    "Conformal_Upper_95": 0.012389,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012389
   },
   {
     "Date": "2025-12-01",
@@ -3849,8 +3613,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006105,
     "Conformal_Upper_90": 0.009955,
-    "Conformal_Upper_95": 0.011925,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011925
   },
   {
     "Date": "2025-12-02",
@@ -3865,8 +3628,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006138,
     "Conformal_Upper_90": 0.009988,
-    "Conformal_Upper_95": 0.011958,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011958
   },
   {
     "Date": "2025-12-03",
@@ -3881,8 +3643,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005947,
     "Conformal_Upper_90": 0.009797,
-    "Conformal_Upper_95": 0.011767,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011767
   },
   {
     "Date": "2025-12-04",
@@ -3897,8 +3658,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.00581,
     "Conformal_Upper_90": 0.00966,
-    "Conformal_Upper_95": 0.01163,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.01163
   },
   {
     "Date": "2025-12-05",
@@ -3913,8 +3673,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.00578,
     "Conformal_Upper_90": 0.00963,
-    "Conformal_Upper_95": 0.0116,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.0116
   },
   {
     "Date": "2025-12-08",
@@ -3929,8 +3688,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005849,
     "Conformal_Upper_90": 0.009699,
-    "Conformal_Upper_95": 0.011668999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011668999999999999
   },
   {
     "Date": "2025-12-09",
@@ -3945,8 +3703,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006069,
     "Conformal_Upper_90": 0.009919,
-    "Conformal_Upper_95": 0.011889,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011889
   },
   {
     "Date": "2025-12-10",
@@ -3961,8 +3718,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005552,
     "Conformal_Upper_90": 0.009402,
-    "Conformal_Upper_95": 0.011372,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011372
   },
   {
     "Date": "2025-12-11",
@@ -3977,8 +3733,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005944,
     "Conformal_Upper_90": 0.009794,
-    "Conformal_Upper_95": 0.011764,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011764
   },
   {
     "Date": "2025-12-12",
@@ -3993,8 +3748,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005697,
     "Conformal_Upper_90": 0.009547,
-    "Conformal_Upper_95": 0.011517,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011517
   },
   {
     "Date": "2025-12-15",
@@ -4009,8 +3763,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006019,
     "Conformal_Upper_90": 0.009869,
-    "Conformal_Upper_95": 0.011838999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011838999999999999
   },
   {
     "Date": "2025-12-16",
@@ -4025,8 +3778,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.00548,
     "Conformal_Upper_90": 0.00933,
-    "Conformal_Upper_95": 0.0113,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.0113
   },
   {
     "Date": "2025-12-17",
@@ -4041,8 +3793,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005526,
     "Conformal_Upper_90": 0.009375999999999999,
-    "Conformal_Upper_95": 0.011345999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011345999999999998
   },
   {
     "Date": "2025-12-18",
@@ -4057,8 +3808,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005586,
     "Conformal_Upper_90": 0.009436,
-    "Conformal_Upper_95": 0.011406,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011406
   },
   {
     "Date": "2025-12-19",
@@ -4073,8 +3823,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005585,
     "Conformal_Upper_90": 0.009434999999999999,
-    "Conformal_Upper_95": 0.011404999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011404999999999998
   },
   {
     "Date": "2025-12-22",
@@ -4089,8 +3838,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.004986,
     "Conformal_Upper_90": 0.008836,
-    "Conformal_Upper_95": 0.010806,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.010806
   },
   {
     "Date": "2025-12-23",
@@ -4105,8 +3853,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005892,
     "Conformal_Upper_90": 0.009742,
-    "Conformal_Upper_95": 0.011712,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011712
   },
   {
     "Date": "2025-12-24",
@@ -4121,8 +3868,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006352,
     "Conformal_Upper_90": 0.010202,
-    "Conformal_Upper_95": 0.012171999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012171999999999999
   },
   {
     "Date": "2025-12-26",
@@ -4137,8 +3883,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005759,
     "Conformal_Upper_90": 0.009609,
-    "Conformal_Upper_95": 0.011578999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011578999999999999
   },
   {
     "Date": "2025-12-29",
@@ -4153,8 +3898,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006304,
     "Conformal_Upper_90": 0.010154,
-    "Conformal_Upper_95": 0.012124,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012124
   },
   {
     "Date": "2025-12-30",
@@ -4169,8 +3913,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.00619,
     "Conformal_Upper_90": 0.01004,
-    "Conformal_Upper_95": 0.01201,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.01201
   },
   {
     "Date": "2025-12-31",
@@ -4185,8 +3928,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006122,
     "Conformal_Upper_90": 0.009972,
-    "Conformal_Upper_95": 0.011942,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011942
   },
   {
     "Date": "2026-01-02",
@@ -4201,8 +3943,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006233,
     "Conformal_Upper_90": 0.010083,
-    "Conformal_Upper_95": 0.012053,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012053
   },
   {
     "Date": "2026-01-05",
@@ -4217,8 +3958,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006557,
     "Conformal_Upper_90": 0.010407,
-    "Conformal_Upper_95": 0.012376999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012376999999999999
   },
   {
     "Date": "2026-01-06",
@@ -4233,8 +3973,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006371,
     "Conformal_Upper_90": 0.010221000000000001,
-    "Conformal_Upper_95": 0.012191,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012191
   },
   {
     "Date": "2026-01-07",
@@ -4249,8 +3988,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006313,
     "Conformal_Upper_90": 0.010163,
-    "Conformal_Upper_95": 0.012133,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012133
   },
   {
     "Date": "2026-01-08",
@@ -4265,8 +4003,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006478,
     "Conformal_Upper_90": 0.010328,
-    "Conformal_Upper_95": 0.012298,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012298
   },
   {
     "Date": "2026-01-09",
@@ -4281,8 +4018,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006527,
     "Conformal_Upper_90": 0.010377,
-    "Conformal_Upper_95": 0.012347,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012347
   },
   {
     "Date": "2026-01-12",
@@ -4297,8 +4033,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006838,
     "Conformal_Upper_90": 0.010688,
-    "Conformal_Upper_95": 0.012657999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012657999999999999
   },
   {
     "Date": "2026-01-13",
@@ -4313,8 +4048,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006159,
     "Conformal_Upper_90": 0.010009,
-    "Conformal_Upper_95": 0.011979,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011979
   },
   {
     "Date": "2026-01-14",
@@ -4329,8 +4063,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006285,
     "Conformal_Upper_90": 0.010135,
-    "Conformal_Upper_95": 0.012105,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012105
   },
   {
     "Date": "2026-01-15",
@@ -4345,8 +4078,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005976,
     "Conformal_Upper_90": 0.009826000000000001,
-    "Conformal_Upper_95": 0.011796000000000001,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011796000000000001
   },
   {
     "Date": "2026-01-16",
@@ -4361,8 +4093,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005867,
     "Conformal_Upper_90": 0.009717,
-    "Conformal_Upper_95": 0.011687,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011687
   },
   {
     "Date": "2026-01-19",
@@ -4377,8 +4108,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.005588,
     "Conformal_Upper_90": 0.009438,
-    "Conformal_Upper_95": 0.011408,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011408
   },
   {
     "Date": "2026-01-20",
@@ -4393,8 +4123,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006167,
     "Conformal_Upper_90": 0.010017,
-    "Conformal_Upper_95": 0.011987,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011987
   },
   {
     "Date": "2026-01-21",
@@ -4409,8 +4138,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006161,
     "Conformal_Upper_90": 0.010010999999999999,
-    "Conformal_Upper_95": 0.011980999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011980999999999999
   },
   {
     "Date": "2026-01-22",
@@ -4425,8 +4153,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006139,
     "Conformal_Upper_90": 0.009989000000000001,
-    "Conformal_Upper_95": 0.011959000000000001,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.011959000000000001
   },
   {
     "Date": "2026-01-23",
@@ -4441,8 +4168,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006693,
     "Conformal_Upper_90": 0.010543,
-    "Conformal_Upper_95": 0.012513,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012513
   },
   {
     "Date": "2026-01-26",
@@ -4457,8 +4183,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.006761,
     "Conformal_Upper_90": 0.010610999999999999,
-    "Conformal_Upper_95": 0.012580999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012580999999999998
   },
   {
     "Date": "2026-01-27",
@@ -4473,8 +4198,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.007064,
     "Conformal_Upper_90": 0.010914,
-    "Conformal_Upper_95": 0.012884,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.012884
   },
   {
     "Date": "2026-01-28",
@@ -4489,8 +4213,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.016641,
     "Conformal_Upper_90": 0.020491,
-    "Conformal_Upper_95": 0.022461,
-    "Prob_Regime_HighVol": 0.3867499999999999
+    "Conformal_Upper_95": 0.022461
   },
   {
     "Date": "2026-01-29",
@@ -4505,8 +4228,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.01635,
     "Conformal_Upper_90": 0.0202,
-    "Conformal_Upper_95": 0.02217,
-    "Prob_Regime_HighVol": 0.3625
+    "Conformal_Upper_95": 0.02217
   },
   {
     "Date": "2026-01-30",
@@ -4521,8 +4243,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.016705,
     "Conformal_Upper_90": 0.020555,
-    "Conformal_Upper_95": 0.022525,
-    "Prob_Regime_HighVol": 0.3920833333333334
+    "Conformal_Upper_95": 0.022525
   },
   {
     "Date": "2026-02-02",
@@ -4537,8 +4258,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.02209,
     "Conformal_Upper_90": 0.025939999999999998,
-    "Conformal_Upper_95": 0.027909999999999997,
-    "Prob_Regime_HighVol": 0.8408333333333332
+    "Conformal_Upper_95": 0.027909999999999997
   },
   {
     "Date": "2026-02-03",
@@ -4553,8 +4273,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.020448,
     "Conformal_Upper_90": 0.024298,
-    "Conformal_Upper_95": 0.026268,
-    "Prob_Regime_HighVol": 0.7040000000000001
+    "Conformal_Upper_95": 0.026268
   },
   {
     "Date": "2026-02-04",
@@ -4569,8 +4288,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.015386,
     "Conformal_Upper_90": 0.019236,
-    "Conformal_Upper_95": 0.021206,
-    "Prob_Regime_HighVol": 0.2821666666666667
+    "Conformal_Upper_95": 0.021206
   },
   {
     "Date": "2026-02-05",
@@ -4585,8 +4303,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.015552,
     "Conformal_Upper_90": 0.019402,
-    "Conformal_Upper_95": 0.021372,
-    "Prob_Regime_HighVol": 0.296
+    "Conformal_Upper_95": 0.021372
   },
   {
     "Date": "2026-02-06",
@@ -4601,8 +4318,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.018076,
     "Conformal_Upper_90": 0.021925999999999998,
-    "Conformal_Upper_95": 0.023895999999999997,
-    "Prob_Regime_HighVol": 0.5063333333333332
+    "Conformal_Upper_95": 0.023895999999999997
   },
   {
     "Date": "2026-02-09",
@@ -4617,8 +4333,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.014445,
     "Conformal_Upper_90": 0.018295,
-    "Conformal_Upper_95": 0.020265,
-    "Prob_Regime_HighVol": 0.20374999999999993
+    "Conformal_Upper_95": 0.020265
   },
   {
     "Date": "2026-02-10",
@@ -4633,8 +4348,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.014013,
     "Conformal_Upper_90": 0.017863,
-    "Conformal_Upper_95": 0.019833,
-    "Prob_Regime_HighVol": 0.16774999999999993
+    "Conformal_Upper_95": 0.019833
   },
   {
     "Date": "2026-02-11",
@@ -4649,8 +4363,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.013756,
     "Conformal_Upper_90": 0.017606,
-    "Conformal_Upper_95": 0.019576,
-    "Prob_Regime_HighVol": 0.14633333333333337
+    "Conformal_Upper_95": 0.019576
   },
   {
     "Date": "2026-02-12",
@@ -4665,8 +4378,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.013937,
     "Conformal_Upper_90": 0.017787,
-    "Conformal_Upper_95": 0.019757,
-    "Prob_Regime_HighVol": 0.16141666666666662
+    "Conformal_Upper_95": 0.019757
   },
   {
     "Date": "2026-02-13",
@@ -4681,8 +4393,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.012904,
     "Conformal_Upper_90": 0.016754,
-    "Conformal_Upper_95": 0.018724,
-    "Prob_Regime_HighVol": 0.07533333333333335
+    "Conformal_Upper_95": 0.018724
   },
   {
     "Date": "2026-02-16",
@@ -4697,8 +4408,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.012938,
     "Conformal_Upper_90": 0.016788,
-    "Conformal_Upper_95": 0.018758,
-    "Prob_Regime_HighVol": 0.07816666666666663
+    "Conformal_Upper_95": 0.018758
   },
   {
     "Date": "2026-02-17",
@@ -4713,8 +4423,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011687,
     "Conformal_Upper_90": 0.015536999999999999,
-    "Conformal_Upper_95": 0.017506999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.017506999999999998
   },
   {
     "Date": "2026-02-18",
@@ -4729,8 +4438,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011345,
     "Conformal_Upper_90": 0.015195,
-    "Conformal_Upper_95": 0.017165,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.017165
   },
   {
     "Date": "2026-02-19",
@@ -4745,8 +4453,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011512,
     "Conformal_Upper_90": 0.015362,
-    "Conformal_Upper_95": 0.017332,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.017332
   },
   {
     "Date": "2026-02-20",
@@ -4761,8 +4468,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011479,
     "Conformal_Upper_90": 0.015328999999999999,
-    "Conformal_Upper_95": 0.017299,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.017299
   },
   {
     "Date": "2026-02-23",
@@ -4777,8 +4483,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011365,
     "Conformal_Upper_90": 0.015215,
-    "Conformal_Upper_95": 0.017185,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.017185
   },
   {
     "Date": "2026-02-24",
@@ -4793,8 +4498,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008905,
     "Conformal_Upper_90": 0.012754999999999999,
-    "Conformal_Upper_95": 0.014724999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014724999999999999
   },
   {
     "Date": "2026-02-25",
@@ -4809,8 +4513,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008208,
     "Conformal_Upper_90": 0.012058,
-    "Conformal_Upper_95": 0.014027999999999999,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014027999999999999
   },
   {
     "Date": "2026-02-26",
@@ -4825,8 +4528,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008641,
     "Conformal_Upper_90": 0.012490999999999999,
-    "Conformal_Upper_95": 0.014460999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014460999999999998
   },
   {
     "Date": "2026-02-27",
@@ -4841,8 +4543,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008537,
     "Conformal_Upper_90": 0.012386999999999999,
-    "Conformal_Upper_95": 0.014356999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014356999999999998
   },
   {
     "Date": "2026-03-02",
@@ -4857,8 +4558,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.01238,
     "Conformal_Upper_90": 0.01623,
-    "Conformal_Upper_95": 0.0182,
-    "Prob_Regime_HighVol": 0.031666666666666676
+    "Conformal_Upper_95": 0.0182
   },
   {
     "Date": "2026-03-03",
@@ -4873,8 +4573,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.012643,
     "Conformal_Upper_90": 0.016493,
-    "Conformal_Upper_95": 0.018463,
-    "Prob_Regime_HighVol": 0.05358333333333329
+    "Conformal_Upper_95": 0.018463
   },
   {
     "Date": "2026-03-04",
@@ -4889,8 +4588,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.017644,
     "Conformal_Upper_90": 0.021494,
-    "Conformal_Upper_95": 0.023464,
-    "Prob_Regime_HighVol": 0.4703333333333333
+    "Conformal_Upper_95": 0.023464
   },
   {
     "Date": "2026-03-05",
@@ -4905,8 +4603,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.015895,
     "Conformal_Upper_90": 0.019745,
-    "Conformal_Upper_95": 0.021714999999999998,
-    "Prob_Regime_HighVol": 0.3245833333333333
+    "Conformal_Upper_95": 0.021714999999999998
   },
   {
     "Date": "2026-03-06",
@@ -4921,8 +4618,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.018156,
     "Conformal_Upper_90": 0.022005999999999998,
-    "Conformal_Upper_95": 0.023975999999999997,
-    "Prob_Regime_HighVol": 0.5129999999999999
+    "Conformal_Upper_95": 0.023975999999999997
   },
   {
     "Date": "2026-03-09",
@@ -4937,8 +4633,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.019064,
     "Conformal_Upper_90": 0.022914,
-    "Conformal_Upper_95": 0.024884,
-    "Prob_Regime_HighVol": 0.5886666666666667
+    "Conformal_Upper_95": 0.024884
   },
   {
     "Date": "2026-03-10",
@@ -4953,8 +4648,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.017106,
     "Conformal_Upper_90": 0.020956,
-    "Conformal_Upper_95": 0.022926,
-    "Prob_Regime_HighVol": 0.42549999999999993
+    "Conformal_Upper_95": 0.022926
   },
   {
     "Date": "2026-03-11",
@@ -4969,8 +4663,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.014728,
     "Conformal_Upper_90": 0.018578,
-    "Conformal_Upper_95": 0.020548,
-    "Prob_Regime_HighVol": 0.22733333333333328
+    "Conformal_Upper_95": 0.020548
   },
   {
     "Date": "2026-03-12",
@@ -4985,8 +4678,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.016182,
     "Conformal_Upper_90": 0.020031999999999998,
-    "Conformal_Upper_95": 0.022001999999999997,
-    "Prob_Regime_HighVol": 0.34849999999999987
+    "Conformal_Upper_95": 0.022001999999999997
   },
   {
     "Date": "2026-03-13",
@@ -5001,8 +4693,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.018566,
     "Conformal_Upper_90": 0.022416,
-    "Conformal_Upper_95": 0.024385999999999998,
-    "Prob_Regime_HighVol": 0.5471666666666666
+    "Conformal_Upper_95": 0.024385999999999998
   },
   {
     "Date": "2026-03-16",
@@ -5017,8 +4708,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.017304,
     "Conformal_Upper_90": 0.021154,
-    "Conformal_Upper_95": 0.023124,
-    "Prob_Regime_HighVol": 0.44199999999999995
+    "Conformal_Upper_95": 0.023124
   },
   {
     "Date": "2026-03-17",
@@ -5033,8 +4723,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.016753,
     "Conformal_Upper_90": 0.020603,
-    "Conformal_Upper_95": 0.022573,
-    "Prob_Regime_HighVol": 0.39608333333333334
+    "Conformal_Upper_95": 0.022573
   },
   {
     "Date": "2026-03-18",
@@ -5049,8 +4738,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.016708,
     "Conformal_Upper_90": 0.020558,
-    "Conformal_Upper_95": 0.022528,
-    "Prob_Regime_HighVol": 0.39233333333333337
+    "Conformal_Upper_95": 0.022528
   },
   {
     "Date": "2026-03-19",
@@ -5065,8 +4753,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.016634,
     "Conformal_Upper_90": 0.020484,
-    "Conformal_Upper_95": 0.022454,
-    "Prob_Regime_HighVol": 0.3861666666666666
+    "Conformal_Upper_95": 0.022454
   },
   {
     "Date": "2026-03-20",
@@ -5081,8 +4768,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.014589,
     "Conformal_Upper_90": 0.018439,
-    "Conformal_Upper_95": 0.020409,
-    "Prob_Regime_HighVol": 0.21574999999999994
+    "Conformal_Upper_95": 0.020409
   },
   {
     "Date": "2026-03-23",
@@ -5097,8 +4783,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.01416,
     "Conformal_Upper_90": 0.01801,
-    "Conformal_Upper_95": 0.01998,
-    "Prob_Regime_HighVol": 0.18000000000000002
+    "Conformal_Upper_95": 0.01998
   },
   {
     "Date": "2026-03-24",
@@ -5113,8 +4798,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.013764,
     "Conformal_Upper_90": 0.017614,
-    "Conformal_Upper_95": 0.019584,
-    "Prob_Regime_HighVol": 0.147
+    "Conformal_Upper_95": 0.019584
   },
   {
     "Date": "2026-03-25",
@@ -5129,8 +4813,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.01413,
     "Conformal_Upper_90": 0.01798,
-    "Conformal_Upper_95": 0.01995,
-    "Prob_Regime_HighVol": 0.1775
+    "Conformal_Upper_95": 0.01995
   },
   {
     "Date": "2026-03-26",
@@ -5145,8 +4828,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.015352,
     "Conformal_Upper_90": 0.019202,
-    "Conformal_Upper_95": 0.021172,
-    "Prob_Regime_HighVol": 0.27933333333333327
+    "Conformal_Upper_95": 0.021172
   },
   {
     "Date": "2026-03-27",
@@ -5161,8 +4843,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.014723,
     "Conformal_Upper_90": 0.018573,
-    "Conformal_Upper_95": 0.020543,
-    "Prob_Regime_HighVol": 0.22691666666666663
+    "Conformal_Upper_95": 0.020543
   },
   {
     "Date": "2026-03-30",
@@ -5177,8 +4858,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.014302,
     "Conformal_Upper_90": 0.018152,
-    "Conformal_Upper_95": 0.020122,
-    "Prob_Regime_HighVol": 0.19183333333333336
+    "Conformal_Upper_95": 0.020122
   },
   {
     "Date": "2026-03-31",
@@ -5193,8 +4873,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.013204,
     "Conformal_Upper_90": 0.017054,
-    "Conformal_Upper_95": 0.019024,
-    "Prob_Regime_HighVol": 0.10033333333333334
+    "Conformal_Upper_95": 0.019024
   },
   {
     "Date": "2026-04-01",
@@ -5209,8 +4888,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.013411,
     "Conformal_Upper_90": 0.017261,
-    "Conformal_Upper_95": 0.019230999999999998,
-    "Prob_Regime_HighVol": 0.11758333333333325
+    "Conformal_Upper_95": 0.019230999999999998
   },
   {
     "Date": "2026-04-02",
@@ -5225,8 +4903,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.013481,
     "Conformal_Upper_90": 0.017331,
-    "Conformal_Upper_95": 0.019301,
-    "Prob_Regime_HighVol": 0.12341666666666663
+    "Conformal_Upper_95": 0.019301
   },
   {
     "Date": "2026-04-03",
@@ -5241,8 +4918,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011734,
     "Conformal_Upper_90": 0.015584,
-    "Conformal_Upper_95": 0.017554,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.017554
   },
   {
     "Date": "2026-04-06",
@@ -5257,8 +4933,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.012048,
     "Conformal_Upper_90": 0.015898,
-    "Conformal_Upper_95": 0.017868,
-    "Prob_Regime_HighVol": 0.003999999999999952
+    "Conformal_Upper_95": 0.017868
   },
   {
     "Date": "2026-04-07",
@@ -5273,8 +4948,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011972,
     "Conformal_Upper_90": 0.015822,
-    "Conformal_Upper_95": 0.017792,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.017792
   },
   {
     "Date": "2026-04-08",
@@ -5289,8 +4963,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011105,
     "Conformal_Upper_90": 0.014955,
-    "Conformal_Upper_95": 0.016925,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.016925
   },
   {
     "Date": "2026-04-09",
@@ -5305,8 +4978,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009479,
     "Conformal_Upper_90": 0.013329,
-    "Conformal_Upper_95": 0.015299,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015299
   },
   {
     "Date": "2026-04-10",
@@ -5321,8 +4993,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009768,
     "Conformal_Upper_90": 0.013618000000000002,
-    "Conformal_Upper_95": 0.015588000000000001,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015588000000000001
   },
   {
     "Date": "2026-04-13",
@@ -5337,8 +5008,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009431,
     "Conformal_Upper_90": 0.013281000000000001,
-    "Conformal_Upper_95": 0.015251,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015251
   },
   {
     "Date": "2026-04-14",
@@ -5353,8 +5023,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009512,
     "Conformal_Upper_90": 0.013361999999999999,
-    "Conformal_Upper_95": 0.015331999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015331999999999998
   },
   {
     "Date": "2026-04-15",
@@ -5369,8 +5038,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009374,
     "Conformal_Upper_90": 0.013224,
-    "Conformal_Upper_95": 0.015194,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015194
   },
   {
     "Date": "2026-04-16",
@@ -5385,8 +5053,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.00944,
     "Conformal_Upper_90": 0.01329,
-    "Conformal_Upper_95": 0.01526,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.01526
   },
   {
     "Date": "2026-04-17",
@@ -5401,8 +5068,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009142,
     "Conformal_Upper_90": 0.012992,
-    "Conformal_Upper_95": 0.014962,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014962
   },
   {
     "Date": "2026-04-20",
@@ -5417,8 +5083,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009504,
     "Conformal_Upper_90": 0.013354000000000001,
-    "Conformal_Upper_95": 0.015324,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015324
   },
   {
     "Date": "2026-04-21",
@@ -5433,8 +5098,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.010148,
     "Conformal_Upper_90": 0.013998,
-    "Conformal_Upper_95": 0.015968,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015968
   },
   {
     "Date": "2026-04-22",
@@ -5449,8 +5113,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Hijau (Normal - Alokasi Standar)",
     "Prediksi_Volatilitas_5D": 0.008863,
     "Conformal_Upper_90": 0.012712999999999999,
-    "Conformal_Upper_95": 0.014682999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.014682999999999998
   },
   {
     "Date": "2026-04-23",
@@ -5465,8 +5128,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011086,
     "Conformal_Upper_90": 0.014936000000000001,
-    "Conformal_Upper_95": 0.016906,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.016906
   },
   {
     "Date": "2026-04-24",
@@ -5481,8 +5143,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.014718,
     "Conformal_Upper_90": 0.018568,
-    "Conformal_Upper_95": 0.020538,
-    "Prob_Regime_HighVol": 0.22649999999999998
+    "Conformal_Upper_95": 0.020538
   },
   {
     "Date": "2026-04-27",
@@ -5497,8 +5158,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.01392,
     "Conformal_Upper_90": 0.01777,
-    "Conformal_Upper_95": 0.01974,
-    "Prob_Regime_HighVol": 0.15999999999999998
+    "Conformal_Upper_95": 0.01974
   },
   {
     "Date": "2026-04-28",
@@ -5513,8 +5173,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.013475,
     "Conformal_Upper_90": 0.017325,
-    "Conformal_Upper_95": 0.019295,
-    "Prob_Regime_HighVol": 0.12291666666666672
+    "Conformal_Upper_95": 0.019295
   },
   {
     "Date": "2026-04-29",
@@ -5529,8 +5188,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.013157,
     "Conformal_Upper_90": 0.017007,
-    "Conformal_Upper_95": 0.018977,
-    "Prob_Regime_HighVol": 0.09641666666666666
+    "Conformal_Upper_95": 0.018977
   },
   {
     "Date": "2026-04-30",
@@ -5545,8 +5203,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.01388,
     "Conformal_Upper_90": 0.01773,
-    "Conformal_Upper_95": 0.0197,
-    "Prob_Regime_HighVol": 0.15666666666666665
+    "Conformal_Upper_95": 0.0197
   },
   {
     "Date": "2026-05-01",
@@ -5561,8 +5218,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011201,
     "Conformal_Upper_90": 0.015050999999999998,
-    "Conformal_Upper_95": 0.017020999999999998,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.017020999999999998
   },
   {
     "Date": "2026-05-04",
@@ -5577,8 +5233,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011084,
     "Conformal_Upper_90": 0.014934,
-    "Conformal_Upper_95": 0.016904,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.016904
   },
   {
     "Date": "2026-05-05",
@@ -5593,8 +5248,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009984,
     "Conformal_Upper_90": 0.013833999999999999,
-    "Conformal_Upper_95": 0.015804,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015804
   },
   {
     "Date": "2026-05-06",
@@ -5609,8 +5263,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009815,
     "Conformal_Upper_90": 0.013665,
-    "Conformal_Upper_95": 0.015635,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015635
   },
   {
     "Date": "2026-05-07",
@@ -5625,8 +5278,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.009341,
     "Conformal_Upper_90": 0.013191000000000001,
-    "Conformal_Upper_95": 0.015161,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.015161
   },
   {
     "Date": "2026-05-08",
@@ -5641,8 +5293,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.01106,
     "Conformal_Upper_90": 0.01491,
-    "Conformal_Upper_95": 0.01688,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.01688
   },
   {
     "Date": "2026-05-11",
@@ -5657,8 +5308,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.011645,
     "Conformal_Upper_90": 0.015495000000000002,
-    "Conformal_Upper_95": 0.017465,
-    "Prob_Regime_HighVol": 0.0
+    "Conformal_Upper_95": 0.017465
   },
   {
     "Date": "2026-05-12",
@@ -5673,8 +5323,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.012528,
     "Conformal_Upper_90": 0.016378,
-    "Conformal_Upper_95": 0.018348,
-    "Prob_Regime_HighVol": 0.043999999999999914
+    "Conformal_Upper_95": 0.018348
   },
   {
     "Date": "2026-05-13",
@@ -5689,8 +5338,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.014964,
     "Conformal_Upper_90": 0.018814,
-    "Conformal_Upper_95": 0.020784,
-    "Prob_Regime_HighVol": 0.24699999999999997
+    "Conformal_Upper_95": 0.020784
   },
   {
     "Date": "2026-05-14",
@@ -5705,8 +5353,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.015207,
     "Conformal_Upper_90": 0.019057,
-    "Conformal_Upper_95": 0.021027,
-    "Prob_Regime_HighVol": 0.26725
+    "Conformal_Upper_95": 0.021027
   },
   {
     "Date": "2026-05-15",
@@ -5721,8 +5368,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Kuning (Elevated Risk - Pangkas Beta & Perketat Stop-Loss)",
     "Prediksi_Volatilitas_5D": 0.013613,
     "Conformal_Upper_90": 0.017463,
-    "Conformal_Upper_95": 0.019433,
-    "Prob_Regime_HighVol": 0.13441666666666666
+    "Conformal_Upper_95": 0.019433
   },
   {
     "Date": "2026-05-18",
@@ -5737,8 +5383,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.014681,
     "Conformal_Upper_90": 0.018531,
-    "Conformal_Upper_95": 0.020501,
-    "Prob_Regime_HighVol": 0.2234166666666666
+    "Conformal_Upper_95": 0.020501
   },
   {
     "Date": "2026-05-19",
@@ -5753,8 +5398,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.017835,
     "Conformal_Upper_90": 0.021685,
-    "Conformal_Upper_95": 0.023655,
-    "Prob_Regime_HighVol": 0.48624999999999996
+    "Conformal_Upper_95": 0.023655
   },
   {
     "Date": "2026-05-20",
@@ -5769,8 +5413,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.015963,
     "Conformal_Upper_90": 0.019813,
-    "Conformal_Upper_95": 0.021783,
-    "Prob_Regime_HighVol": 0.3302500000000001
+    "Conformal_Upper_95": 0.021783
   },
   {
     "Date": "2026-05-21",
@@ -5785,8 +5428,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.018292,
     "Conformal_Upper_90": 0.022142,
-    "Conformal_Upper_95": 0.024111999999999998,
-    "Prob_Regime_HighVol": 0.5243333333333332
+    "Conformal_Upper_95": 0.024111999999999998
   },
   {
     "Date": "2026-05-22",
@@ -5801,8 +5443,7 @@ window.AEGIS_DATA = {
     "EWS_Risk_Zone": "Merah (Turbulence Alert - Wajib Hedging & Realokasi ke Kas/SBN)",
     "Prediksi_Volatilitas_5D": 0.017341,
     "Conformal_Upper_90": 0.021190999999999998,
-    "Conformal_Upper_95": 0.023160999999999998,
-    "Prob_Regime_HighVol": 0.4450833333333332
+    "Conformal_Upper_95": 0.023160999999999998
   }
 ],
     history_sample: [
@@ -24054,65 +23695,143 @@ window.AEGIS_DATA = {
     "event": "Taper Tantrum (2013)",
     "date": "2013-05-22",
     "ihsg_drop": -14.2,
-    "vix_peak": 21.5,
+    "ihsg_dd": -14.2,
+    "peak_vol": 2.85,
     "vol_spike": 0.0285,
+    "vix_peak": 21.5,
     "impact": "Capital outflow mendadak akibat sinyal normalisasi moneter The Fed."
   },
   {
     "event": "Pemilu RI 2014",
     "date": "2014-07-09",
     "ihsg_drop": -4.8,
-    "vix_peak": 15.2,
+    "ihsg_dd": -4.8,
+    "peak_vol": 1.95,
     "vol_spike": 0.0195,
+    "vix_peak": 15.2,
     "impact": "Volatilitas elektoral pra-pilpres sebelum reli pasca-pengumuman."
   },
   {
     "event": "Devaluasi Yuan & China Crash (2015)",
     "date": "2015-08-24",
     "ihsg_drop": -16.8,
-    "vix_peak": 40.7,
+    "ihsg_dd": -16.8,
+    "peak_vol": 3.45,
     "vol_spike": 0.0345,
+    "vix_peak": 40.7,
     "impact": "Black Monday bursa Shanghai menekan seluruh bursa emerging markets."
   },
   {
     "event": "Brexit Referendum (2016)",
     "date": "2016-06-24",
     "ihsg_drop": -6.1,
-    "vix_peak": 25.8,
+    "ihsg_dd": -6.1,
+    "peak_vol": 2.1,
     "vol_spike": 0.021,
+    "vix_peak": 25.8,
     "impact": "Ketidakpastian geopolitik Eropa memicu safe haven flight ke emas."
   },
   {
     "event": "Pemilu RI 2019",
     "date": "2019-04-17",
     "ihsg_drop": -3.9,
-    "vix_peak": 16.4,
+    "ihsg_dd": -3.9,
+    "peak_vol": 1.82,
     "vol_spike": 0.0182,
+    "vix_peak": 16.4,
     "impact": "Reaksi pasar terukur dengan volatilitas mereda dalam 15 hari bursa."
   },
   {
     "event": "Pandemi Covid-19 (Maret 2020)",
     "date": "2020-03-24",
     "ihsg_drop": -37.5,
-    "vix_peak": 66.0,
+    "ihsg_dd": -37.5,
+    "peak_vol": 6.82,
     "vol_spike": 0.0682,
+    "vix_peak": 66.0,
     "impact": "Shock likuiditas global ekstrem, trading halt berulang di BEI."
   },
   {
     "event": "Perang Ukraina & Fed Tightening (2022)",
     "date": "2022-03-08",
     "ihsg_drop": -8.4,
-    "vix_peak": 36.5,
+    "ihsg_dd": -8.4,
+    "peak_vol": 2.74,
     "vol_spike": 0.0274,
+    "vix_peak": 36.5,
     "impact": "Lonjakan harga minyak mentah dan kenaikan FFR agresif The Fed."
   },
   {
     "event": "Pemilu RI 2024",
     "date": "2024-02-14",
     "ihsg_drop": -2.1,
-    "vix_peak": 14.8,
+    "ihsg_dd": -2.1,
+    "peak_vol": 1.42,
     "vol_spike": 0.0142,
+    "vix_peak": 14.8,
     "impact": "Transisi kepemimpinan berjalan tertib, pasar merespon positif."
+  }
+],
+    feature_correlations: [
+  {
+    "feature": "RV_IHSG_5D (HAR Short)",
+    "corr": 0.684,
+    "pillar": "Pilar 1: Realized Volatility",
+    "color": "#00F0FF"
+  },
+  {
+    "feature": "RV_IHSG_20D (HAR Medium)",
+    "corr": 0.612,
+    "pillar": "Pilar 1: Realized Volatility",
+    "color": "#00F0FF"
+  },
+  {
+    "feature": "VIX_Level (Fear Index)",
+    "corr": 0.434,
+    "pillar": "Pilar 2: Global Risk Spillover",
+    "color": "#0052FF"
+  },
+  {
+    "feature": "RV_IHSG_60D (HAR Long)",
+    "corr": 0.418,
+    "pillar": "Pilar 1: Realized Volatility",
+    "color": "#00F0FF"
+  },
+  {
+    "feature": "VIX_Change_5D",
+    "corr": 0.382,
+    "pillar": "Pilar 2: Global Risk Spillover",
+    "color": "#0052FF"
+  },
+  {
+    "feature": "USDIDR_Dev_MA60",
+    "corr": 0.298,
+    "pillar": "Pilar 3: FX Pressure",
+    "color": "#10B981"
+  },
+  {
+    "feature": "FX_Vol_20D (USD/IDR)",
+    "corr": 0.274,
+    "pillar": "Pilar 3: FX Pressure",
+    "color": "#10B981"
+  },
+  {
+    "feature": "Gold_Oil_Ratio",
+    "corr": 0.212,
+    "pillar": "Pilar 5: Safe Haven / Commodity",
+    "color": "#F59E0B"
+  },
+  {
+    "feature": "Oil_Shock_20D",
+    "corr": 0.185,
+    "pillar": "Pilar 5: Safe Haven / Commodity",
+    "color": "#F59E0B"
+  },
+  {
+    "feature": "Rate_Spread (BI - US)",
+    "corr": -0.245,
+    "pillar": "Pilar 4: Suku Bunga & Moneter",
+    "color": "#EF4444"
   }
 ],
     feature_corrs: [
@@ -29839,14 +29558,13 @@ window.AEGIS_DATA = {
     "vix": 14.5,
     "usdidr_pct": 0.0,
     "spread": 2.25,
-    "pred_vol": 0.0121,
+    "pred_vol": 0.0093,
     "status": "NORMAL / AMAN",
     "status_color": "#10B981",
     "eq_weight": 80,
     "sbn_weight": 20,
     "cash_weight": 0,
-    "var_99_miliar": 180,
-    "description": "Kondisi pasar tenang, volatilitas global rendah, inflasi terkendali, dan spread yield menarik bagi investor asing."
+    "var_99_miliar": 216
   },
   {
     "id": "moderate",
@@ -29854,14 +29572,13 @@ window.AEGIS_DATA = {
     "vix": 24.8,
     "usdidr_pct": 3.5,
     "spread": 1.0,
-    "pred_vol": 0.0195,
+    "pred_vol": 0.0165,
     "status": "WASPADA / ELEVATED",
     "status_color": "#F59E0B",
-    "eq_weight": 50,
-    "sbn_weight": 40,
-    "cash_weight": 10,
-    "var_99_miliar": 295,
-    "description": "Ketidakpastian geopolitik global meningkat, rupiah tertekan moderat, portofolio mengaktifkan buffer defensive SBN."
+    "eq_weight": 60,
+    "sbn_weight": 25,
+    "cash_weight": 15,
+    "var_99_miliar": 383
   },
   {
     "id": "covid_shock",
@@ -29872,11 +29589,10 @@ window.AEGIS_DATA = {
     "pred_vol": 0.0482,
     "status": "KRISIS AKUT / BLACK SWAN",
     "status_color": "#EF4444",
-    "eq_weight": 20,
-    "sbn_weight": 60,
-    "cash_weight": 20,
-    "var_99_miliar": 720,
-    "description": "Panic selling global, circuit breaker bursa aktif berulang kali. Portofolio mengalihkan mayoritas dana ke SBN dan Kas Hedging."
+    "eq_weight": 35,
+    "sbn_weight": 20,
+    "cash_weight": 45,
+    "var_99_miliar": 1121
   },
   {
     "id": "fed_hike",
@@ -29887,11 +29603,10 @@ window.AEGIS_DATA = {
     "pred_vol": 0.0248,
     "status": "WASPADA TINGGI",
     "status_color": "#F59E0B",
-    "eq_weight": 40,
-    "sbn_weight": 45,
+    "eq_weight": 50,
+    "sbn_weight": 35,
     "cash_weight": 15,
-    "var_99_miliar": 372,
-    "description": "The Fed menaikkan FFR sebesar 75 bps berturut-turut, memicu penguatan DXY dan pembalikan modal dari emerging markets."
+    "var_99_miliar": 576
   }
 ]
 };

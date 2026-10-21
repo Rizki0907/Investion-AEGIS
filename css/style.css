@@ -319,17 +319,20 @@ p, li, span, td, th {
 }
 
 .brand-logo-img {
-  height: 42px;
+  height: 52px;
   width: auto;
-  max-width: 250px;
+  max-width: 320px;
   object-fit: contain;
   display: block;
-  mix-blend-mode: var(--logo-blend);
   transition: opacity 0.25s ease, filter 0.25s ease;
 }
 
 [data-theme="dark"] .brand-logo-img {
-  filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.2));
+  filter: drop-shadow(0 0 14px rgba(0, 240, 255, 0.35));
+}
+
+[data-theme="light"] .brand-logo-img {
+  filter: drop-shadow(0 2px 6px rgba(0, 82, 255, 0.15));
 }
 
 /* Center Tabs Container */
@@ -738,18 +741,8 @@ p, li, span, td, th {
 }
 
 /* ==========================================================================
-   SHIELD RADAR & SVG KEYFRAME ANIMATIONS (FEATURE 1 FIXED)
+   SHIELD RADAR & SVG KEYFRAME ANIMATIONS
    ========================================================================== */
-.animate-radar-sweep {
-  transform-box: fill-box;
-  transform-origin: 220px 226px;
-  animation: radarSweepAnim 4.5s linear infinite;
-}
-
-@keyframes radarSweepAnim {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
 
 .animate-radar-ring-1 {
   animation: radarRingPulse 3s ease-out infinite;

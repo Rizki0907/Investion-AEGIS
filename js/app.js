@@ -113,10 +113,9 @@ window.AEGIS_APP = (function() {
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('aegis_theme', theme);
 
-        const logoDark = 'assets/logo/aegis_wordmark_dark.jpg';
-        const logoLight = 'assets/logo/aegis_wordmark_light.jpg';
+        const logoDark = 'assets/logo/aegis_wordmark_dark.png';
+        const logoLight = 'assets/logo/aegis_wordmark_light.png';
         const activeLogo = theme === 'dark' ? logoDark : logoLight;
-        const blendMode = theme === 'dark' ? 'screen' : 'multiply';
 
         // Update all brand logo images seamlessly
         const logoIds = ['nav-brand-logo', 'boot-brand-logo', 'hero-brand-logo'];
@@ -124,7 +123,7 @@ window.AEGIS_APP = (function() {
             const img = document.getElementById(id);
             if (img) {
                 img.src = activeLogo;
-                img.style.mixBlendMode = blendMode;
+                img.style.mixBlendMode = 'normal';
             }
         });
 

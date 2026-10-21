@@ -283,13 +283,13 @@ window.AEGIS_CHARTS = (function() {
     }
 
     /**
-     * 4. Feature Correlations Ranking Chart (EDA 3 - Fixed Non-Overflow)
+     * 4. Feature Correlations Ranking Chart (EDA 3 - Bulletproof Fallback)
      */
     function initFeatureCorrelationChart() {
         const container = document.getElementById('chart-feature-correlations');
-        if (!container || !window.AEGIS_DATA || !window.AEGIS_DATA.feature_correlations) return;
+        const data = (window.AEGIS_DATA && (window.AEGIS_DATA.feature_correlations || window.AEGIS_DATA.feature_corrs)) || [];
+        if (!container || data.length === 0) return;
 
-        const data = window.AEGIS_DATA.feature_correlations;
         const features = data.map(d => d.feature).reverse();
         const corrs = data.map(d => d.corr).reverse();
 
@@ -332,13 +332,13 @@ window.AEGIS_CHARTS = (function() {
     }
 
     /**
-     * 5. Historical Crisis Shock Event Study Chart (EDA 4 - Shortened Labels, Strict Width)
+     * 5. Historical Crisis Shock Event Study Chart (EDA 4 - Bulletproof Fallback & Clean Labels)
      */
     function initCrisisEventChart() {
         const container = document.getElementById('chart-crisis-event-study');
-        if (!container || !window.AEGIS_DATA || !window.AEGIS_DATA.crisis_events) return;
+        const events = (window.AEGIS_DATA && window.AEGIS_DATA.crisis_events) || [];
+        if (!container || events.length === 0) return;
 
-        const events = window.AEGIS_DATA.crisis_events;
         // Shortened names for crisp x-axis readability without overflowing
         const shortLabels = [
             'Taper 2013',
@@ -351,8 +351,8 @@ window.AEGIS_CHARTS = (function() {
             'Pemilu 2024'
         ];
         const fullNames = events.map(e => e.event);
-        const dd = events.map(e => e.ihsg_dd);
-        const vol = events.map(e => e.peak_vol);
+        const dd = events.map(e => e.ihsg_dd !== undefined ? e.ihsg_dd : (e.ihsg_drop !== undefined ? e.ihsg_drop : 0));
+        const vol = events.map(e => e.peak_vol !== undefined ? e.peak_vol : (e.vol_spike !== undefined ? e.vol_spike * 100 : 0));
 
         const th = getThemeLayout();
 

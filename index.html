@@ -11,43 +11,14 @@
   <!-- Master Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
   
-  <!-- Inline SVG Animation Fallback Stylesheet -->
+  <!-- Inline SVG Animation Stylesheet -->
   <style>
-    @keyframes radarSweepAnim {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-    @keyframes radarRingPulse {
-      0% { r: 20px; opacity: 0.85; stroke-width: 2.2; }
-      100% { r: 170px; opacity: 0; stroke-width: 0.5; }
-    }
-    @keyframes candleFloat1 {
-      0% { transform: translateY(0); }
-      100% { transform: translateY(-4px); }
-    }
-    @keyframes candleFloat2 {
-      0% { transform: translateY(0); }
-      100% { transform: translateY(-7px); }
-    }
-    @keyframes candleFloat3 {
-      0% { transform: translateY(0); }
-      100% { transform: translateY(-9px); }
-    }
+    @keyframes candleFloat1 { 0% { transform: translateY(0); } 100% { transform: translateY(-4px); } }
+    @keyframes candleFloat2 { 0% { transform: translateY(0); } 100% { transform: translateY(-7px); } }
+    @keyframes candleFloat3 { 0% { transform: translateY(0); } 100% { transform: translateY(-9px); } }
     @keyframes nodePulse {
-      0%, 100% { r: 7px; filter: drop-shadow(0 0 5px #00F0FF); opacity: 1; }
-      50% { r: 10px; filter: drop-shadow(0 0 16px #00F0FF); opacity: 0.75; }
-    }
-    .animate-radar-sweep {
-      transform-origin: 220px 226px;
-      animation: radarSweepAnim 4.5s linear infinite !important;
-    }
-    .animate-radar-ring-1 {
-      animation: radarRingPulse 3s ease-out infinite !important;
-      transform-origin: 220px 226px;
-    }
-    .animate-radar-ring-2 {
-      animation: radarRingPulse 3s ease-out infinite 1.5s !important;
-      transform-origin: 220px 226px;
+      0%, 100% { r: 7px; filter: drop-shadow(0 0 6px #00F0FF); opacity: 1; }
+      50% { r: 10px; filter: drop-shadow(0 0 18px #00F0FF); opacity: 0.75; }
     }
     .animate-candle-1 { animation: candleFloat1 3s ease-in-out infinite alternate !important; }
     .animate-candle-2 { animation: candleFloat2 3.8s ease-in-out infinite alternate !important; }
@@ -75,7 +46,7 @@
       
       <!-- Prominent Brand Wordmark Logo in Loading Sequence (Item 4) -->
       <div class="boot-brand-wrap">
-        <img id="boot-brand-logo" src="assets/logo/aegis_wordmark_dark.jpg" alt="INVESTION AEGIS" class="boot-brand-img">
+        <img id="boot-brand-logo" src="assets/logo/aegis_wordmark_dark.png" alt="INVESTION AEGIS" class="boot-brand-img" style="max-height: 68px; width: auto; object-fit: contain; filter: drop-shadow(0 0 24px rgba(0, 240, 255, 0.55));">
       </div>
 
       <div class="boot-header">
@@ -107,7 +78,7 @@
       
       <!-- Brand Logo Wordmark Image (Item 4) -->
       <div class="brand-block" onclick="AEGIS_APP.nav('overview')">
-        <img id="nav-brand-logo" src="assets/logo/aegis_wordmark_dark.jpg" alt="INVESTION AEGIS" class="brand-logo-img">
+        <img id="nav-brand-logo" src="assets/logo/aegis_wordmark_dark.png" alt="INVESTION AEGIS" class="brand-logo-img">
       </div>
 
       <!-- Navigation Tabs (Metodologi di Paling Kanan - Item 5) -->
@@ -209,7 +180,7 @@
           <div>
             <!-- Institutional Badge with Brand Logo (Item 4) -->
             <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 16px; flex-wrap: wrap;">
-              <img id="hero-brand-logo" src="assets/logo/aegis_wordmark_dark.jpg" alt="INVESTION AEGIS" style="height: 38px; width: auto; object-fit: contain; mix-blend-mode: screen; filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.25));">
+              <img id="hero-brand-logo" src="assets/logo/aegis_wordmark_dark.png" alt="INVESTION AEGIS" style="height: 56px; width: auto; object-fit: contain; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.45));">
               <span class="hero-pill-badge">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                 <span>PT INVESTION ASSET MANAGEMENT &bull; INCEPTION 2026</span>
@@ -322,14 +293,29 @@
                   <circle cx="220" cy="226" r="100" fill="none" stroke="#00F0FF" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="4 6" />
                   <circle cx="220" cy="226" r="140" fill="none" stroke="#0052FF" stroke-opacity="0.2" stroke-width="1" />
 
-                  <!-- Pulsing Expanding Radar Waves -->
-                  <circle class="animate-radar-ring-1" cx="220" cy="226" r="30" fill="none" stroke="#00F0FF" />
-                  <circle class="animate-radar-ring-2" cx="220" cy="226" r="30" fill="none" stroke="#0052FF" />
+                  <!-- Pulsing Expanding Radar Waves (Native SVG) -->
+                  <circle cx="220" cy="226" r="20" fill="none" stroke="#00F0FF">
+                    <animate attributeName="r" from="20" to="170" dur="3s" repeatCount="indefinite" />
+                    <animate attributeName="opacity" from="0.9" to="0" dur="3s" repeatCount="indefinite" />
+                    <animate attributeName="stroke-width" from="2" to="0.5" dur="3s" repeatCount="indefinite" />
+                  </circle>
+                  <circle cx="220" cy="226" r="20" fill="none" stroke="#0052FF">
+                    <animate attributeName="r" from="20" to="170" dur="3s" begin="1.5s" repeatCount="indefinite" />
+                    <animate attributeName="opacity" from="0.9" to="0" dur="3s" begin="1.5s" repeatCount="indefinite" />
+                    <animate attributeName="stroke-width" from="2" to="0.5" dur="3s" begin="1.5s" repeatCount="indefinite" />
+                  </circle>
 
-                  <!-- Rotating Radar Sweep Cone -->
-                  <g class="animate-radar-sweep" style="transform-origin: 220px 226px;">
-                    <path d="M 220 226 L 220 40 A 180 180 0 0 1 370 140 Z" fill="url(#radarSweepGradHero)" />
-                    <line x1="220" y1="226" x2="220" y2="40" stroke="#00F0FF" stroke-width="2" stroke-opacity="0.8" />
+                  <!-- Rotating Radar Sweep Cone (Native SVG Transform Centered on 220, 226) -->
+                  <g>
+                    <path d="M 220 226 L 220 50 A 176 176 0 0 1 344 102 Z" fill="url(#radarSweepGradHero)" />
+                    <line x1="220" y1="226" x2="220" y2="50" stroke="#00F0FF" stroke-width="2.5" stroke-opacity="0.9" />
+                    <animateTransform
+                      attributeName="transform"
+                      type="rotate"
+                      from="0 220 226"
+                      to="360 220 226"
+                      dur="4.5s"
+                      repeatCount="indefinite" />
                   </g>
 
                   <!-- Dynamic Floating Financial Candlesticks -->
