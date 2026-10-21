@@ -133,20 +133,33 @@
   </header>
 
   <!-- ========================================================================
-       LIVE TICKER BAR (EXACT AUTHENTIC NUMBERS)
+       LIVE TICKER BAR (SMOOTH RUNNING INFINITE MARQUEE)
        ======================================================================== -->
   <div class="live-ticker-bar">
     <div class="ticker-badge">
       <span>TELEMETRI TERKINI</span>
     </div>
-    <div class="ticker-scroll">
-      <div class="ticker-item"><span>AUM ACTIVE:</span> <b class="val-mono">Rp 10.000.000.000.000</b></div>
-      <div class="ticker-item"><span>CHAMPION MODEL:</span> <b class="val-mono">Boosted Hybrid (Ridge-HAR-X + GBRT)</b></div>
-      <div class="ticker-item"><span>VAL RMSE:</span> <b class="val-mono">0.003100</b> <span class="badge-tag tag-safe">-23.00% vs Naive</span></div>
-      <div class="ticker-item"><span>INFERENCE LATENCY:</span> <b class="val-mono">4.2 ms</b> <span class="badge-tag tag-safe">Order-Book Safe</span></div>
-      <div class="ticker-item"><span>DATASET:</span> <b class="val-mono">4.266 Baris (2010–2026)</b></div>
-      <div class="ticker-item"><span>ANTI-LEAKAGE:</span> <b class="val-mono">5-Fold Purged CV (5D Gap)</b></div>
-      <div class="ticker-item"><span>REGULATORY:</span> <b class="val-mono">POJK 43/2015 &amp; Basel III FRTB</b></div>
+    <div class="ticker-track-wrapper">
+      <div class="ticker-track">
+        <div class="ticker-item"><span class="dot"></span><span>AUM Aktif: <span class="val-highlight">Rp 10.000.000.000.000 (Mandat Reksa Dana)</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>Model Champion: <span class="val-highlight">Boosted Hybrid (Ridge-HAR-X + GBRT)</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>Inference Latency: <span class="val-safe">4.2 ms (Order-Book Safe &le; 10ms)</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>Holdout RMSE: <span class="val-safe">0.003100 (-23.00% vs Naive Baseline)</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>5-Fold Purged CV RMSE: <span class="val-highlight">0.004041 (5-Day Embargo Gap)</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>Proyeksi Volatilitas 2025–2026: <span class="val-safe">0.0093 Rata-rata (Rezim Tenang)</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>Estimasi 99% VaR 5D: <span class="val-highlight">Rp 216 Miliar (&le; Rp 350 M Limit)</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>Governance &amp; Kepatuhan: <span class="val-highlight">POJK No. 43/2015 &bull; Basel III FRTB</span></span></div>
+        
+        <!-- Duplicated track for seamless infinite marquee loop -->
+        <div class="ticker-item"><span class="dot"></span><span>AUM Aktif: <span class="val-highlight">Rp 10.000.000.000.000 (Mandat Reksa Dana)</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>Model Champion: <span class="val-highlight">Boosted Hybrid (Ridge-HAR-X + GBRT)</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>Inference Latency: <span class="val-safe">4.2 ms (Order-Book Safe &le; 10ms)</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>Holdout RMSE: <span class="val-safe">0.003100 (-23.00% vs Naive Baseline)</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>5-Fold Purged CV RMSE: <span class="val-highlight">0.004041 (5-Day Embargo Gap)</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>Proyeksi Volatilitas 2025–2026: <span class="val-safe">0.0093 Rata-rata (Rezim Tenang)</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>Estimasi 99% VaR 5D: <span class="val-highlight">Rp 216 Miliar (&le; Rp 350 M Limit)</span></span></div>
+        <div class="ticker-item"><span class="dot"></span><span>Governance &amp; Kepatuhan: <span class="val-highlight">POJK No. 43/2015 &bull; Basel III FRTB</span></span></div>
+      </div>
     </div>
   </div>
 
