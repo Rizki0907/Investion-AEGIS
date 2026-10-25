@@ -474,7 +474,7 @@ window.AEGIS_CHARTS = (function() {
         const traceChampion = {
             x: [champion.lat],
             y: [champion.rmse],
-            text: ['★ #1 Champion: Boosted Hybrid (4.2 ms | RMSE 0.00310)'],
+            text: ['#1 Champion: Boosted Hybrid (4.2 ms | RMSE 0.00310)'],
             mode: 'markers+text',
             type: 'scatter',
             name: 'Champion #1: Boosted Hybrid',

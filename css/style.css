@@ -767,6 +767,16 @@ p, li, span, td, th {
   }
 }
 
+.animate-radar-sweep {
+  animation: radarSweep 6s linear infinite;
+  transform-origin: 220px 226px;
+}
+
+@keyframes radarSweep {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .animate-candle-1 {
   animation: candleFloat1 3s ease-in-out infinite alternate;
 }

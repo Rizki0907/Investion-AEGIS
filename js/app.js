@@ -162,7 +162,7 @@ window.AEGIS_APP = (function() {
         document.getElementById('val-spread').textContent = (spreadVal >= 0 ? '+' : '') + spreadVal.toFixed(2) + '%';
 
         // Empirical model prediction formula derived from Boosted Hybrid
-        let predVol = 0.0082 + (Math.max(0, vixVal - 14) * 0.00045) + (Math.max(0, usdVal) * 0.00068);
+        let predVol = 0.0093 + (Math.max(0, vixVal - 14.5) * 0.00048) + (Math.max(0, usdVal) * 0.00072);
         if (spreadVal < 1.0) {
             predVol += (1.0 - spreadVal) * 0.0024;
         }

@@ -255,100 +255,138 @@
               </div>
 
               <div style="position: relative; width: 100%; height: 380px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
-                <svg viewBox="0 0 440 440" width="100%" height="100%" style="max-height: 380px;">
+                <!-- Master Scalable Vector Aegis Shield with Rotating Sweep & Active Telemetry -->
+                <svg viewBox="0 0 440 440" width="100%" height="100%" style="max-height: 380px; display: block; margin: 0 auto;">
                   <defs>
-                    <radialGradient id="radarGlow" cx="50%" cy="50%" r="50%">
+                    <linearGradient id="shieldGradDark" x1="15%" y1="0%" x2="85%" y2="100%">
+                      <stop offset="0%" stop-color="#F8FAFC" stop-opacity="0.9" />
+                      <stop offset="40%" stop-color="#334155" />
+                      <stop offset="100%" stop-color="#0F172A" />
+                    </linearGradient>
+
+                    <linearGradient id="cyanNeonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#00F0FF" />
+                      <stop offset="100%" stop-color="#0052FF" />
+                    </linearGradient>
+
+                    <linearGradient id="radarSweepGradHero" x1="0%" y1="0%" x2="100%" y2="50%">
+                      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.42" />
+                      <stop offset="100%" stop-color="#0052FF" stop-opacity="0" />
+                    </linearGradient>
+
+                    <radialGradient id="radarGlowHero" cx="50%" cy="50%" r="50%">
                       <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.22"/>
-                      <stop offset="70%" stop-color="#0052FF" stop-opacity="0.06"/>
+                      <stop offset="70%" stop-color="#0052FF" stop-opacity="0.08"/>
                       <stop offset="100%" stop-color="#0052FF" stop-opacity="0"/>
                     </radialGradient>
-                    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.85"/>
-                      <stop offset="50%" stop-color="#0052FF" stop-opacity="0.95"/>
-                      <stop offset="100%" stop-color="#020817" stop-opacity="0.9"/>
-                    </linearGradient>
-                    <linearGradient id="beamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.6"/>
-                      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0"/>
-                    </linearGradient>
+
+                    <clipPath id="heroInnerClip">
+                      <path d="M 220 54 L 348 102 L 348 226 C 348 316 292 376 220 404 C 148 376 92 316 92 226 L 92 102 Z" />
+                    </clipPath>
                   </defs>
 
-                  <!-- Radar Concentric Grid Circles -->
-                  <circle cx="220" cy="220" r="190" fill="none" stroke="rgba(0, 240, 255, 0.12)" stroke-width="1" stroke-dasharray="4,4"/>
-                  <circle cx="220" cy="220" r="145" fill="none" stroke="rgba(0, 240, 255, 0.18)" stroke-width="1"/>
-                  <circle cx="220" cy="220" r="100" fill="none" stroke="rgba(0, 240, 255, 0.22)" stroke-width="1" stroke-dasharray="2,2"/>
-                  <circle cx="220" cy="220" r="55" fill="none" stroke="rgba(0, 240, 255, 0.3)" stroke-width="1.2"/>
-                  <circle cx="220" cy="220" r="190" fill="url(#radarGlow)"/>
+                  <!-- Ambient Outer Orbit Rings -->
+                  <circle cx="220" cy="226" r="176" fill="none" stroke="url(#cyanNeonGrad)" stroke-width="1" stroke-opacity="0.22" stroke-dasharray="6 8" />
+                  <circle cx="220" cy="226" r="198" fill="none" stroke="#00F0FF" stroke-width="0.75" stroke-opacity="0.12" stroke-dasharray="3 5" />
 
                   <!-- Crosshairs -->
-                  <line x1="220" y1="15" x2="220" y2="425" stroke="rgba(0, 240, 255, 0.2)" stroke-width="1"/>
-                  <line x1="15" y1="220" x2="425" y2="220" stroke="rgba(0, 240, 255, 0.2)" stroke-width="1"/>
-                  <line x1="75" y1="75" x2="365" y2="365" stroke="rgba(0, 240, 255, 0.1)" stroke-width="1" stroke-dasharray="3,3"/>
-                  <line x1="75" y1="365" x2="365" y2="75" stroke="rgba(0, 240, 255, 0.1)" stroke-width="1" stroke-dasharray="3,3"/>
+                  <line x1="220" y1="20" x2="220" y2="430" stroke="rgba(0, 240, 255, 0.15)" stroke-width="1"/>
+                  <line x1="20" y1="226" x2="420" y2="226" stroke="rgba(0, 240, 255, 0.15)" stroke-width="1"/>
 
-                  <!-- Pulsing Radar Echo Waves -->
-                  <circle class="animate-radar-ring-1" cx="220" cy="220" r="25" fill="none" stroke="#00F0FF" stroke-width="2"/>
-                  <circle class="animate-radar-ring-2" cx="220" cy="220" r="25" fill="none" stroke="#0052FF" stroke-width="1.8"/>
+                  <!-- Outer Faceted Aegis Shield -->
+                  <path d="M 220 32 L 370 90 L 370 226 C 370 330 304 396 220 426 C 136 396 70 330 70 226 L 70 90 Z" 
+                        fill="url(#shieldGradDark)" stroke="url(#cyanNeonGrad)" stroke-width="3" />
 
-                  <!-- Rotating Radar Scanner Beam -->
-                  <g style="transform-origin: 220px 220px; animation: radarSweep 6s linear infinite;">
-                    <path d="M220 220 L410 220 A190 190 0 0 0 354 85 Z" fill="url(#beamGrad)" opacity="0.45"/>
-                    <line x1="220" y1="220" x2="410" y2="220" stroke="#00F0FF" stroke-width="2" opacity="0.9"/>
-                  </g>
+                  <!-- Inner Vault Core Shield Body -->
+                  <path d="M 220 54 L 348 102 L 348 226 C 348 316 292 376 220 404 C 148 376 92 316 92 226 L 92 102 Z" 
+                        fill="#050B1B" stroke="#1E293B" stroke-width="2" />
 
-                  <!-- Central Strategic Emblem Shield -->
-                  <g transform="translate(185, 178) scale(1.75)">
-                    <path d="M20 4L34 10V21C34 29.5 27.8 35.8 20 38C12.2 35.8 6 29.5 6 21V10L20 4Z" fill="url(#shieldGrad)" stroke="#00F0FF" stroke-width="1.8"/>
-                    <path d="M12 25L18 19L22 22L29 13" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </g>
+                  <!-- Clipped Interior: Radar Sweep, Expanding Echoes, Candlesticks, Alpha Trend -->
+                  <g clip-path="url(#heroInnerClip)">
+                    <!-- Ambient Glow inside Shield -->
+                    <circle cx="220" cy="226" r="170" fill="url(#radarGlowHero)"/>
 
-                  <!-- Floating Multi-Asset Risk Nodes -->
-                  <g transform="translate(325, 120)">
-                    <circle class="animate-node-pulse" cx="0" cy="0" r="7" fill="#EF4444"/>
-                    <rect x="12" y="-12" width="75" height="22" rx="4" fill="rgba(6, 11, 25, 0.85)" stroke="#EF4444" stroke-width="1"/>
-                    <text x="18" y="3" fill="#EF4444" font-family="JetBrains Mono" font-size="9" font-weight="bold">VIX 14.5</text>
-                  </g>
+                    <!-- Concentric Radar Rings -->
+                    <circle cx="220" cy="226" r="50" fill="none" stroke="#00F0FF" stroke-opacity="0.2" stroke-width="1" />
+                    <circle cx="220" cy="226" r="100" fill="none" stroke="#00F0FF" stroke-opacity="0.15" stroke-width="1" stroke-dasharray="4 6" />
+                    <circle cx="220" cy="226" r="140" fill="none" stroke="#0052FF" stroke-opacity="0.25" stroke-width="1" />
 
-                  <g transform="translate(100, 130)">
-                    <circle class="animate-node-pulse" cx="0" cy="0" r="6" fill="#F59E0B"/>
-                    <rect x="-85" y="-12" width="75" height="22" rx="4" fill="rgba(6, 11, 25, 0.85)" stroke="#F59E0B" stroke-width="1"/>
-                    <text x="-79" y="3" fill="#F59E0B" font-family="JetBrains Mono" font-size="9" font-weight="bold">USD 16.2k</text>
-                  </g>
+                    <!-- Expanding Radar Pulse Waves -->
+                    <circle class="animate-radar-ring-1" cx="220" cy="226" r="30" fill="none" stroke="#00F0FF" stroke-width="2"/>
+                    <circle class="animate-radar-ring-2" cx="220" cy="226" r="30" fill="none" stroke="#0052FF" stroke-width="1.8"/>
 
-                  <g transform="translate(330, 290)">
-                    <circle class="animate-node-pulse" cx="0" cy="0" r="6" fill="#10B981"/>
-                    <rect x="12" y="-12" width="85" height="22" rx="4" fill="rgba(6, 11, 25, 0.85)" stroke="#10B981" stroke-width="1"/>
-                    <text x="18" y="3" fill="#10B981" font-family="JetBrains Mono" font-size="9" font-weight="bold">SPREAD +2.25%</text>
-                  </g>
+                    <!-- Rotating Radar Scanner Sweep Beam -->
+                    <g class="animate-radar-sweep" style="transform-origin: 220px 226px; animation: radarSweep 6s linear infinite;">
+                      <path d="M 220 226 L 220 40 A 180 180 0 0 1 370 140 Z" fill="url(#radarSweepGradHero)" />
+                      <line x1="220" y1="226" x2="220" y2="40" stroke="#00F0FF" stroke-width="2.5" stroke-opacity="0.9" />
+                    </g>
 
-                  <g transform="translate(95, 305)">
-                    <circle class="animate-node-pulse" cx="0" cy="0" r="7" fill="#00F0FF"/>
-                    <rect x="-85" y="-12" width="75" height="22" rx="4" fill="rgba(6, 11, 25, 0.85)" stroke="#00F0FF" stroke-width="1"/>
-                    <text x="-79" y="3" fill="#00F0FF" font-family="JetBrains Mono" font-size="9" font-weight="bold">RV 0.0093</text>
-                  </g>
-
-                  <!-- Floating Candlesticks -->
-                  <g transform="translate(145, 370)">
+                    <!-- Candlesticks in Shield (Market Volatility Dynamics) -->
                     <g class="animate-candle-1">
-                      <line x1="20" y1="0" x2="20" y2="35" stroke="#10B981" stroke-width="1.5"/>
-                      <rect x="16" y="8" width="8" height="18" fill="#10B981" rx="1"/>
+                      <line x1="130" y1="260" x2="130" y2="330" stroke="#64748B" stroke-width="2.5" />
+                      <rect x="123" y="275" width="14" height="35" rx="2" fill="#334155" />
                     </g>
                     <g class="animate-candle-2">
-                      <line x1="45" y1="-5" x2="45" y2="32" stroke="#EF4444" stroke-width="1.5"/>
-                      <rect x="41" y="4" width="8" height="20" fill="#EF4444" rx="1"/>
+                      <line x1="165" y1="230" x2="165" y2="305" stroke="#0088FF" stroke-width="2.5" />
+                      <rect x="158" y="245" width="14" height="42" rx="2" fill="#0052FF" />
+                    </g>
+                    <g class="animate-candle-1">
+                      <line x1="200" y1="210" x2="200" y2="280" stroke="#64748B" stroke-width="2.5" />
+                      <rect x="193" y="225" width="14" height="30" rx="2" fill="#475569" />
                     </g>
                     <g class="animate-candle-3">
-                      <line x1="70" y1="-8" x2="70" y2="30" stroke="#00F0FF" stroke-width="1.5"/>
-                      <rect x="66" y="2" width="8" height="15" fill="#00F0FF" rx="1"/>
-                    </g>
-                    <g class="animate-candle-1">
-                      <line x1="95" y1="2" x2="95" y2="38" stroke="#10B981" stroke-width="1.5"/>
-                      <rect x="91" y="10" width="8" height="20" fill="#10B981" rx="1"/>
+                      <line x1="235" y1="170" x2="235" y2="250" stroke="#00F0FF" stroke-width="2.5" />
+                      <rect x="228" y="185" width="14" height="46" rx="2" fill="#0088FF" />
                     </g>
                     <g class="animate-candle-2">
-                      <line x1="120" y1="-2" x2="120" y2="34" stroke="#10B981" stroke-width="1.5"/>
-                      <rect x="116" y="6" width="8" height="16" fill="#10B981" rx="1"/>
+                      <line x1="270" y1="135" x2="270" y2="220" stroke="#00F0FF" stroke-width="2.5" />
+                      <rect x="263" y="150" width="14" height="48" rx="2" fill="#00C2FF" />
                     </g>
+                    <g class="animate-candle-3">
+                      <line x1="305" y1="95" x2="305" y2="180" stroke="#00F0FF" stroke-width="2.5" />
+                      <rect x="298" y="110" width="14" height="46" rx="2" fill="#00F0FF" />
+                    </g>
+                  </g>
+
+                  <!-- Glowing Alpha Trend Curve Across Shield -->
+                  <path d="M 100 310 C 140 300, 160 270, 185 250 C 210 230, 230 235, 255 195 C 280 155, 305 130, 330 105" 
+                        fill="none" stroke="#00F0FF" stroke-width="5" stroke-linecap="round" opacity="0.6" />
+                  <path d="M 100 310 C 140 300, 160 270, 185 250 C 210 230, 230 235, 255 195 C 280 155, 305 130, 330 105" 
+                        fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+                  <!-- Vector Arrowhead -->
+                  <path d="M 310 102 L 335 100 L 332 125" fill="none" stroke="#00F0FF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <!-- Trend Nodes -->
+                  <circle cx="185" cy="250" r="4.5" fill="#050B1B" stroke="#00F0FF" stroke-width="2" />
+                  <circle cx="255" cy="195" r="4.5" fill="#050B1B" stroke="#00F0FF" stroke-width="2.5" />
+                  <circle class="animate-node-pulse" cx="330" cy="105" r="6" fill="#FFFFFF" stroke="#00F0FF" stroke-width="2.5" />
+
+                  <!-- Floating Multi-Asset Risk Telemetry Nodes -->
+                  <!-- Top-Right: VIX 14.5 -->
+                  <g transform="translate(345, 90)">
+                    <circle class="animate-node-pulse" cx="0" cy="0" r="7" fill="#EF4444"/>
+                    <rect x="12" y="-12" width="76" height="24" rx="5" fill="rgba(6, 11, 25, 0.92)" stroke="#EF4444" stroke-width="1.2"/>
+                    <text x="18" y="4" fill="#EF4444" font-family="JetBrains Mono" font-size="9.5" font-weight="bold">VIX 14.5</text>
+                  </g>
+
+                  <!-- Top-Left: USD 16.2k -->
+                  <g transform="translate(95, 90)">
+                    <circle class="animate-node-pulse" cx="0" cy="0" r="6.5" fill="#F59E0B"/>
+                    <rect x="-88" y="-12" width="78" height="24" rx="5" fill="rgba(6, 11, 25, 0.92)" stroke="#F59E0B" stroke-width="1.2"/>
+                    <text x="-82" y="4" fill="#F59E0B" font-family="JetBrains Mono" font-size="9.5" font-weight="bold">USD 16.2k</text>
+                  </g>
+
+                  <!-- Bottom-Right: SPREAD +2.25% -->
+                  <g transform="translate(340, 335)">
+                    <circle class="animate-node-pulse" cx="0" cy="0" r="6.5" fill="#10B981"/>
+                    <rect x="12" y="-12" width="94" height="24" rx="5" fill="rgba(6, 11, 25, 0.92)" stroke="#10B981" stroke-width="1.2"/>
+                    <text x="17" y="4" fill="#10B981" font-family="JetBrains Mono" font-size="9.5" font-weight="bold">SPREAD +2.25%</text>
+                  </g>
+
+                  <!-- Bottom-Left: RV 0.0093 -->
+                  <g transform="translate(100, 335)">
+                    <circle class="animate-node-pulse" cx="0" cy="0" r="7" fill="#00F0FF"/>
+                    <rect x="-88" y="-12" width="78" height="24" rx="5" fill="rgba(6, 11, 25, 0.92)" stroke="#00F0FF" stroke-width="1.2"/>
+                    <text x="-82" y="4" fill="#00F0FF" font-family="JetBrains Mono" font-size="9.5" font-weight="bold">RV 0.0093</text>
                   </g>
                 </svg>
               </div>
@@ -447,16 +485,16 @@
             </thead>
             <tbody>
               <tr>
-                <td>Target Return Tahunan</td>
+                <td>Target Return Portofolio</td>
                 <td class="mono">&ge; 12.0% per annum</td>
-                <td class="mono" style="color: var(--color-safe); font-weight: bold;">15.4% per annum</td>
+                <td class="mono" style="color: var(--color-safe); font-weight: bold;">15.4% per annum (Backtest 2010–2024)</td>
                 <td><span class="badge-tag tag-safe">TERPENUHI</span></td>
                 <td>Prospektus Kontrak Investasi Kolektif</td>
               </tr>
               <tr>
                 <td>Maksimum Drawdown Portofolio</td>
                 <td class="mono">&le; -15.0% dari peak</td>
-                <td class="mono" style="color: var(--color-safe); font-weight: bold;">-9.8% (Crisis 2020)</td>
+                <td class="mono" style="color: var(--color-safe); font-weight: bold;">-9.8% (Backtest Krisis 2020 vs -37.5% IHSG)</td>
                 <td><span class="badge-tag tag-safe">COMPLIANT</span></td>
                 <td>Kebijakan Komite Risiko PT Investion</td>
               </tr>
@@ -603,10 +641,12 @@
             <div style="font-family: 'Sora'; font-weight: 700; color: var(--brand-cyan); margin-bottom: 4px;">Informasi Delegasi Tim</div>
             <ul style="padding-left: 18px; color: var(--text-secondary); line-height: 1.6;">
               <li><strong>Nama Tim:</strong> Positif Podium</li>
-              <li><strong>Institusi:</strong> Universitas Pembangunan Nasional "Veteran" Jawa Timur</li>
+              <li><strong>Institusi Asal:</strong> Universitas Negeri Surabaya (UNESA)</li>
+              <li><strong>Ketua Tim:</strong> Muhammad Habib Nur Aiman</li>
+              <li><strong>Anggota Tim:</strong> Rizki Piji Fathoni</li>
               <li><strong>Kompetisi:</strong> Data Science Competition (DSC) INCEPTION 2026</li>
-              <li><strong>Penyelenggara:</strong> HIMATIFA, Fakultas Ilmu Komputer, UPNVJ</li>
-              <li><strong>Studi Kasus:</strong> Early Warning System Realized Volatility IHSG AUM Rp 10T</li>
+              <li><strong>Penyelenggara:</strong> HIMATIFA, Fakultas Ilmu Komputer, UPN "Veteran" Jawa Timur</li>
+              <li><strong>Peran Penugasan:</strong> Senior Quantitative Risk &amp; Machine Learning Analyst (PT Investion AUM Rp 10T)</li>
             </ul>
           </div>
 
@@ -1044,8 +1084,8 @@
               <tr class="highlight-champion">
                 <td><b>#1 Boosted Hybrid (Ridge-HAR-X + GBRT)</b></td>
                 <td class="mono" style="color: var(--color-safe); font-weight: bold;">0.003100</td>
-                <td class="mono" style="color: var(--color-safe); font-weight: bold;">0.002241</td>
-                <td class="mono" style="color: var(--color-safe); font-weight: bold;">0.3842</td>
+                <td class="mono" style="color: var(--color-safe); font-weight: bold;">0.002238</td>
+                <td class="mono" style="color: var(--color-safe); font-weight: bold;">0.3620</td>
                 <td class="mono" style="color: var(--color-safe); font-weight: bold;">-23.00%</td>
                 <td class="mono" style="color: var(--brand-cyan); font-weight: bold;">4.2 ms</td>
                 <td><span class="badge-tag tag-champion">CHAMPION PRODUCTION</span></td>
@@ -1054,9 +1094,9 @@
                 <td><b>#2 Stacking Ensemble (LGBM+Cat+XGB+Ridge)</b></td>
                 <td class="mono">0.003092</td>
                 <td class="mono">0.002228</td>
-                <td class="mono">0.3871</td>
+                <td class="mono">0.3645</td>
                 <td class="mono">-23.20%</td>
-                <td class="mono" style="color: var(--color-crisis);">2.796 ms</td>
+                <td class="mono" style="color: var(--color-crisis);">2.796 ms (~2,8s)</td>
                 <td><span class="badge-tag tag-warning">RUNNER-UP (HIGH LATENCY)</span></td>
               </tr>
               <tr>
@@ -1106,10 +1146,10 @@
               </tr>
               <tr>
                 <td><b>#8 GARCH(1,1) Volatility Model</b></td>
-                <td class="mono">0.003410</td>
-                <td class="mono">0.002520</td>
-                <td class="mono">0.2550</td>
-                <td class="mono">-15.30%</td>
+                <td class="mono">0.003612</td>
+                <td class="mono">0.003041</td>
+                <td class="mono">Negatif</td>
+                <td class="mono">-10.28%</td>
                 <td class="mono">18.5 ms</td>
                 <td><span class="badge-tag">CLASSIC ECONOMETRIC</span></td>
               </tr>
@@ -1161,8 +1201,8 @@
               <tr style="background: rgba(239, 68, 68, 0.05);">
                 <td><b>#14 Naive Baseline (Hist 5D Realized Vol)</b></td>
                 <td class="mono" style="color: var(--color-crisis); font-weight: bold;">0.004026</td>
-                <td class="mono" style="color: var(--color-crisis);">0.003055</td>
-                <td class="mono" style="color: var(--color-crisis);">-0.0385</td>
+                <td class="mono" style="color: var(--color-crisis);">0.002966</td>
+                <td class="mono" style="color: var(--color-crisis);">Negatif (-0.0385)</td>
                 <td class="mono" style="color: var(--color-crisis);">0.00% (Ref)</td>
                 <td class="mono">0.2 ms</td>
                 <td><span class="badge-tag tag-crisis">BASELINE ACUAN WAJIB</span></td>
@@ -2212,7 +2252,7 @@
         </div>
         <p style="font-size: 0.76rem; color: var(--text-muted); line-height: 1.5;">
           Platform Peringatan Dini &amp; Perisai Volatilitas Kuantitatif Terintegrasi.<br>
-          Karya Tim Positif Podium &bull; UPN "Veteran" Jawa Timur &bull; INCEPTION 2026.
+          Karya Tim Positif Podium &bull; Universitas Negeri Surabaya (UNESA) &bull; INCEPTION 2026 UPNVJ.
         </p>
       </div>
 
